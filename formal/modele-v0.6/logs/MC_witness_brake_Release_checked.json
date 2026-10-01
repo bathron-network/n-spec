@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_brake_Release_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 46.69,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessRelease"
+  ],
+  "generated": 18,
+  "distinct": 18,
+  "queue": 0,
+  "depth": 18,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n W = 1000\n Scenario = \"slow\"\n Mutation = \"none\"\n Horizon = 20\nINVARIANTS NoWitnessRelease\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_brake_Release_checked.log"
+}

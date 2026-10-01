@@ -1,0 +1,67 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "1", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_replay_anchor_split_checked_fixed.cfg", "MC_replay_anchor_split_checked_fixed.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 93 and seed 1 with 1 worker on 14 cores with 2731MB heap and 64MB offheap memory [pid: 52746] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_replay_anchor_split_checked_fixed.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/AnchorBTCChecked.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module AnchorBTCChecked
+Semantic processing of module MC_replay_anchor_split_checked_fixed
+Starting... (2026-09-30 21:27:52)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 21:27:52.
+Error: Invariant A4 is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ step = 0
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 2: <ReplayNext line 4, col 14 to line 7, col 16 of module MC_replay_anchor_split_checked_fixed>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ step = 1
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{"A"}, {}>>
+/\ anchor = <<[branch |-> "A", height |-> 2], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 3: <ReplayNext line 4, col 14 to line 7, col 16 of module MC_replay_anchor_split_checked_fixed>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ step = 2
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "B", height |-> 3]>>
+/\ audit = TRUE
+/\ chosen = <<{"A"}, {"B"}>>
+/\ anchor = <<[branch |-> "A", height |-> 2], [branch |-> "B", height |-> 2]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+3 states generated, 3 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 3.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 1 and the 95th percentile is 1).
+Finished in 00s at (2026-09-30 21:27:52)
+
+exit=12

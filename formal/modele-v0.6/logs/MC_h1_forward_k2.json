@@ -1,0 +1,22 @@
+{
+  "name": "MC_h1_forward_k2",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 6.88,
+  "workers": 1,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 504973,
+  "distinct": 27556,
+  "queue": 0,
+  "depth": 7,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Scenario = \"forward\"\n Mutation = \"none\"\n MaxReorg = 2\nINVARIANTS H1Order H1Subset H1NonVacuity H1Orientation NoContinuation\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 7.1E-10",
+    "  based on the actual fingerprints:  val = 1.5E-11"
+  ],
+  "log": "logs/MC_h1_forward_k2.log"
+}

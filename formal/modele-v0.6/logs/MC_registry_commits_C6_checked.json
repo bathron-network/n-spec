@@ -1,0 +1,22 @@
+{
+  "name": "MC_registry_commits_C6_checked",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 1.12,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 92353,
+  "distinct": 43264,
+  "queue": 0,
+  "depth": 5,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n MaxReorg = 2\n Mutation = \"none\"\nINVARIANTS C6\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 1.2E-10",
+    "  based on the actual fingerprints:  val = 5.2E-11"
+  ],
+  "log": "logs/MC_registry_commits_C6_checked.log"
+}

@@ -1,0 +1,22 @@
+
+****** SANY2 Version 2.1 created 24 February 2014
+
+Parsing file etudes/n-spec/tla/modele-v0.6/Authorities.tla
+***Parse Error***
+Was expecting "==== or more Module body"
+Encountered "nonce" at line 14, column 54 and token "<" 
+
+Residual stack trace follows:
+Module definition starting at line 1, column 1.
+
+
+Fatal errors while parsing TLA+ spec in file etudes/n-spec/tla/modele-v0.6/Authorities.tla
+
+tla2sany.semantic.AbortException
+*** Abort messages: 1
+
+In module Authorities
+
+Could not parse module Authorities from file etudes/n-spec/tla/modele-v0.6/Authorities.tla
+
+

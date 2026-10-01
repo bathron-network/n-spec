@@ -1,0 +1,166 @@
+[
+  {
+    "name": "MC_replay_spec_adopt_v06",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 0.78,
+    "completed": true,
+    "invariant_violations": [],
+    "statistics": [
+      "13 states generated, 13 distinct states found, 0 states left on queue."
+    ],
+    "depth": [
+      "13"
+    ]
+  },
+  {
+    "name": "MC_replay_spec_adopt_strong_v06",
+    "exit": 12,
+    "timeout": false,
+    "seconds": 0.79,
+    "completed": false,
+    "invariant_violations": [
+      "RegistryImmutable"
+    ],
+    "statistics": [
+      "13 states generated, 13 distinct states found, 0 states left on queue."
+    ],
+    "depth": [
+      "13"
+    ]
+  },
+  {
+    "name": "MC_replay_spec_strong_v06",
+    "exit": 12,
+    "timeout": false,
+    "seconds": 0.74,
+    "completed": false,
+    "invariant_violations": [
+      "RegistryImmutable"
+    ],
+    "statistics": [
+      "9 states generated, 9 distinct states found, 0 states left on queue."
+    ],
+    "depth": [
+      "9"
+    ]
+  },
+  {
+    "name": "MC_broken_tipsnapshot_v06",
+    "exit": 12,
+    "timeout": false,
+    "seconds": 1.5,
+    "completed": false,
+    "invariant_violations": [
+      "RegistryStableOnCommonPrefix"
+    ],
+    "statistics": [
+      "19116 states generated, 4588 distinct states found, 2485 states left on queue."
+    ],
+    "depth": [
+      "7"
+    ]
+  },
+  {
+    "name": "MC_broken_h1promote_v06",
+    "exit": 12,
+    "timeout": false,
+    "seconds": 19.98,
+    "completed": false,
+    "invariant_violations": [
+      "H1Detector"
+    ],
+    "statistics": [
+      "224060 states generated, 46122 distinct states found, 20537 states left on queue."
+    ],
+    "depth": [
+      "11"
+    ]
+  },
+  {
+    "name": "MC_witness_empty_v06",
+    "exit": 12,
+    "timeout": false,
+    "seconds": 3.91,
+    "completed": false,
+    "invariant_violations": [
+      "NoEmptyEpochWitness"
+    ],
+    "statistics": [
+      "56559 states generated, 12359 distinct states found, 6031 states left on queue."
+    ],
+    "depth": [
+      "9"
+    ]
+  },
+  {
+    "name": "MC_witness_twoempty_v06",
+    "exit": 12,
+    "timeout": false,
+    "seconds": 3.99,
+    "completed": false,
+    "invariant_violations": [
+      "NoTwoEmptyEpochsWitness"
+    ],
+    "statistics": [
+      "86289 states generated, 19306 distinct states found, 9440 states left on queue."
+    ],
+    "depth": [
+      "9"
+    ]
+  },
+  {
+    "name": "MC_live_v06",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 6.8,
+    "completed": true,
+    "invariant_violations": [],
+    "statistics": [
+      "1296 states generated, 386 distinct states found, 0 states left on queue."
+    ],
+    "depth": [
+      "7"
+    ]
+  },
+  {
+    "name": "MC_safe_v06",
+    "exit": 0,
+    "timeout": false,
+    "seconds": 159.2,
+    "completed": true,
+    "invariant_violations": [],
+    "statistics": [
+      "639168 states generated, 93112 distinct states found, 0 states left on queue."
+    ],
+    "depth": [
+      "21"
+    ]
+  },
+  {
+    "name": "MC_spec_registryreorg_strong_v06",
+    "exit": 12,
+    "timeout": false,
+    "seconds": 1.97,
+    "completed": false,
+    "invariant_violations": [
+      "RegistryImmutable"
+    ],
+    "statistics": [
+      "69227 states generated, 15659 distinct states found, 7908 states left on queue."
+    ],
+    "depth": [
+      "9"
+    ]
+  },
+  {
+    "name": "MC_spec_registryreorg_v06",
+    "exit": -15,
+    "timeout": true,
+    "seconds": 570.0,
+    "completed": false,
+    "invariant_violations": [],
+    "statistics": [],
+    "depth": []
+  }
+]

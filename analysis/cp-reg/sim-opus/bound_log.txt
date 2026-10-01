@@ -1,0 +1,223 @@
+0.3 0.2 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 2 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 2 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 1 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 1 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 1.0 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 1.0 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 1.0 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 1.0 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 1.0 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 1.0 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.7 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.7 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 2 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 2 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 0 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.2 0 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 1.0 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 1.0 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.7 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.7 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.4 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.4 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 1 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 1 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.7 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.7 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 2 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 2 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 0 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.2 0 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.4 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.4 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 2 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 2 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 0.7 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 0.7 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 1 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 1 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 1.0 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 1.0 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.7 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.7 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.4 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.4 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 1 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 1 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 1.0 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 1.0 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.4 2 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.4 2 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.7 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.7 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 1.0 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 1.0 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 0 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.2 0 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.7 2 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.7 2 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 0.4 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 0.4 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.4 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.4 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.7 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.7 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 0.2 2 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 0.2 2 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 1.0 1 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.1 1.0 1 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.4 1 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.4 1 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 0 pess slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 0.4 0 pess sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 1.0 2 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.3 1.0 2 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.4 2 opt slot INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.4 2 opt sym INFINI {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.7 2 opt slot QUASI-CRITIQUE {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.25 0.7 2 opt sym QUASI-CRITIQUE {'1e-06': None, '1e-09': None, '1e-12': None} None 
+0.2 0.7 2 opt sym OK {'1e-06': 2165, '1e-09': 3275, '1e-12': 4385} 7.4 
+0.2 0.7 2 opt slot OK {'1e-06': 2835, '1e-09': 4288, '1e-12': 5740} 9.3 
+0.25 0.4 0 pess sym OK {'1e-06': 5330, '1e-09': 8067, '1e-12': 10808} 16.5 
+0.1 0.4 1 pess slot OK {'1e-06': 1963, '1e-09': 2966, '1e-12': 3970} 3.4 
+0.1 0.2 2 opt sym OK {'1e-06': 2042, '1e-09': 3093, '1e-12': 4145} 11.0 
+0.1 0.4 1 pess sym OK {'1e-06': 925, '1e-09': 1399, '1e-12': 1872} 2.0 
+0.2 0.4 1 opt sym OK {'1e-06': 4416, '1e-09': 6680, '1e-12': 8945} 22.1 
+0.1 0.2 1 pess sym OK {'1e-06': 3955, '1e-09': 5980, '1e-12': 8004} 22.8 
+0.3 1.0 1 opt slot OK {'1e-06': 1520, '1e-09': 2301, '1e-12': 3083} 3.3 
+0.3 1.0 1 opt sym OK {'1e-06': 1520, '1e-09': 2301, '1e-12': 3083} 2.2 
+0.1 0.2 1 opt sym OK {'1e-06': 876, '1e-09': 1331, '1e-12': 1786} 1.2 
+0.25 0.7 1 opt slot OK {'1e-06': 1932, '1e-09': 2927, '1e-12': 3922} 3.1 
+0.25 0.7 1 opt sym OK {'1e-06': 1502, '1e-09': 2276, '1e-12': 3050} 2.9 
+0.2 1.0 2 opt slot OK {'1e-06': 957, '1e-09': 1449, '1e-12': 1940} 1.2 
+0.2 1.0 2 opt sym OK {'1e-06': 957, '1e-09': 1449, '1e-12': 1940} 1.2 
+0.2 0.4 0 pess slot OK {'1e-06': 1391, '1e-09': 2115, '1e-12': 2840} 1.0 
+0.2 0.4 0 pess sym OK {'1e-06': 720, '1e-09': 1095, '1e-12': 1471} 0.5 
+0.1 0.2 2 opt slot OK {'1e-06': 7244, '1e-09': 10974, '1e-12': 14706} 19.5 
+0.3 0.7 0 pess sym OK {'1e-06': 658, '1e-09': 1001, '1e-12': 1344} 0.4 
+0.3 0.7 0 pess slot OK {'1e-06': 835, '1e-09': 1270, '1e-12': 1705} 0.6 
+0.25 1.0 1 opt slot OK {'1e-06': 521, '1e-09': 791, '1e-12': 1061} 0.4 
+0.25 1.0 1 opt sym OK {'1e-06': 521, '1e-09': 791, '1e-12': 1061} 0.4 
+0.2 0.7 1 opt sym OK {'1e-06': 442, '1e-09': 672, '1e-12': 902} 0.4 
+0.2 0.7 1 opt slot OK {'1e-06': 579, '1e-09': 880, '1e-12': 1181} 0.4 
+0.1 0.2 0 pess sym OK {'1e-06': 451, '1e-09': 686, '1e-12': 922} 0.2 
+0.25 0.7 0 pess slot OK {'1e-06': 360, '1e-09': 549, '1e-12': 739} 0.1 
+0.1 0.4 2 opt sym OK {'1e-06': 294, '1e-09': 447, '1e-12': 601} 0.3 
+0.25 0.7 0 pess sym OK {'1e-06': 277, '1e-09': 424, '1e-12': 570} 0.1 
+0.2 1.0 1 opt slot OK {'1e-06': 243, '1e-09': 369, '1e-12': 496} 0.1 
+0.1 0.4 2 opt slot OK {'1e-06': 628, '1e-09': 956, '1e-12': 1284} 0.5 
+0.3 1.0 0 pess slot OK {'1e-06': 211, '1e-09': 322, '1e-12': 434} 0.1 
+0.2 1.0 1 opt sym OK {'1e-06': 243, '1e-09': 369, '1e-12': 496} 0.1 
+0.3 1.0 0 pess sym OK {'1e-06': 211, '1e-09': 322, '1e-12': 434} 0.1 
+0.1 0.4 1 opt sym OK {'1e-06': 162, '1e-09': 247, '1e-12': 332} 0.1 
+0.1 0.7 2 opt slot OK {'1e-06': 234, '1e-09': 356, '1e-12': 478} 0.1 
+0.1 0.4 1 opt slot OK {'1e-06': 350, '1e-09': 535, '1e-12': 720} 0.2 
+0.2 0.7 0 pess slot OK {'1e-06': 189, '1e-09': 289, '1e-12': 389} 0.0 
+0.25 1.0 0 pess slot OK {'1e-06': 124, '1e-09': 191, '1e-12': 257} 0.0 
+0.2 0.7 0 pess sym OK {'1e-06': 142, '1e-09': 217, '1e-12': 292} 0.0 
+0.1 0.2 0 pess slot OK {'1e-06': 1625, '1e-09': 2476, '1e-12': 3328} 0.9 
+0.1 1.0 2 opt slot OK {'1e-06': 151, '1e-09': 230, '1e-12': 308} 0.0 
+0.1 0.7 2 opt sym OK {'1e-06': 173, '1e-09': 264, '1e-12': 354} 0.2 
+0.25 1.0 0 pess sym OK {'1e-06': 124, '1e-09': 191, '1e-12': 257} 0.1 
+0.1 0.4 0 pess sym OK {'1e-06': 92, '1e-09': 140, '1e-12': 189} 0.0 
+0.1 1.0 2 opt sym OK {'1e-06': 151, '1e-09': 230, '1e-12': 308} 0.0 
+0.1 0.7 1 opt sym OK {'1e-06': 90, '1e-09': 137, '1e-12': 185} 0.0 
+0.1 0.7 1 opt slot OK {'1e-06': 123, '1e-09': 188, '1e-12': 253} 0.0 
+0.1 0.4 0 pess slot OK {'1e-06': 206, '1e-09': 317, '1e-12': 427} 0.1 
+0.2 1.0 0 pess slot OK {'1e-06': 78, '1e-09': 120, '1e-12': 162} 0.0 
+0.1 1.0 1 opt slot OK {'1e-06': 73, '1e-09': 112, '1e-12': 150} 0.0 
+0.1 0.7 0 pess sym OK {'1e-06': 46, '1e-09': 70, '1e-12': 95} 0.0 
+0.2 1.0 0 pess sym OK {'1e-06': 78, '1e-09': 120, '1e-12': 162} 0.0 
+0.1 1.0 0 pess slot OK {'1e-06': 33, '1e-09': 51, '1e-12': 69} 0.0 
+0.1 1.0 1 opt sym OK {'1e-06': 73, '1e-09': 112, '1e-12': 150} 0.0 
+0.1 1.0 0 pess sym OK {'1e-06': 33, '1e-09': 51, '1e-12': 69} 0.0 
+0.1 0.7 0 pess slot OK {'1e-06': 65, '1e-09': 100, '1e-12': 135} 0.0 
+0.1 0.2 1 opt slot OK {'1e-06': 3121, '1e-09': 4741, '1e-12': 6363} 5.6 
+0.25 1.0 2 opt sym OK {'1e-06': 5373, '1e-09': 8111, '1e-12': 10850} 31.2 
+0.25 1.0 2 opt slot OK {'1e-06': 5373, '1e-09': 8111, '1e-12': 10850} 31.3 
+0.25 0.4 0 pess slot OK {'1e-06': 9696, '1e-09': 14676, '1e-12': 19662} 33.2 
+0.2 0.4 1 opt slot OK {'1e-06': 8467, '1e-09': 12809, '1e-12': 17151} 35.4 
+0.1 0.2 1 pess slot OK {'1e-06': 14022, '1e-09': 21197, '1e-12': 28371} 48.6 extrap
+0.1 0.7 1 pess sym OK {'1e-06': 4048, '1e-09': 6089, '1e-12': 8131} 52.2 
+0.1 0.7 1 pess slot OK {'1e-06': 5482, '1e-09': 8246, '1e-12': 11010Process SpawnPoolWorker-5:
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/queues.py", line 378, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 205, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 416, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 373, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/queues.py", line 378, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 205, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 416, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 373, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Process SpawnPoolWorker-3:
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/queues.py", line 378, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 205, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 416, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 373, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/queues.py", line 378, in put
+    self._writer.send_bytes(obj)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 205, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 416, in _send_bytes
+    self._send(header + buf)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/connection.py", line 373, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,0 +1,22 @@
+{
+  "name": "MC_v6_mirror_on_01",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 152.74,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 1015556,
+  "distinct": 141242,
+  "queue": 0,
+  "depth": 24,
+  "configuration": "SPECIFICATION ShardSpec\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 5\n  KReg = 1\n  MaxReorg = 4\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryImmutable RegistryStableOnCommonPrefix\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 6.7E-9",
+    "  based on the actual fingerprints:  val = 8.7E-10"
+  ],
+  "log": "logs/MC_v6_mirror_on_01.log"
+}

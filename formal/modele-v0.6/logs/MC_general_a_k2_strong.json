@@ -1,0 +1,21 @@
+{
+  "name": "MC_general_a_k2_strong",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 44.97,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "RegistryImmutable"
+  ],
+  "generated": 755583,
+  "distinct": 150933,
+  "queue": 54065,
+  "depth": 14,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 2\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryImmutable BlockMetadataCorrect\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [],
+  "log": "logs/MC_general_a_k2_strong.log"
+}

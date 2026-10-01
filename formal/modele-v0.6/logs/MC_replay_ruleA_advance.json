@@ -1,0 +1,30 @@
+{
+  "name": "MC_replay_ruleA_advance",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.68,
+  "workers": 1,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessAdvance"
+  ],
+  "generated": 22,
+  "distinct": 18,
+  "queue": 0,
+  "depth": 18,
+  "configuration": "SPECIFICATION Replay\nCONSTANTS Epochs=3 SlotsPerEpoch=2 EndSlot=4 KReg=1 MaxReorg=4 ForkSlot=0\n BrokenTipSnapshot=FALSE BrokenH1Promote=FALSE RuleA=TRUE\nINVARIANTS TypeOK BlockMetadataCorrect NoWitnessAdvance\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_replay_ruleA_advance.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_replay_ruleA_advance.cfg": "8a5af3c940965f4feecab2391b164cb4e6deb42667695d5ec65b0745c5e43cd2",
+    "MC_replay_ruleA_advance.tla": "c0147b3fd0def9c2d8c8638afdcba3812ff9e8c8d16e8bba5b16f1279fd1a019",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

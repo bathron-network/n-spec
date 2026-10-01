@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_registry_Reject_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessReject"
+  ],
+  "generated": 330,
+  "distinct": 270,
+  "queue": 130,
+  "depth": 9,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Threshold = 2\n Mutation = \"none\"\nINVARIANTS NoWitnessReject\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_registry_Reject_checked.log"
+}

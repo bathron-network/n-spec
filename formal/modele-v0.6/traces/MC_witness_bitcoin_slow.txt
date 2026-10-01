@@ -1,0 +1,31 @@
+Error: Invariant NoWitnessSlowAnchor is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 2: <Select line 37, col 2 to line 45, col 41 of module AnchorBTCChecked>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{"A"}, {}>>
+/\ anchor = <<[branch |-> "A", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+4 states generated, 4 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 2.
+Finished in 00s at (2026-09-30 20:36:23)
+
+exit=12

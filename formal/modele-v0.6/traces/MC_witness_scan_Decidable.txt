@@ -1,0 +1,57 @@
+Error: Invariant NoWitnessDecidable is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ btcHeight = 2
+/\ scan = {}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 2: <Scan line 26, col 11 to line 27, col 46 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {2}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 3: <Scan line 26, col 11 to line 27, col 46 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {1, 2}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 4: <Scan line 26, col 11 to line 27, col 46 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {1, 2, 3}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 5: <Resolve line 28, col 14 to line 29, col 43 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {1, 2, 3}
+/\ objects = {"xC"}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 6: <Resolve line 28, col 14 to line 29, col 43 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {1, 2, 3}
+/\ objects = {"xC", "xW"}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 7: <Bitcoin line 30, col 14 to line 31, col 41 of module H1Scan>
+/\ btcHeight = 5
+/\ scan = {1, 2, 3}
+/\ objects = {"xC", "xW"}
+/\ rank = "C"
+/\ cache = FALSE
+
+4899 states generated, 648 distinct states found, 200 states left on queue.
+The depth of the complete state graph search is 7.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 10 and the 95th percentile is 5).
+Finished in 00s at (2026-09-30 19:38:59)
+
+exit=12

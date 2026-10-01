@@ -1,0 +1,51 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_mut_forget_seal.cfg", "MC_mut_forget_seal.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 96 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 43050] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_mut_forget_seal.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/AnchorBTC.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module AnchorBTC
+Semantic processing of module MC_mut_forget_seal
+Starting... (2026-09-30 19:36:23)
+Computing initial states...
+Finished computing initial states: 2 distinct states generated at 2026-09-30 19:36:23.
+Error: Invariant G0 is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 3>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 2: <Reorg line 45, col 12 to line 47, col 55 of module AnchorBTC>
+/\ mode = <<"RECHECK", "RECHECK">>
+/\ btc = {"b4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 3>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+22 states generated, 20 distinct states found, 12 states left on queue.
+The depth of the complete state graph search is 3.
+Finished in 00s at (2026-09-30 19:36:23)
+
+exit=12

@@ -1,0 +1,6 @@
+{"Q_B": 1, "K_reg_used": 2739, "b": 1629, "b_max_given_Kreg": 1629, "eps_epoch_composed": 2.3318367586253004e-13, "eps_H_composed": 5.111386174906658e-10, "extrapolated": true}
+{"Q_B": 1, "K_reg_used": 2740, "b": 1630, "b_max_given_Kreg": 1629, "eps_epoch_composed": 2.365275785572967e-13, "eps_H_composed": 5.184684521975944e-10, "extrapolated": true}
+{"Q_B": 1, "K_reg_used": 2750, "b": 1630, "b_max_given_Kreg": 1634, "eps_epoch_composed": 2.1029209400858048e-13, "eps_H_composed": 4.609602700668084e-10, "extrapolated": true}
+{"Q_B": 256, "K_reg_used": 2739, "b": 1629, "b_max_given_Kreg": 1420, "eps_epoch_composed": 3.0414062146149755e-13, "eps_H_composed": 1.7066911801436227e-07, "extrapolated": true}
+{"Q_B": 256, "K_reg_used": 2740, "b": 1630, "b_max_given_Kreg": 1420, "eps_epoch_composed": 3.087831769153664e-13, "eps_H_composed": 1.7327429729241167e-07, "extrapolated": true}
+{"Q_B": 256, "K_reg_used": 2750, "b": 1630, "b_max_given_Kreg": 1425, "eps_epoch_composed": 2.722256687729396e-13, "eps_H_composed": 1.5275997848327258e-07, "extrapolated": true}

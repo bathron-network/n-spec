@@ -1,0 +1,22 @@
+{
+  "name": "MC_h1_mutual_checked",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 3.24,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 815361,
+  "distinct": 50176,
+  "queue": 0,
+  "depth": 8,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Scenario = \"mutual\"\n Mutation = \"none\"\n MaxReorg = 1\nINVARIANTS H1Order H1Subset H1NonVacuity H1Orientation NoContinuation\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 2.1E-9",
+    "  based on the actual fingerprints:  val = 7.5E-11"
+  ],
+  "log": "logs/MC_h1_mutual_checked.log"
+}

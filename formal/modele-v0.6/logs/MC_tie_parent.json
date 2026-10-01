@@ -1,0 +1,21 @@
+{
+  "name": "MC_tie_parent",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 59,
+  "distinct": 20,
+  "queue": 0,
+  "depth": 5,
+  "configuration": "SPECIFICATION Spec\nINVARIANTS ParentDeterministic\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 4.2E-17"
+  ],
+  "log": "logs/MC_tie_parent.log"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "MC_registry_commits_CPreg",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.57,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "CPreg"
+  ],
+  "generated": 48,
+  "distinct": 47,
+  "queue": 40,
+  "depth": 4,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n MaxReorg = 2\n Mutation = \"none\"\nINVARIANTS CPreg\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_registry_commits_CPreg.log"
+}

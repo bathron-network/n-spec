@@ -1,0 +1,384 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_fast_off_00.cfg", "MC_fast_off_00.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 95 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 48217] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_fast_off_00.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModelFast2.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryModelFast2
+Semantic processing of module MC_fast_off_00
+Starting... (2026-09-30 20:36:25)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 20:36:25.
+Error: Invariant RegistryImmutable is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ partition = TRUE
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 2: <Reveal line 240, col 11 to line 242, col 46 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 3: <Produce line 212, col 3 to line 232, col 76 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<8>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 4: <Tick line 234, col 9 to line 239, col 44 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 1
+/\ absent = TRUE
+/\ chains = <<<<8>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 5: <Tick line 234, col 9 to line 239, col 44 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 2
+/\ absent = TRUE
+/\ chains = <<<<8>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 6: <Tick line 234, col 9 to line 239, col 44 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 3
+/\ absent = TRUE
+/\ chains = <<<<8>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 7: <Tick line 234, col 9 to line 239, col 44 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 4
+/\ absent = TRUE
+/\ chains = <<<<8>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 8: <Tick line 234, col 9 to line 239, col 44 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 5
+/\ absent = TRUE
+/\ chains = <<<<8>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 9: <Produce line 212, col 3 to line 232, col 76 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 5
+/\ absent = TRUE
+/\ chains = <<<<8>>, <<20>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59437, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> 5,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 1, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>) ] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 10: <Fetch line 173, col 3 to line 197, col 32 of module RegistryModelFast2>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 5
+/\ absent = TRUE
+/\ chains = <<<<8>>, <<20>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59437, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> FALSE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<8>>,
+     mode |-> "RUN",
+     epoch |-> 2,
+     registry |-> <<3, 1, 1>>,
+     origin |-> 0,
+     signed |-> 5,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 1, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>) ] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+41399 states generated, 8999 distinct states found, 4324 states left on queue.
+The depth of the complete state graph search is 10.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 8 and the 95th percentile is 5).
+Finished in 01s at (2026-09-30 20:36:26)
+
+exit=12

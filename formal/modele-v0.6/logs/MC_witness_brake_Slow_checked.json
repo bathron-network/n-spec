@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_brake_Slow_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 5.13,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessSlow"
+  ],
+  "generated": 11,
+  "distinct": 11,
+  "queue": 0,
+  "depth": 11,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n W = 1000\n Scenario = \"slow\"\n Mutation = \"none\"\n Horizon = 20\nINVARIANTS NoWitnessSlow\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_brake_Slow_checked.log"
+}

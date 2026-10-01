@@ -1,0 +1,53 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_persistence.cfg", "MC_persistence.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 31 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 43076] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_persistence.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/Persistence.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Persistence
+Semantic processing of module MC_persistence
+Starting... (2026-09-30 19:36:31)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 19:36:31.
+Error: Successor state is not completely specified by action Reserve of the next-state relation. The following variables are not assigned: committed, crashes, exported, generation, prepared, witness.
+
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ witness = {}
+/\ generation = <<0, 0>>
+/\ exported = {}
+/\ prepared = <<"none", "none">>
+/\ crashes = <<0, 0>>
+/\ committed = {}
+
+State 2: <Prepare line 11, col 16 to line 12, col 63 of module Persistence>
+/\ witness = {}
+/\ generation = <<0, 0>>
+/\ exported = {}
+/\ prepared = <<"A", "none">>
+/\ crashes = <<0, 0>>
+/\ committed = {}
+
+State 3: <Reserve line 13, col 14 to line 16, col 64 of module Persistence>
+/\ witness = null
+/\ generation = null
+/\ exported = null
+/\ prepared = null
+/\ crashes = null
+/\ committed = null
+
+21 states generated, 15 distinct states found, 10 states left on queue.
+The depth of the complete state graph search is 3.
+The average outdegree of the complete state graph is 8 (minimum is 8, the maximum 8 and the 95th percentile is 8).
+Finished in 00s at (2026-09-30 19:36:31)
+
+exit=75

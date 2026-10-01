@@ -1,0 +1,115 @@
+{
+  "minimum": 8,
+  "cut": 7200,
+  "raw_support": "P",
+  "inherited": "genesis",
+  "epoch_start": 28800,
+  "early": [
+    [
+      7197,
+      "P",
+      false
+    ],
+    [
+      7200,
+      "W0",
+      false
+    ],
+    [
+      7201,
+      "W1",
+      false
+    ],
+    [
+      7202,
+      "W2",
+      false
+    ],
+    [
+      7203,
+      "W3",
+      false
+    ],
+    [
+      7204,
+      "W4",
+      false
+    ],
+    [
+      7205,
+      "W5",
+      false
+    ],
+    [
+      28799,
+      "E",
+      true
+    ],
+    [
+      28800,
+      "H",
+      true
+    ]
+  ],
+  "late": [
+    [
+      7197,
+      "P",
+      false
+    ],
+    [
+      7200,
+      "W0",
+      false
+    ],
+    [
+      7201,
+      "W1",
+      false
+    ],
+    [
+      7202,
+      "W2",
+      false
+    ],
+    [
+      7203,
+      "W3",
+      false
+    ],
+    [
+      7204,
+      "W4",
+      false
+    ],
+    [
+      7205,
+      "W5",
+      false
+    ],
+    [
+      28799,
+      "L",
+      false
+    ],
+    [
+      28801,
+      "A",
+      true
+    ]
+  ],
+  "public_support": [
+    "genesis",
+    7,
+    28799
+  ],
+  "private_support": [
+    "P",
+    8,
+    28801
+  ],
+  "disconnected": 2,
+  "private_wins_public_rank": true,
+  "registry_equal_no_control_ops": true,
+  "statement": "CP_reg failure in a projected valid schedule; not a probability or full native block fixture"
+}

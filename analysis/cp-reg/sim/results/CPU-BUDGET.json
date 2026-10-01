@@ -1,0 +1,17 @@
+{
+  "campaigns_cpu_seconds": {
+    "main_final": 621.497557,
+    "closure_final": 9.602796000000001,
+    "main_exploratory": 571.050022,
+    "closure_exploratory": 25.088467,
+    "pilot": 0.44844899999999993,
+    "pilot_worst_worker": 0.618928,
+    "final_validation": 0.8196049999999999,
+    "earlier_validation": 0.37235
+  },
+  "recorded_cpu_seconds": 1229.4981740000003,
+  "conservative_total_upper_seconds": 1250,
+  "budget_seconds": 1800,
+  "unitemized_setup_and_checks_margin_seconds": 20.50182599999971,
+  "status": "WITHIN_BUDGET"
+}

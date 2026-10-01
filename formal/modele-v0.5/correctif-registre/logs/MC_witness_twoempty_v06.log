@@ -1,0 +1,349 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 33 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 33401] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file <tmp>
+Parsing file <tmp>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module NModel_v06
+Semantic processing of module MC_witness_twoempty_v06
+Starting... (2026-09-30 17:41:19)
+Computing initial states...
+Computed 2 initial states...
+Finished computing initial states: 4 distinct states generated at 2026-09-30 17:41:19.
+Progress(9) at 2026-09-30 17:41:22: 82 568 states generated (82 568 s/min), 18 520 distinct states found (18 520 ds/min), 9 096 states left on queue.
+Error: Invariant NoTwoEmptyEpochsWitness is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ partition = TRUE
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 2: <Reveal line 219, col 11 to line 221, col 46 of module NModel_v06>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 3: <Heal line 222, col 9 to line 224, col 44 of module NModel_v06>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = FALSE
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 4: <Tick line 213, col 9 to line 218, col 44 of module NModel_v06>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = FALSE
+/\ slot = 1
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 5: <Tick line 213, col 9 to line 218, col 44 of module NModel_v06>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = FALSE
+/\ slot = 2
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 6: <Tick line 213, col 9 to line 218, col 44 of module NModel_v06>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = FALSE
+/\ slot = 3
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 7: <Tick line 213, col 9 to line 218, col 44 of module NModel_v06>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = FALSE
+/\ slot = 4
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 8: <Produce line 191, col 3 to line 211, col 76 of module NModel_v06>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = FALSE
+/\ slot = 4
+/\ absent = TRUE
+/\ chains = <<<<11>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> 4,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 1, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>) ] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+State 9: <Return line 225, col 11 to line 227, col 46 of module NModel_v06>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = FALSE
+/\ slot = 4
+/\ absent = FALSE
+/\ chains = <<<<11>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> 4,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 1, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>) ] ],
+   [ seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     tip |-> <<>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>] ] >>
+
+86289 states generated, 19306 distinct states found, 9440 states left on queue.
+The depth of the complete state graph search is 9.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 8 and the 95th percentile is 5).
+Finished in 03s at (2026-09-30 17:41:22)
+exit=12

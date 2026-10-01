@@ -1,0 +1,21 @@
+{
+  "name": "MC_brake_slow_checked",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 30.38,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 21,
+  "distinct": 21,
+  "queue": 0,
+  "depth": 21,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n W = 1000\n Scenario = \"slow\"\n Mutation = \"none\"\n Horizon = 20\nINVARIANTS Mechanical RotationUnderBrake IntentionalRounding SlowProgress\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 0.0"
+  ],
+  "log": "logs/MC_brake_slow_checked.log"
+}

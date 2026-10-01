@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_h1_rank",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.53,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessRankExit"
+  ],
+  "generated": 67,
+  "distinct": 12,
+  "queue": 0,
+  "depth": 4,
+  "configuration": "SPECIFICATION Spec\nINVARIANTS NoWitnessRankExit\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_h1_rank.log"
+}

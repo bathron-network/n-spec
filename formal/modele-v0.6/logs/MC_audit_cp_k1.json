@@ -1,0 +1,31 @@
+{
+  "name": "MC_audit_cp_k1",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 10.07,
+  "workers": 1,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "CPregGlobal"
+  ],
+  "generated": 82493,
+  "distinct": 17727,
+  "queue": 7888,
+  "depth": 11,
+  "configuration": "SPECIFICATION CPScenario\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 1\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK CPregGlobal\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [],
+  "log": "logs/MC_audit_cp_k1.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_audit_cp_k1.cfg": "e872e2f9c098ce86db200b26a7cfd4c692e48ca13dd7d191ba82c7f14145ff44",
+    "MC_audit_cp_k1.tla": "f0852d08f16a312fbea33e774917457b391171b9d94beee0e653fa5cc3f1d36d",
+    "RegistryAudit.tla": "f7a9bea98293eaadf1e54c0cb2e5c3bc7876e2e35aa1d266ababf6fa9be0eb96",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

@@ -1,0 +1,56 @@
+Error: Invariant NoWitnessBTCStop is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 2: <Select line 37, col 2 to line 45, col 41 of module AnchorBTCChecked>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{"A"}, {}>>
+/\ anchor = <<[branch |-> "A", height |-> 2], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 3: <Reorg line 46, col 12 to line 48, col 55 of module AnchorBTCChecked>
+/\ mode = <<"RECHECK", "RECHECK">>
+/\ btc = {"b4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "A", height |-> 2], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 4: <Select line 37, col 2 to line 45, col 41 of module AnchorBTCChecked>
+/\ mode = <<"STOP_BTC", "RECHECK">>
+/\ btc = {"b4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "A", height |-> 2], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+374 states generated, 159 distinct states found, 119 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 4 (minimum is 0, the maximum 9 and the 95th percentile is 9).
+Finished in 00s at (2026-09-30 20:35:24)
+
+exit=12

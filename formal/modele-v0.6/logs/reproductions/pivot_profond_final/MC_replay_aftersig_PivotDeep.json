@@ -1,0 +1,31 @@
+{
+  "name": "MC_replay_aftersig_PivotDeep",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 3.73,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessDeepAfterSig"
+  ],
+  "generated": 42,
+  "distinct": 42,
+  "queue": 0,
+  "depth": 42,
+  "configuration": "SPECIFICATION Replay\nCONSTANTS SlotsPerEpoch=8 KReg=4 MaxReorg=4 MatMin=12 BtcMat=14 EndSlot=21\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural PathNotStuck NoWitnessDeepAfterSig\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/reproductions/pivot_profond_final/MC_replay_aftersig_PivotDeep.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_replay_aftersig_PivotDeep.cfg": "ad7a29b70132328d97b9969292430168618058b1af3d909ee3c9064b11ffb71f",
+    "MC_replay_aftersig_PivotDeep.tla": "f0e9c0eda4bc0504a494b74c4977db5ed746cc36edac3b57d89c95735dc9b1c0",
+    "RegistryModel_PivotDeep.tla": "9438ddd08991cb8b359fb77c7458ddcd59826c2262acdea9c78601196dc685e8",
+    "Replay_PivotDeep.tla": "1633724a39933bf23960811e5026092cc3e89259c953e743660e94933aac82a6",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

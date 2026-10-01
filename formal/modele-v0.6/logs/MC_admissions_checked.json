@@ -1,0 +1,21 @@
+{
+  "name": "MC_admissions_checked",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.59,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 8640,
+  "distinct": 6720,
+  "queue": 0,
+  "depth": 5,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\nINVARIANTS AddNoReset ReactReference AddedRights HistoricalPrice\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 7.0E-13"
+  ],
+  "log": "logs/MC_admissions_checked.log"
+}

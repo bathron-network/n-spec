@@ -1,0 +1,757 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-fp", "0", "-metadir", "<TMPDIR>", "-config", "MC_replay_sync_PivotDeep.cfg", "MC_replay_sync_PivotDeep.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 0 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 63849] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_replay_sync_PivotDeep.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/Replay_PivotDeep.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModel_PivotDeep.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryModel_PivotDeep
+Semantic processing of module Replay_PivotDeep
+Semantic processing of module MC_replay_sync_PivotDeep
+Starting... (2026-10-01 00:09:57)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-01 00:09:57.
+Error: Invariant NoWitnessDeepSyncBeforeStart is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 1
+/\ chains = <<<<1>>, <<1>>>>
+/\ step = 0
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 2: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 1
+/\ chains = <<<<1, 20>>, <<1>>>>
+/\ step = 1
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 20>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 3: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 1
+/\ chains = <<<<1, 20>>, <<1>>>>
+/\ step = 2
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 20>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<2, 1>>,
+     tip |-> <<1, 20>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 4: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 2
+/\ chains = <<<<1, 20>>, <<1>>>>
+/\ step = 3
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 20>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<2, 1>>,
+     tip |-> <<1, 20>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 5: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 2
+/\ chains = <<<<1, 20, 21>>, <<1>>>>
+/\ step = 4
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 20>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 20, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 2 ] >>
+
+State 6: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 2
+/\ chains = <<<<1, 20, 21>>, <<1>>>>
+/\ step = 5
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 20, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 20, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 2 ] >>
+
+State 7: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 3
+/\ chains = <<<<1, 20, 21>>, <<1>>>>
+/\ step = 6
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 20, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 20, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 2 ] >>
+
+State 8: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 4
+/\ chains = <<<<1, 20, 21>>, <<1>>>>
+/\ step = 7
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 20, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 20, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 2 ] >>
+
+State 9: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 4
+/\ chains = <<<<1, 20, 21, 23>>, <<1>>>>
+/\ step = 8
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 20, 21, 23>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 20, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 2 ] >>
+
+State 10: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 4
+/\ chains = <<<<1, 20, 21, 23>>, <<1>>>>
+/\ step = 9
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 20, 21, 23>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<4, 1>>,
+     tip |-> <<1, 20, 21, 23>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 2 ] >>
+
+State 11: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 5
+/\ chains = <<<<1, 20, 21, 23>>, <<1>>>>
+/\ step = 10
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 20, 21, 23>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<4, 1>>,
+     tip |-> <<1, 20, 21, 23>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 2 ] >>
+
+State 12: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 5
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 20, 21, 23>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 13: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 5
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1>>>>
+/\ step = 12
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 14: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 5
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 13
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 15: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 6
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 14
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 16: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 7
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 15
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 17: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 8
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 16
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 18: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 9
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 17
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 19: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 10
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 18
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 20: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 11
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 19
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 21: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 12
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 20
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 22: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 13
+/\ chains = <<<<1, 20, 21, 23, 24>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 21
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 23: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 13
+/\ chains = <<<<1, 20, 21, 23, 24, 32>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 22
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<6, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32>>,
+     anchor |-> <<1, 20>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<5, 1>>,
+     tip |-> <<1, 20, 21, 23, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 24: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 13
+/\ chains = <<<<1, 20, 21, 23, 24, 32>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 23
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<6, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32>>,
+     anchor |-> <<1, 20>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<6, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32>>,
+     anchor |-> <<1, 20>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 25: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 14
+/\ chains = <<<<1, 20, 21, 23, 24, 32>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 24
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<6, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32>>,
+     anchor |-> <<1, 20>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<6, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32>>,
+     anchor |-> <<1, 20>>,
+     mode |-> "RUN",
+     signed |-> 5 ] >>
+
+State 26: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {33}
+/\ journal = { [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 0,
+    node |-> 2,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 14
+/\ chains = <<<<1, 20, 21, 23, 24, 32, 33>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 25
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<6, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32>>,
+     anchor |-> <<1, 20>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 14 ] >>
+
+State 27: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {33}
+/\ journal = { [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 0,
+    node |-> 2,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ],
+  [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 1,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 14
+/\ chains = <<<<1, 20, 21, 23, 24, 32, 33>>, <<1, 20, 21, 23, 24>>>>
+/\ step = 26
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 14 ] >>
+
+State 28: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {33, 49}
+/\ journal = { [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 0,
+    node |-> 2,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ],
+  [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 1,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 14
+/\ chains = <<<<1, 20, 21, 23, 24, 32, 33>>, <<1, 20, 21, 23, 24, 49>>>>
+/\ step = 27
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 14 ] >>
+
+State 29: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {33, 49}
+/\ journal = { [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 0,
+    node |-> 2,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ],
+  [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 1,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 15
+/\ chains = <<<<1, 20, 21, 23, 24, 32, 33>>, <<1, 20, 21, 23, 24, 49>>>>
+/\ step = 28
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 14 ] >>
+
+State 30: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {33, 49, 52}
+/\ journal = { [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 0,
+    node |-> 2,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ],
+  [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 1,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 15
+/\ chains = <<<<1, 20, 21, 23, 24, 32, 33>>, <<1, 20, 21, 23, 24, 49, 52>>>>
+/\ step = 29
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 14 ] >>
+
+State 31: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {33, 49, 52}
+/\ journal = { [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 0,
+    node |-> 2,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ],
+  [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 1,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 15
+/\ chains = <<<<1, 20, 21, 23, 24, 32, 33>>, <<1, 20, 21, 23, 24, 49, 52>>>>
+/\ step = 30
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 14 ] >>
+
+State 32: <ReplayNextP line 12, col 19 to line 12, col 71 of module Replay_PivotDeep>
+/\ mature = {33, 49, 52}
+/\ journal = { [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 0,
+    node |-> 2,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ],
+  [ slot |-> 14,
+    D |-> <<1, 20, 21>>,
+    prev |-> <<1, 20, 21, 23, 24, 32>>,
+    t |-> 1,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    disc |-> 0,
+    prevD |-> <<0>> ],
+  [ slot |-> 15,
+    D |-> <<>>,
+    prev |-> <<1, 20, 21, 23, 24, 32, 33>>,
+    t |-> 2,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 20, 21, 23, 24, 49, 52>>,
+    disc |-> 2,
+    prevD |-> <<1, 20, 21>> ] }
+/\ forked = TRUE
+/\ slot = 15
+/\ chains = <<<<1, 20, 21, 23, 24, 32, 33>>, <<1, 20, 21, 23, 24, 49, 52>>>>
+/\ step = 31
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<7, 7>>,
+     tip |-> <<1, 20, 21, 23, 24, 49, 52>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 13 ],
+   [ seen |-> <<7, 1>>,
+     tip |-> <<1, 20, 21, 23, 24, 32, 33>>,
+     anchor |-> <<1, 20, 21>>,
+     mode |-> "RUN",
+     signed |-> 14 ] >>
+
+32 states generated, 32 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 32.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 1 and the 95th percentile is 1).
+Finished in 01s at (2026-10-01 00:09:57)
+
+exit=12

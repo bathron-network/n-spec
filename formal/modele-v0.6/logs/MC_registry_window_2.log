@@ -1,0 +1,58 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_registry_window_2.cfg", "MC_registry_window_2.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 128 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 43088] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_registry_window_2.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryWindow.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryWindow
+Semantic processing of module MC_registry_window_2
+Starting... (2026-09-30 19:36:34)
+Computing initial states...
+Error: TLC encountered a non-enumerable quantifier bound
+<<>>.
+line 33, col 13 to line 33, col 22 of module RegistryWindow
+While working on the initial state:
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 0
+/\ phase = "idle"
+/\ installed = 4
+
+Error: The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 14, column 9 to line 15, column 59 in RegistryWindow
+1. Line 14, column 9 to line 15, column 43 in RegistryWindow
+2. Line 14, column 9 to line 15, column 29 in RegistryWindow
+3. Line 14, column 9 to line 15, column 15 in RegistryWindow
+4. Line 14, column 9 to line 14, column 62 in RegistryWindow
+5. Line 14, column 12 to line 14, column 62 in RegistryWindow
+6. Line 14, column 12 to line 14, column 46 in RegistryWindow
+7. Line 14, column 12 to line 14, column 29 in RegistryWindow
+8. Line 14, column 12 to line 14, column 22 in RegistryWindow
+9. Line 14, column 27 to line 14, column 29 in RegistryWindow
+10. Line 14, column 34 to line 14, column 46 in RegistryWindow
+11. Line 14, column 51 to line 14, column 62 in RegistryWindow
+12. Line 15, column 5 to line 15, column 15 in RegistryWindow
+13. Line 15, column 20 to line 15, column 29 in RegistryWindow
+14. Line 15, column 34 to line 15, column 43 in RegistryWindow
+15. Line 15, column 48 to line 15, column 59 in RegistryWindow
+16. Line 32, column 10 to line 33, column 33 in RegistryWindow
+17. Line 33, column 5 to line 33, column 33 in RegistryWindow
+
+
+1 states generated, 1 distinct states found, 1 states left on queue.
+Finished in 00s at (2026-09-30 19:36:34)
+
+exit=75

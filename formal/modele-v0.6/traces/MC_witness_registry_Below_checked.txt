@@ -1,0 +1,80 @@
+Error: Invariant NoWitnessBelow is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 0
+/\ phase = "idle"
+/\ installed = 4
+
+State 2: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<[slot |-> 0, mature |-> FALSE, op |-> 0]>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 0
+/\ phase = "prepared"
+/\ installed = 4
+
+State 3: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<[slot |-> 0, mature |-> FALSE, op |-> 0]>>
+/\ s = 1
+/\ phase = "idle"
+/\ installed = 4
+
+State 4: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<[slot |-> 0, mature |-> FALSE, op |-> 0]>>
+/\ s = 2
+/\ phase = "idle"
+/\ installed = 4
+
+State 5: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<[slot |-> 0, mature |-> FALSE, op |-> 0]>>
+/\ s = 3
+/\ phase = "idle"
+/\ installed = 4
+
+State 6: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 3, mature |-> TRUE, op |-> 0] >>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<[slot |-> 0, mature |-> FALSE, op |-> 0]>>
+/\ s = 3
+/\ phase = "prepared"
+/\ installed = 4
+
+State 7: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 3, mature |-> TRUE, op |-> 0] >>
+/\ s = 4
+/\ phase = "idle"
+/\ installed = 4
+
+234 states generated, 198 distinct states found, 100 states left on queue.
+The depth of the complete state graph search is 9.
+The average outdegree of the complete state graph is 2 (minimum is 1, the maximum 3 and the 95th percentile is 3).
+Finished in 00s at (2026-09-30 20:35:29)
+
+exit=12

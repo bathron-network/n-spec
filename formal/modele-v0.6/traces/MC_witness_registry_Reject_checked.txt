@@ -1,0 +1,88 @@
+Error: Invariant NoWitnessReject is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 0
+/\ phase = "idle"
+/\ installed = 4
+
+State 2: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 1
+/\ phase = "idle"
+/\ installed = 4
+
+State 3: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 2
+/\ phase = "idle"
+/\ installed = 4
+
+State 4: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 3
+/\ phase = "idle"
+/\ installed = 4
+
+State 5: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<[slot |-> 3, mature |-> FALSE, op |-> 0]>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 3
+/\ phase = "prepared"
+/\ installed = 4
+
+State 6: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 1
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 4
+/\ phase = "idle"
+/\ installed = 4
+
+State 7: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<[slot |-> 4, mature |-> TRUE, op |-> 1]>>
+/\ rejected = 1
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 4
+/\ phase = "prepared"
+/\ installed = 4
+
+State 8: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 1
+/\ signed = TRUE
+/\ chain = <<[slot |-> 4, mature |-> TRUE, op |-> 1]>>
+/\ s = 5
+/\ phase = "idle"
+/\ installed = 4
+
+330 states generated, 270 distinct states found, 130 states left on queue.
+The depth of the complete state graph search is 9.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 3 and the 95th percentile is 3).
+Finished in 00s at (2026-09-30 20:35:30)
+
+exit=12

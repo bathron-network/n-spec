@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_h1_promote_checked",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.59,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "H1Subset"
+  ],
+  "generated": 344,
+  "distinct": 237,
+  "queue": 229,
+  "depth": 4,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Scenario = \"forward\"\n Mutation = \"promote\"\n MaxReorg = 1\nINVARIANTS H1Subset\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_mut_h1_promote_checked.log"
+}

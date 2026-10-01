@@ -1,0 +1,30 @@
+{
+  "name": "MC_witness_bitcoin_slow",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.51,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessSlowAnchor"
+  ],
+  "generated": 4,
+  "distinct": 4,
+  "queue": 0,
+  "depth": 2,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS MaxReorg=1 Dbtc=3 SlowBTC=TRUE Mutation=\"none\"\nINVARIANTS NoWitnessSlowAnchor\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_bitcoin_slow.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "AnchorBTCChecked.tla": "be81f8de455de53779b656719815c1491c5063d85780211a0c7a82b55032af43",
+    "MC_witness_bitcoin_slow.cfg": "83b95f425e012e6eebaaae65740c8af89f4c17fa78b868a77d4427faf0c46d4d",
+    "MC_witness_bitcoin_slow.tla": "933e6feb78d1fb7b55c682827594d9995830ac3cda17f1f0bc42f1c7aa72b7e6",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

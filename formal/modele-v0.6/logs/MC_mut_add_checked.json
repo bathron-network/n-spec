@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_add_checked",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.52,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "AddNoReset"
+  ],
+  "generated": 964,
+  "distinct": 964,
+  "queue": 956,
+  "depth": 2,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"add_reset\"\nINVARIANTS AddNoReset\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_mut_add_checked.log"
+}

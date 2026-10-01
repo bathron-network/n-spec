@@ -1,0 +1,56 @@
+Error: Invariant NoWitnessReact is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ depth = 60
+/\ after = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ consumed = FALSE
+/\ burnAmount = 10
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = FALSE
+/\ exclude = TRUE
+/\ before = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 0
+/\ priceOK = TRUE
+/\ reference = "exact_dossier_x"
+/\ currentPrice = 10
+
+State 2: <Add line 12, col 7 to line 19, col 108 of module AdmissionsChecked>
+/\ audit = TRUE
+/\ depth = 60
+/\ after = [state |-> "EXCLUDED", reset |-> 2, queue |-> 3, active |-> 0, dormant |-> 5]
+/\ consumed = FALSE
+/\ burnAmount = 10
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = FALSE
+/\ exclude = TRUE
+/\ before = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 1
+/\ priceOK = TRUE
+/\ reference = "exact_dossier_x"
+/\ currentPrice = 10
+
+State 3: <ReactExam line 20, col 13 to line 22, col 114 of module AdmissionsChecked>
+/\ audit = TRUE
+/\ depth = 60
+/\ after = [state |-> "EXCLUDED", reset |-> 2, queue |-> 3, active |-> 0, dormant |-> 5]
+/\ consumed = FALSE
+/\ burnAmount = 10
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = TRUE
+/\ exclude = TRUE
+/\ before = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 2
+/\ priceOK = TRUE
+/\ reference = "exact_dossier_x"
+/\ currentPrice = 10
+
+3138 states generated, 3138 distinct states found, 1563 states left on queue.
+The depth of the complete state graph search is 3.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 2 and the 95th percentile is 2).
+Finished in 00s at (2026-09-30 20:35:27)
+
+exit=12

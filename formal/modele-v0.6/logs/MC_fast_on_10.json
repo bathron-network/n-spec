@@ -1,0 +1,28 @@
+{
+  "name": "MC_fast_on_10",
+  "status": "INCOMPLET",
+  "exit": 143,
+  "timeout": true,
+  "seconds": 569.12,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 3543392,
+  "distinct": 549892,
+  "queue": 72479,
+  "depth": null,
+  "configuration": "SPECIFICATION ShardSpec\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 5\n  KReg = 1\n  MaxReorg = 4\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryImmutable RegistryStableOnCommonPrefix\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [],
+  "log": "logs/MC_fast_on_10.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_fast_on_10.cfg": "8803b2217f20a1be58f983b816d18cddbf04d232ff1741e12a3841151fa1de1f",
+    "MC_fast_on_10.tla": "7b636571006251637fd0a63fea693527ee31577b8948fe70480cc90e0f59f29c",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "wrapper_exit": 0,
+  "status": "FAIL",
+  "violation": [
+    "RegistryImmutable"
+  ],
+  "originals_preserved": true,
+  "original_sha256": {
+    "logs/MC_replay_general_k1.log": "9a72fb19e59a62a1273db751d0f579f6730ffb53734e9a9a0acf0a13211b62c0",
+    "traces/MC_replay_general_k1.txt": "d13b4a0e9445f1867403435eab093df211d10a80d12cc3fe46d43724b3861b67"
+  },
+  "trace_copy_exists": true
+}

@@ -1,0 +1,26 @@
+{
+  "name": "MC_witness_recovery_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.52,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessRecovery"
+  ],
+  "generated": 256,
+  "distinct": 163,
+  "queue": 71,
+  "depth": 4,
+  "configuration": "SPECIFICATION Spec\nINVARIANTS NoWitnessRecovery\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "/\\ approval = <<>>",
+    "/\\ approval = <<>>",
+    "/\\ approval = <<1, \"none\", \"none\", FALSE, \"target\">>",
+    "/\\ approval = <<1, \"none\", \"none\", FALSE, \"target\">>"
+  ],
+  "log": "logs/MC_witness_recovery_checked.log"
+}

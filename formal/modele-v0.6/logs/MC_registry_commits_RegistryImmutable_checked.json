@@ -1,0 +1,21 @@
+{
+  "name": "MC_registry_commits_RegistryImmutable_checked",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.51,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "RegistryImmutable"
+  ],
+  "generated": 49,
+  "distinct": 48,
+  "queue": 41,
+  "depth": 4,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n MaxReorg = 2\n Mutation = \"none\"\nINVARIANTS RegistryImmutable\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_registry_commits_RegistryImmutable_checked.log"
+}

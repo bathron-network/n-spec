@@ -1,0 +1,30 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 74 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 31129] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file ./MC_safe.tla
+Parsing file ./NModel.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module NModel
+Semantic processing of module MC_safe
+Starting... (2026-09-30 17:23:51)
+Computing initial states...
+Computed 2 initial states...
+Finished computing initial states: 4 distinct states generated at 2026-09-30 17:23:51.
+Progress(6) at 2026-09-30 17:23:54: 6 901 states generated (6 901 s/min), 1 722 distinct states found (1 722 ds/min), 948 states left on queue.
+Progress(10) at 2026-09-30 17:24:54: 164 310 states generated (157 409 s/min), 34 401 distinct states found (32 679 ds/min), 15 799 states left on queue.
+Progress(11) at 2026-09-30 17:25:54: 266 140 states generated (101 830 s/min), 53 253 distinct states found (18 852 ds/min), 22 664 states left on queue.
+Progress(12) at 2026-09-30 17:26:54: 349 896 states generated (83 756 s/min), 68 631 distinct states found (15 378 ds/min), 28 178 states left on queue.
+Progress(12) at 2026-09-30 17:27:54: 450 365 states generated (100 469 s/min), 84 494 distinct states found (15 863 ds/min), 31 470 states left on queue.
+Progress(13) at 2026-09-30 17:28:54: 564 812 states generated (114 447 s/min), 103 096 distinct states found (18 602 ds/min), 35 971 states left on queue.
+Progress(13) at 2026-09-30 17:29:54: 673 898 states generated (109 086 s/min), 117 931 distinct states found (14 835 ds/min), 36 306 states left on queue.
+Progress(14) at 2026-09-30 17:30:54: 794 925 states generated (121 027 s/min), 135 092 distinct states found (17 161 ds/min), 37 649 states left on queue.
+
+INTERRUPTED: exploration inachevee, aucun PASS revendique.

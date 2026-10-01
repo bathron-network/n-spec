@@ -1,0 +1,7 @@
+{
+  "execution_records": 207,
+  "all_configs_executed": true,
+  "mutation_controls": 13,
+  "issues": [],
+  "note": "Checks evidence consistency, not completeness of the protocol model. INCOMPLET and declared NT remain unresolved."
+}

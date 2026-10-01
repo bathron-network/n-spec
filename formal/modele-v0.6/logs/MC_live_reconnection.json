@@ -1,0 +1,21 @@
+{
+  "name": "MC_live_reconnection",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 4.19,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 202959,
+  "distinct": 6826,
+  "queue": 0,
+  "depth": 7,
+  "configuration": "SPECIFICATION Live\nCONSTANTS Scenario = \"false\" Mutation = \"none\" MaxReorg = 1\nINVARIANTS H1Order H1Subset\nPROPERTIES Resumed\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 7.3E-11"
+  ],
+  "log": "logs/MC_live_reconnection.log"
+}

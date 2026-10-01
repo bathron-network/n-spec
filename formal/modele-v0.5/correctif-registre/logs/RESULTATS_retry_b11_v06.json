@@ -1,0 +1,21 @@
+[
+  {
+    "name": "MC_spec_registryreorg_b11_w8_v06",
+    "bitcoin": [
+      0,
+      1,
+      1
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 247.7,
+    "completed": true,
+    "invariant_violations": [],
+    "statistics": [
+      "4097562 states generated, 572125 distinct states found, 0 states left on queue."
+    ],
+    "depth": [
+      "31"
+    ]
+  }
+]

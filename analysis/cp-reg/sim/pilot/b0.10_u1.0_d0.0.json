@@ -1,0 +1,97 @@
+{
+  "cell": "b0.10_u1.0_d0.0",
+  "parameters": {
+    "beta": 0.1,
+    "u": 1.0,
+    "h": 0.9,
+    "alpha": 0.0,
+    "f": 1.0,
+    "delay": 0.0,
+    "d": 0,
+    "reduced_good": 0.9,
+    "reduced_bad": 0.09999999999999998
+  },
+  "samples": 16,
+  "horizon": 14400,
+  "seed_entropy": [
+    20260930,
+    1,
+    0,
+    0
+  ],
+  "max_age_quantiles": [
+    11.0,
+    14.0,
+    15.5,
+    16.7,
+    17.0
+  ],
+  "max_blocks_quantiles": [
+    6.0,
+    7.5,
+    8.25,
+    8.85,
+    9.0
+  ],
+  "mean_public_growth": 0.8999479166666666,
+  "mean_favorable_starts": 1664.375,
+  "envelope_violations": 0,
+  "examples": [
+    {
+      "rep": 0,
+      "age": {
+        "start_group": 5371,
+        "start_slot": 5371,
+        "release_slot": 5382,
+        "public_prefix_blocks": 4846,
+        "public_total_blocks": 4852,
+        "private_added": 6,
+        "disconnected": 6,
+        "first_difference": 5371,
+        "age": 11,
+        "tie_favorable": true
+      },
+      "depth": {
+        "start_group": 5371,
+        "start_slot": 5371,
+        "release_slot": 5382,
+        "public_prefix_blocks": 4846,
+        "public_total_blocks": 4852,
+        "private_added": 6,
+        "disconnected": 6,
+        "first_difference": 5371,
+        "age": 11,
+        "tie_favorable": true
+      }
+    },
+    {
+      "rep": 1,
+      "age": {
+        "start_group": 13533,
+        "start_slot": 13533,
+        "release_slot": 13543,
+        "public_prefix_blocks": 12168,
+        "public_total_blocks": 12173,
+        "private_added": 6,
+        "disconnected": 5,
+        "first_difference": 13533,
+        "age": 10,
+        "tie_favorable": false
+      },
+      "depth": {
+        "start_group": 2885,
+        "start_slot": 2885,
+        "release_slot": 2894,
+        "public_prefix_blocks": 2619,
+        "public_total_blocks": 2624,
+        "private_added": 5,
+        "disconnected": 5,
+        "first_difference": 2885,
+        "age": 9,
+        "tie_favorable": true
+      }
+    }
+  ],
+  "cpu_seconds": 0.05018299999999999,
+  "wall_seconds": 1.494321542
+}

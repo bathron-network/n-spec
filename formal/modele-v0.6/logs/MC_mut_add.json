@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_add",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.59,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 960,
+  "distinct": 960,
+  "queue": 0,
+  "depth": 1,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"add_reset\"\nINVARIANTS AddNoReset\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 0.0"
+  ],
+  "log": "logs/MC_mut_add.log"
+}

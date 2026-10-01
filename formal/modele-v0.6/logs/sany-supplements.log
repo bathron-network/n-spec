@@ -1,0 +1,31 @@
+
+****** SANY2 Version 2.1 created 24 February 2014
+
+Parsing file etudes/n-spec/tla/modele-v0.6/AnchorBTCChecked.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module AnchorBTCChecked
+
+****** SANY2 Version 2.1 created 24 February 2014
+
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_live_reconnection.tla
+File does not exist: H1OrdersChecked.tla while looking in these directories: jar:file:etudes/n-spec/tla/modele-v0.6/tla2tools.jar!/tla2sany/StandardModules/
+
+Fatal errors while parsing TLA+ spec in file etudes/n-spec/tla/modele-v0.6/MC_live_reconnection.tla
+
+tla2sany.semantic.AbortException
+*** Abort messages: 1
+
+Unknown location
+
+Cannot find source file for module H1OrdersChecked imported in module MC_live_reconnection.
+
+

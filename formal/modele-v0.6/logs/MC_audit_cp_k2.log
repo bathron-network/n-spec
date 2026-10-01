@@ -1,0 +1,519 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "1", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_audit_cp_k2.cfg", "MC_audit_cp_k2.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 82 and seed 1 with 1 worker on 14 cores with 2731MB heap and 64MB offheap memory [pid: 50199] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_audit_cp_k2.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryAudit.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModelFast2.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryModelFast2
+Semantic processing of module RegistryAudit
+Semantic processing of module MC_audit_cp_k2
+Starting... (2026-09-30 21:01:00)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 21:01:00.
+Progress(10) at 2026-09-30 21:01:03: 38 353 states generated (38 353 s/min), 8 800 distinct states found (8 800 ds/min), 4 335 states left on queue.
+Error: Invariant CPregGlobal is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 2: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 3: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ slot = 1
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 4: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ slot = 2
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 5: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ slot = 3
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 6: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = {}
+/\ partition = TRUE
+/\ slot = 3
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 7: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = {}
+/\ partition = TRUE
+/\ slot = 3
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13, 16>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 38655, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 8: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = {}
+/\ partition = TRUE
+/\ slot = 4
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13, 16>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 38655, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 9: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = { [ e |-> 2,
+    node |-> 1,
+    slot |-> 4,
+    kind |-> "signature",
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)>>,
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    control |-> {},
+    calendar |-> (4 :> 1 @@ 5 :> 1) ] }
+/\ partition = TRUE
+/\ slot = 4
+/\ absent = TRUE
+/\ chains = <<<<11>>, <<13, 16>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 1779, 0, 0, 38655, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> 4,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 1, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>) ],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 10: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = { [ e |-> 2,
+    node |-> 1,
+    slot |-> 4,
+    kind |-> "signature",
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)>>,
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    control |-> {},
+    calendar |-> (4 :> 1 @@ 5 :> 1) ] }
+/\ partition = TRUE
+/\ slot = 4
+/\ absent = FALSE
+/\ chains = <<<<11>>, <<13, 16>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 1779, 0, 0, 38655, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> 4,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 1, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>) ],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 11: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = { [ e |-> 2,
+    node |-> 1,
+    slot |-> 4,
+    kind |-> "signature",
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)>>,
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    control |-> {},
+    calendar |-> (4 :> 1 @@ 5 :> 1) ] }
+/\ partition = TRUE
+/\ slot = 4
+/\ absent = FALSE
+/\ chains = <<<<11>>, <<13, 16>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 1779, 0, 0, 38655, 0, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> 4,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 1, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>) ],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>, supports |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<13, 16>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 2>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 12: <AuditNext line 16, col 12 to line 16, col 55 of module RegistryAudit>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = { [ e |-> 2,
+    node |-> 1,
+    slot |-> 4,
+    kind |-> "signature",
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)>>,
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    control |-> {},
+    calendar |-> (4 :> 1 @@ 5 :> 1) ],
+  [ e |-> 2,
+    node |-> 2,
+    slot |-> 4,
+    kind |-> "signature",
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)>>,
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<13>>),
+    R |-> <<2, 2, 1>>,
+    control |-> {13},
+    calendar |-> (4 :> 2 @@ 5 :> 3) ] }
+/\ partition = TRUE
+/\ slot = 4
+/\ absent = FALSE
+/\ chains = <<<<11>>, <<13, 16, 17>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 1779, 0, 0, 38655, 63426, 0>>
+/\ bitcoin = (0 :> 0 @@ 1 :> 1 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ signed |-> 4,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 1, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>) ],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ signed |-> 4,
+     history |->
+         [ epoch |-> 2,
+           registry |-> <<2, 2, 1>>,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<13>>) ],
+     epoch |-> 0,
+     tip |-> <<13, 16>>,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     seen |-> <<0, 3>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+155271 states generated, 34850 distinct states found, 16021 states left on queue.
+The depth of the complete state graph search is 12.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 8 and the 95th percentile is 5).
+Finished in 22s at (2026-09-30 21:01:22)
+
+exit=12

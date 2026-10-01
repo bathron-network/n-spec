@@ -1,0 +1,21 @@
+{
+  "name": "MC_v6_replay_spec_adopt_off",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.65,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "RegistryImmutable"
+  ],
+  "generated": 13,
+  "distinct": 13,
+  "queue": 0,
+  "depth": 13,
+  "configuration": "SPECIFICATION Replay\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 1\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryImmutable RegistryStableOnCommonPrefix BlockMetadataCorrect\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = FALSE\n",
+  "collision": [],
+  "log": "logs/MC_v6_replay_spec_adopt_off.log"
+}

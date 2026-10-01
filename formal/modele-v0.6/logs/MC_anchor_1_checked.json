@@ -1,0 +1,21 @@
+{
+  "name": "MC_anchor_1_checked",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.7,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 10594,
+  "distinct": 1172,
+  "queue": 0,
+  "depth": 9,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\n MaxReorg = 1\n Dbtc = 3\nINVARIANTS AnchorExact G0 SafeBTC\nCHECK_DEADLOCK FALSE\nCONSTANT SlowBTC = FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 6.0E-13"
+  ],
+  "log": "logs/MC_anchor_1_checked.log"
+}

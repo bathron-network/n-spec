@@ -1,0 +1,21 @@
+{
+  "name": "MC_anchor_agreement",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "A4"
+  ],
+  "generated": 93,
+  "distinct": 59,
+  "queue": 46,
+  "depth": 3,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\n MaxReorg = 1\n Dbtc = 3\nINVARIANTS A4\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_anchor_agreement.log"
+}

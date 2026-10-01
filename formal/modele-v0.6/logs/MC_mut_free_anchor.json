@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_free_anchor",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.58,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 1911,
+  "distinct": 242,
+  "queue": 0,
+  "depth": 7,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"free_anchor\"\n MaxReorg = 1\n Dbtc = 3\nINVARIANTS AnchorExact\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 2.2E-14"
+  ],
+  "log": "logs/MC_mut_free_anchor.log"
+}

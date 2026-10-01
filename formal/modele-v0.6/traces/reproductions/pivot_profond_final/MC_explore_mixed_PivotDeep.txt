@@ -1,0 +1,321 @@
+Error: Invariant NoWitnessMixedSync is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 1
+/\ chains = <<<<1>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 2: <Reveal line 202, col 14 to line 203, col 74 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 1
+/\ chains = <<<<1>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 3: <Tick line 204, col 9 to line 205, col 68 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 2
+/\ chains = <<<<1>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 4: <Tick line 204, col 9 to line 205, col 68 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 3
+/\ chains = <<<<1>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 5: <Tick line 204, col 9 to line 205, col 68 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 4
+/\ chains = <<<<1>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 6: <Tick line 204, col 9 to line 205, col 68 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 5
+/\ chains = <<<<1>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 7: <Tick line 204, col 9 to line 205, col 68 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 6
+/\ chains = <<<<1>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 8: <AProduce line 184, col 6 to line 190, col 55 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 6
+/\ chains = <<<<1, 21>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 9: <Fetch line 141, col 6 to line 147, col 55 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 6
+/\ chains = <<<<1, 21>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 10: <Tick line 204, col 9 to line 205, col 68 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 7
+/\ chains = <<<<1, 21>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 11: <Tick line 204, col 9 to line 205, col 68 of module RegistryModel_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 8
+/\ chains = <<<<1, 21>>, <<1>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 12: <AProduce line 184, col 6 to line 190, col 55 of module RegistryModel_PivotDeep>
+/\ mature = {35}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 8
+/\ chains = <<<<1, 21>>, <<1, 35>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 13: <Tick line 204, col 9 to line 205, col 68 of module RegistryModel_PivotDeep>
+/\ mature = {35}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 9
+/\ chains = <<<<1, 21>>, <<1, 35>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 14: <AProduce line 184, col 6 to line 190, col 55 of module RegistryModel_PivotDeep>
+/\ mature = {35, 38}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 9
+/\ chains = <<<<1, 21>>, <<1, 35, 38>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 21>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 15: <HProduce line 158, col 6 to line 172, col 39 of module RegistryModel_PivotDeep>
+/\ mature = {24, 35, 38}
+/\ journal = { [ slot |-> 9,
+    D |-> <<1>>,
+    prev |-> <<1, 21>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<1, 21, 24>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = FALSE
+/\ slot = 9
+/\ chains = <<<<1, 21, 24>>, <<1, 35, 38>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 21, 24>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 9 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 16: <Fetch line 141, col 6 to line 147, col 55 of module RegistryModel_PivotDeep>
+/\ mature = {24, 35, 38}
+/\ journal = { [ slot |-> 9,
+    D |-> <<>>,
+    prev |-> <<1, 21, 24>>,
+    t |-> 1,
+    node |-> 1,
+    kind |-> "adoption",
+    chain |-> <<1, 35, 38>>,
+    disc |-> 2,
+    prevD |-> <<1>> ],
+  [ slot |-> 9,
+    D |-> <<1>>,
+    prev |-> <<1, 21>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<1, 21, 24>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = FALSE
+/\ slot = 9
+/\ chains = <<<<1, 21, 24>>, <<1, 35, 38>>>>
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 3>>,
+     tip |-> <<1, 35, 38>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 9 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+1182746 states generated, 523997 distinct states found, 300487 states left on queue.
+The depth of the complete state graph search is 16.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 8 and the 95th percentile is 4).
+Finished in 41s at (2026-09-30 23:57:43)
+
+exit=12

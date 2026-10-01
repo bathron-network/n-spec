@@ -1,0 +1,64 @@
+Error: Invariant NoWitnessCrash is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ witness = {}
+/\ generation = <<0, 0>>
+/\ exported = {}
+/\ prepared = <<"none", "none">>
+/\ crashes = <<0, 0>>
+/\ committed = {}
+
+State 2: <Prepare line 11, col 16 to line 12, col 63 of module PersistenceChecked>
+/\ witness = {}
+/\ generation = <<0, 0>>
+/\ exported = {}
+/\ prepared = <<"none", "A">>
+/\ crashes = <<0, 0>>
+/\ committed = {}
+
+State 3: <CrashRestore line 23, col 19 to line 25, col 55 of module PersistenceChecked>
+/\ witness = {}
+/\ generation = <<0, 0>>
+/\ exported = {}
+/\ prepared = <<"none", "A">>
+/\ crashes = <<1, 0>>
+/\ committed = {}
+
+State 4: <CrashRestore line 23, col 19 to line 25, col 55 of module PersistenceChecked>
+/\ witness = {}
+/\ generation = <<0, 0>>
+/\ exported = {}
+/\ prepared = <<"none", "A">>
+/\ crashes = <<2, 0>>
+/\ committed = {}
+
+State 5: <Reserve line 13, col 14 to line 16, col 64 of module PersistenceChecked>
+/\ witness = {[key |-> 0, digest |-> "A"]}
+/\ generation = <<0, 0>>
+/\ exported = {}
+/\ prepared = <<"none", "A">>
+/\ crashes = <<2, 0>>
+/\ committed = {}
+
+State 6: <Export line 17, col 13 to line 19, col 63 of module PersistenceChecked>
+/\ witness = {[key |-> 0, digest |-> "A"]}
+/\ generation = <<0, 0>>
+/\ exported = {"A"}
+/\ prepared = <<"none", "A">>
+/\ crashes = <<2, 0>>
+/\ committed = {}
+
+State 7: <Rotate line 26, col 13 to line 27, col 61 of module PersistenceChecked>
+/\ witness = {[key |-> 0, digest |-> "A"]}
+/\ generation = <<0, 1>>
+/\ exported = {"A"}
+/\ prepared = <<"none", "A">>
+/\ crashes = <<2, 0>>
+/\ committed = {}
+
+2829 states generated, 816 distinct states found, 371 states left on queue.
+The depth of the complete state graph search is 8.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 8 and the 95th percentile is 4).
+Finished in 00s at (2026-09-30 20:36:20)
+
+exit=12

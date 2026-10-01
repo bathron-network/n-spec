@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_seal_only",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.59,
+  "workers": 1,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessSealOnly"
+  ],
+  "generated": 58,
+  "distinct": 45,
+  "queue": 37,
+  "depth": 3,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\n MaxReorg = 1\n Dbtc = 3\nINVARIANTS NoWitnessSealOnly\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_seal_only.log"
+}

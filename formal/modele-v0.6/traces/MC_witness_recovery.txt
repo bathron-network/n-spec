@@ -1,0 +1,56 @@
+Error: Invariant NoWitnessRecovery is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ request = <<>>
+/\ origin = "none"
+/\ channels = <<>>
+/\ contextLost = FALSE
+/\ used = {}
+/\ valid = TRUE
+/\ approval = <<>>
+/\ nonce = 0
+/\ anchor = "none"
+
+State 2: <Prepare line 14, col 11 to line 15, col 78 of module Authorities>
+/\ audit = TRUE
+/\ request = <<1, "none", "none", FALSE, "target">>
+/\ origin = "none"
+/\ channels = <<>>
+/\ contextLost = FALSE
+/\ used = {}
+/\ valid = TRUE
+/\ approval = <<>>
+/\ nonce = 1
+/\ anchor = "none"
+
+State 3: <ExplicitApprove line 16, col 19 to line 17, col 83 of module Authorities>
+/\ audit = TRUE
+/\ request = <<1, "none", "none", FALSE, "target">>
+/\ origin = "none"
+/\ channels = <<>>
+/\ contextLost = FALSE
+/\ used = {}
+/\ valid = TRUE
+/\ approval = <<1, "none", "none", FALSE, "target">>
+/\ nonce = 1
+/\ anchor = "none"
+
+State 4: <Recover line 18, col 11 to line 22, col 55 of module Authorities>
+/\ audit = TRUE
+/\ request = <<1, "none", "none", FALSE, "target">>
+/\ origin = "target"
+/\ channels = <<>>
+/\ contextLost = FALSE
+/\ used = {<<1, "none", "none", FALSE, "target">>}
+/\ valid = TRUE
+/\ approval = <<1, "none", "none", FALSE, "target">>
+/\ nonce = 1
+/\ anchor = "target"
+
+304 states generated, 162 distinct states found, 70 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 3 and the 95th percentile is 2).
+Finished in 00s at (2026-09-30 19:38:56)
+
+exit=12

@@ -1,0 +1,19 @@
+{
+  "name": "MC_registry_window_1",
+  "status": "INCOMPLET",
+  "exit": 75,
+  "timeout": false,
+  "seconds": 0.53,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 1,
+  "distinct": 1,
+  "queue": 1,
+  "depth": null,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Threshold = 1\n Mutation = \"none\"\nINVARIANTS ARule NoCircularity\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_registry_window_1.log"
+}

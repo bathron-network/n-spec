@@ -1,0 +1,98 @@
+{
+  "cell": "b0.10_u1.0_d1.0",
+  "parameters": {
+    "beta": 0.1,
+    "u": 1.0,
+    "h": 0.9,
+    "alpha": 0.0,
+    "f": 1.0,
+    "delay": 1.0,
+    "d": 1,
+    "reduced_good": 0.0,
+    "reduced_bad": 1.0
+  },
+  "samples": 4096,
+  "horizon": 14400,
+  "seed_entropy": [
+    20260930,
+    1,
+    0,
+    0
+  ],
+  "honest_active_identities": 64,
+  "max_age_quantiles": [
+    17.0,
+    23.0,
+    25.0,
+    29.0,
+    45.0
+  ],
+  "max_blocks_quantiles": [
+    7.0,
+    10.0,
+    10.0,
+    12.0,
+    18.0
+  ],
+  "mean_public_growth": 0.5013395012749566,
+  "mean_favorable_starts": 831.351318359375,
+  "envelope_violations": 0,
+  "examples": [
+    {
+      "rep": 0,
+      "age": {
+        "start_group": 3478,
+        "start_slot": 6956,
+        "release_slot": 6975,
+        "public_prefix_blocks": 3485,
+        "public_total_blocks": 3493,
+        "private_added": 8,
+        "disconnected": 8,
+        "first_difference": 6956,
+        "age": 19,
+        "tie_favorable": true
+      },
+      "depth": {
+        "start_group": 3478,
+        "start_slot": 6956,
+        "release_slot": 6975,
+        "public_prefix_blocks": 3485,
+        "public_total_blocks": 3493,
+        "private_added": 8,
+        "disconnected": 8,
+        "first_difference": 6956,
+        "age": 19,
+        "tie_favorable": true
+      }
+    },
+    {
+      "rep": 1,
+      "age": {
+        "start_group": 3061,
+        "start_slot": 6122,
+        "release_slot": 6137,
+        "public_prefix_blocks": 3067,
+        "public_total_blocks": 3073,
+        "private_added": 6,
+        "disconnected": 6,
+        "first_difference": 6122,
+        "age": 15,
+        "tie_favorable": true
+      },
+      "depth": {
+        "start_group": 3060,
+        "start_slot": 6120,
+        "release_slot": 6135,
+        "public_prefix_blocks": 3066,
+        "public_total_blocks": 3072,
+        "private_added": 6,
+        "disconnected": 6,
+        "first_difference": 6121,
+        "age": 14,
+        "tie_favorable": true
+      }
+    }
+  ],
+  "cpu_seconds": 8.951835,
+  "wall_seconds": 21.986096917
+}

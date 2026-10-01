@@ -1,0 +1,30 @@
+{
+  "name": "MC_witness_persistence_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.57,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessCrash"
+  ],
+  "generated": 2829,
+  "distinct": 816,
+  "queue": 371,
+  "depth": 8,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\nINVARIANTS NoWitnessCrash\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_persistence_checked.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_witness_persistence_checked.cfg": "68c028b8c584f3858fbe5b4b0c533aadd3baca41ea0149883fdddc7323db2d43",
+    "MC_witness_persistence_checked.tla": "8a73b6868b88388075a31aa5846244e6ae56e64131d32d2b5a853b5e29336667",
+    "PersistenceChecked.tla": "7d8bf98f70c3936ebbe4e8f79b54ecfd02e5de82003ae0b0037bbd2fc90f355e",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

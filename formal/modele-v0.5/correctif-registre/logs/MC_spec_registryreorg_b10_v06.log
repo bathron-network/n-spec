@@ -1,0 +1,31 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 33 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 35387] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file <tmp>
+Parsing file <tmp>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module NModel_v06
+Semantic processing of module MC_spec_registryreorg_b10_v06
+Starting... (2026-09-30 18:04:17)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 18:04:17.
+Progress(12) at 2026-09-30 18:04:20: 110 776 states generated (110 776 s/min), 25 173 distinct states found (25 173 ds/min), 12 708 states left on queue.
+Progress(15) at 2026-09-30 18:05:20: 1 102 248 states generated (991 472 s/min), 217 392 distinct states found (192 219 ds/min), 87 298 states left on queue.
+Progress(16) at 2026-09-30 18:06:20: 1 804 173 states generated (701 925 s/min), 329 852 distinct states found (112 460 ds/min), 110 640 states left on queue.
+Progress(17) at 2026-09-30 18:07:20: 2 392 391 states generated (588 218 s/min), 413 657 distinct states found (83 805 ds/min), 115 614 states left on queue.
+Progress(18) at 2026-09-30 18:08:20: 2 930 866 states generated (538 475 s/min), 481 010 distinct states found (67 353 ds/min), 108 403 states left on queue.
+Progress(18) at 2026-09-30 18:09:20: 3 420 761 states generated (489 895 s/min), 545 607 distinct states found (64 597 ds/min), 104 513 states left on queue.
+Progress(19) at 2026-09-30 18:10:20: 3 856 836 states generated (436 075 s/min), 592 341 distinct states found (46 734 ds/min), 85 695 states left on queue.
+Progress(20) at 2026-09-30 18:11:20: 4 274 103 states generated (417 267 s/min), 636 212 distinct states found (43 871 ds/min), 66 683 states left on queue.
+Progress(20) at 2026-09-30 18:12:20: 4 640 857 states generated (366 754 s/min), 673 037 distinct states found (36 825 ds/min), 46 114 states left on queue.
+Progress(22) at 2026-09-30 18:13:20: 4 978 003 states generated (337 146 s/min), 700 997 distinct states found (27 960 ds/min), 18 220 states left on queue.
+
+RUNNER_TIMEOUT=570s; NOT A PASS

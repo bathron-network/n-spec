@@ -1,0 +1,85 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_registry_commits_CPreg_checked.cfg", "MC_registry_commits_CPreg_checked.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 95 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 47879] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_registry_commits_CPreg_checked.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryCommitmentsChecked.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryCommitmentsChecked
+Semantic processing of module MC_registry_commits_CPreg_checked
+Starting... (2026-09-30 20:34:17)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 20:34:17.
+Error: Invariant CPreg is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ tip = <<<<>>, <<>>>>
+/\ journal = {}
+/\ steps = <<0, 0>>
+
+State 2: <Commit line 25, col 18 to line 30, col 36 of module RegistryCommitmentsChecked>
+/\ audit = TRUE
+/\ tip = <<<<0, 23>>, <<>>>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<>>>>,
+    R |-> <<2, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {}, weights |-> <<2, 1, 1>>],
+    calendar |-> (4 :> 2 @@ 5 :> 3),
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<0, 23>> ] }
+/\ steps = <<1, 0>>
+
+State 3: <Commit line 25, col 18 to line 30, col 36 of module RegistryCommitmentsChecked>
+/\ audit = TRUE
+/\ tip = <<<<0, 23>>, <<>>>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<>>>>,
+    R |-> <<2, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {}, weights |-> <<2, 1, 1>>],
+    calendar |-> (4 :> 2 @@ 5 :> 3),
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<0, 23>> ] }
+/\ steps = <<2, 0>>
+
+State 4: <Commit line 25, col 18 to line 30, col 36 of module RegistryCommitmentsChecked>
+/\ audit = TRUE
+/\ tip = <<<<0, 23>>, <<0, 11, 13>>>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<>>>>,
+    R |-> <<2, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {}, weights |-> <<2, 1, 1>>],
+    calendar |-> (4 :> 2 @@ 5 :> 3),
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<0, 23>> ],
+  [ D |-> <<<<>>, <<>>, <<0>>>>,
+    R |-> <<3, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {0}, weights |-> <<3, 1, 1>>],
+    calendar |-> (4 :> 3 @@ 5 :> 0),
+    node |-> 2,
+    kind |-> "signature",
+    chain |-> <<0, 11, 13>> ] }
+/\ steps = <<2, 1>>
+
+49 states generated, 48 distinct states found, 41 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 30 (minimum is 30, the maximum 30 and the 95th percentile is 30).
+Finished in 00s at (2026-09-30 20:34:17)
+
+exit=12

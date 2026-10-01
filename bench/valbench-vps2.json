@@ -1,0 +1,32 @@
+{
+ "host": "HOST_B",
+ "cpu": "x86_64",
+ "sig_size": 2420,
+ "mldsa44_verify": {
+  "p50_us": 153.448,
+  "p99_us": 297.591,
+  "max_us": 1358.924
+ },
+ "mldsa44_sign": {
+  "p50_us": 8423.987,
+  "p99_us": 11703.75,
+  "max_us": 14554.78
+ },
+ "shake256_lottery_64B": {
+  "p50_us": 1.267,
+  "p99_us": 2.993,
+  "max_us": 94.601
+ },
+ "sha256_body_256KiB": {
+  "p50_us": 567.729,
+  "p99_us": 958.419,
+  "max_us": 2563.241
+ },
+ "shake256_body_256KiB": {
+  "p50_us": 696.106,
+  "p99_us": 1284.166,
+  "max_us": 1335.558
+ },
+ "block_upper_ms": 34.35725000000001,
+ "note": "borne = (1+108) v\u00e9rifs p99 + 2 hachages corps p99 + loterie ; hors acc\u00e8s \u00e9tat"
+}

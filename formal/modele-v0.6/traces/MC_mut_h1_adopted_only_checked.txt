@@ -1,0 +1,40 @@
+Error: Invariant H1NonVacuity is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ result = <<"FALSE", "FALSE">>
+/\ adopted = <<"G", "G">>
+/\ received = <<{}, {}>>
+/\ evicted = {}
+/\ auth = <<{}, {}>>
+
+State 2: <Deliver line 36, col 2 to line 45, col 21 of module H1OrdersChecked>
+/\ audit = TRUE
+/\ result = <<"FALSE", "FALSE">>
+/\ adopted = <<"G", "G">>
+/\ received = <<{"F"}, {}>>
+/\ evicted = {}
+/\ auth = <<{}, {}>>
+
+State 3: <Deliver line 36, col 2 to line 45, col 21 of module H1OrdersChecked>
+/\ audit = TRUE
+/\ result = <<"FALSE", "FALSE">>
+/\ adopted = <<"G", "G">>
+/\ received = <<{"F"}, {"F"}>>
+/\ evicted = {}
+/\ auth = <<{}, {}>>
+
+State 4: <Deliver line 36, col 2 to line 45, col 21 of module H1OrdersChecked>
+/\ audit = TRUE
+/\ result = <<"FALSE", "FALSE">>
+/\ adopted = <<"C", "G">>
+/\ received = <<{"F", "C", "W", "L", "BTC", "A"}, {"F"}>>
+/\ evicted = {}
+/\ auth = <<{"C"}, {}>>
+
+469 states generated, 314 distinct states found, 305 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 31 (minimum is 31, the maximum 31 and the 95th percentile is 31).
+Finished in 00s at (2026-09-30 20:34:11)
+
+exit=12

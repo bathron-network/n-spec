@@ -1,0 +1,76 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_witness_btc.cfg", "MC_witness_btc.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 109 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 43165] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_witness_btc.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/AnchorBTC.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module AnchorBTC
+Semantic processing of module MC_witness_btc
+Starting... (2026-09-30 19:37:05)
+Computing initial states...
+Finished computing initial states: 2 distinct states generated at 2026-09-30 19:37:05.
+Error: Invariant NoWitnessBTCStop is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 2: <Select line 36, col 2 to line 44, col 41 of module AnchorBTC>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{"A"}, {}>>
+/\ anchor = <<[branch |-> "A", height |-> 2], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 3: <Reorg line 45, col 12 to line 47, col 55 of module AnchorBTC>
+/\ mode = <<"RECHECK", "RECHECK">>
+/\ btc = {"b4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "A", height |-> 2], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 4: <Select line 36, col 2 to line 44, col 41 of module AnchorBTC>
+/\ mode = <<"STOP_BTC", "RECHECK">>
+/\ btc = {"b4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "A", height |-> 3], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "A", height |-> 2], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+402 states generated, 168 distinct states found, 123 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 4 (minimum is 0, the maximum 9 and the 95th percentile is 8).
+Finished in 00s at (2026-09-30 19:37:05)
+
+exit=12

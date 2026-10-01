@@ -1,0 +1,30 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-fp", "0", "-metadir", "<TMPDIR>", "-config", "MC_deliv_ni_43.cfg", "MC_deliv_ni_43.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 0 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 73103] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_deliv_ni_43.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/NonInterference_Deliv.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module NonInterference_Deliv
+Semantic processing of module MC_deliv_ni_43
+Starting... (2026-10-01 11:13:12)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-01 11:13:12.
+Progress(14) at 2026-10-01 11:13:15: 782 377 states generated (782 377 s/min), 430 019 distinct states found (430 019 ds/min), 300 585 states left on queue.
+Progress(18) at 2026-10-01 11:14:15: 11 223 136 states generated (10 440 759 s/min), 4 582 295 distinct states found (4 152 276 ds/min), 1 838 939 states left on queue.
+Progress(19) at 2026-10-01 11:15:15: 18 988 918 states generated (7 765 782 s/min), 6 882 277 distinct states found (2 299 982 ds/min), 1 210 187 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 6.0E-6
+  based on the actual fingerprints:  val = 6.3E-6
+22118626 states generated, 7564308 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 22.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 17 and the 95th percentile is 3).
+Finished in 02min 31s at (2026-10-01 11:15:43)
+
+exit=0

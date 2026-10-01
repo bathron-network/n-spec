@@ -1,0 +1,271 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 50 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 31285] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file ./MC_replay_tip.tla
+Parsing file ./NModel.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module NModel
+Semantic processing of module MC_replay_tip
+Starting... (2026-09-30 17:25:36)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 17:25:37.
+Error: Invariant RegistryImmutable is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ partition = TRUE
+/\ slot = 1
+/\ absent = TRUE
+/\ chains = <<<<1>>, <<1>>>>
+/\ blockTie = <<2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ step = 0
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> 0, registry |-> <<2, 1, 1>>] ],
+   [ seen |-> <<1, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> 0, registry |-> <<2, 1, 1>>] ] >>
+
+State 2: <ReplayNext line 4, col 15 to line 12, col 31 of module MC_replay_tip>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ partition = TRUE
+/\ slot = 1
+/\ absent = TRUE
+/\ chains = <<<<1>>, <<1, 16>>>>
+/\ blockTie = <<2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2077, 0, 0, 0, 0, 0>>
+/\ step = 1
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 2>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> 1,
+     history |-> [epoch |-> 0, registry |-> <<2, 1, 1>>] ],
+   [ seen |-> <<1, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> 0, registry |-> <<2, 1, 1>>] ] >>
+
+State 3: <ReplayNext line 4, col 15 to line 12, col 31 of module MC_replay_tip>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ partition = TRUE
+/\ slot = 2
+/\ absent = TRUE
+/\ chains = <<<<1>>, <<1, 16>>>>
+/\ blockTie = <<2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2077, 0, 0, 0, 0, 0>>
+/\ step = 2
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 2>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>] ],
+   [ seen |-> <<1, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>] ] >>
+
+State 4: <ReplayNext line 4, col 15 to line 12, col 31 of module MC_replay_tip>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ partition = TRUE
+/\ slot = 2
+/\ absent = FALSE
+/\ chains = <<<<1>>, <<1, 16>>>>
+/\ blockTie = <<2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2077, 0, 0, 0, 0, 0>>
+/\ step = 3
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 2>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>] ],
+   [ seen |-> <<1, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>] ] >>
+
+State 5: <ReplayNext line 4, col 15 to line 12, col 31 of module MC_replay_tip>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 2
+/\ absent = FALSE
+/\ chains = <<<<1>>, <<1, 16>>>>
+/\ blockTie = <<2075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2077, 0, 0, 0, 0, 0>>
+/\ step = 4
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 2>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>] ],
+   [ seen |-> <<1, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>] ] >>
+
+State 6: <ReplayNext line 4, col 15 to line 12, col 31 of module MC_replay_tip>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 2
+/\ absent = FALSE
+/\ chains = <<<<1, 10>>, <<1, 16>>>>
+/\ blockTie = <<2075, 0, 0, 0, 0, 0, 0, 0, 0, 30782, 0, 0, 0, 0, 0, 2077, 0, 0, 0, 0, 0>>
+/\ step = 5
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 2>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>] ],
+   [ seen |-> <<2, 1>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> 2,
+     history |-> [epoch |-> 1, registry |-> <<3, 1, 1>>] ] >>
+
+State 7: <ReplayNext line 4, col 15 to line 12, col 31 of module MC_replay_tip>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ partition = TRUE
+/\ slot = 2
+/\ absent = FALSE
+/\ chains = <<<<1, 10>>, <<1, 16>>>>
+/\ blockTie = <<2075, 0, 0, 0, 0, 0, 0, 0, 0, 30782, 0, 0, 0, 0, 0, 2077, 0, 0, 0, 0, 0>>
+/\ step = 6
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 0)
+/\ audit = [ anchor |-> TRUE,
+  immutable |-> FALSE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ seen |-> <<1, 2>>,
+     anchor |-> <<>>,
+     tip |-> <<1>>,
+     mode |-> "RUN",
+     epoch |-> 0,
+     registry |-> <<2, 1, 1>>,
+     origin |-> 0,
+     signed |-> -1,
+     history |-> [epoch |-> -1, registry |-> <<>>] ],
+   [ seen |-> <<2, 2>>,
+     anchor |-> <<1>>,
+     tip |-> <<1, 16>>,
+     mode |-> "RUN",
+     epoch |-> 1,
+     registry |-> <<3, 2, 1>>,
+     origin |-> 0,
+     signed |-> 2,
+     history |-> [epoch |-> 1, registry |-> <<3, 1, 1>>] ] >>
+
+7 states generated, 7 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 7.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 1 and the 95th percentile is 1).
+Finished in 01s at (2026-09-30 17:25:37)
+exit=12

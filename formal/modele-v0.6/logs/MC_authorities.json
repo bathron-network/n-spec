@@ -1,0 +1,21 @@
+{
+  "name": "MC_authorities",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 872,
+  "distinct": 306,
+  "queue": 0,
+  "depth": 8,
+  "configuration": "SPECIFICATION Spec\nINVARIANTS AuthoritiesSafe\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 9.4E-15"
+  ],
+  "log": "logs/MC_authorities.log"
+}

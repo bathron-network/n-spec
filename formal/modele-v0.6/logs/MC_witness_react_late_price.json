@@ -1,0 +1,30 @@
+{
+  "name": "MC_witness_react_late_price",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.58,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessLatePrice"
+  ],
+  "generated": 5064,
+  "distinct": 5064,
+  "queue": 1916,
+  "depth": 4,
+  "configuration": "SPECIFICATION Spec\nCONSTANT Mutation=\"none\"\nINVARIANT NoWitnessLatePrice\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_react_late_price.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "AdmissionsChecked.tla": "da204e20b1d871ed4633669ed20e73d33e07c4fb6e69c2277991f5b996278ef8",
+    "MC_witness_react_late_price.cfg": "675afadfde7fbc4d164eec601db46bd2848091bce52525ef720f30739cf1cef4",
+    "MC_witness_react_late_price.tla": "c1c2fb4dba2731d8d269f6fc69d8d6b589d2fec39bce84b82a5d79f1a3810a40",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

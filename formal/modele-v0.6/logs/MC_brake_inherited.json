@@ -1,0 +1,19 @@
+{
+  "name": "MC_brake_inherited",
+  "status": "INCOMPLET",
+  "exit": 75,
+  "timeout": false,
+  "seconds": 9.05,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 15,
+  "distinct": 14,
+  "queue": 1,
+  "depth": 14,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n W = 1000\n Scenario = \"inherited\"\n Mutation = \"none\"\n Horizon = 20\nINVARIANTS Mechanical RotationUnderBrake IntentionalRounding SlowProgress\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_brake_inherited.log"
+}

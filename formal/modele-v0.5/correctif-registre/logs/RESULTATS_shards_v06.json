@@ -1,0 +1,70 @@
+[
+  {
+    "name": "MC_spec_registryreorg_b00_v06",
+    "bitcoin": [
+      0,
+      0,
+      0
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 339.59,
+    "completed": true,
+    "invariant_violations": [],
+    "statistics": [
+      "2925161 states generated, 402099 distinct states found, 0 states left on queue."
+    ],
+    "depth": [
+      "26"
+    ]
+  },
+  {
+    "name": "MC_spec_registryreorg_b01_v06",
+    "bitcoin": [
+      0,
+      0,
+      1
+    ],
+    "exit": 0,
+    "timeout": false,
+    "seconds": 281.76,
+    "completed": true,
+    "invariant_violations": [],
+    "statistics": [
+      "2479295 states generated, 339829 distinct states found, 0 states left on queue."
+    ],
+    "depth": [
+      "26"
+    ]
+  },
+  {
+    "name": "MC_spec_registryreorg_b10_v06",
+    "bitcoin": [
+      0,
+      1,
+      0
+    ],
+    "exit": -15,
+    "timeout": true,
+    "seconds": 570.01,
+    "completed": false,
+    "invariant_violations": [],
+    "statistics": [],
+    "depth": []
+  },
+  {
+    "name": "MC_spec_registryreorg_b11_v06",
+    "bitcoin": [
+      0,
+      1,
+      1
+    ],
+    "exit": -15,
+    "timeout": true,
+    "seconds": 570.01,
+    "completed": false,
+    "invariant_violations": [],
+    "statistics": [],
+    "depth": []
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_react_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.59,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessReact"
+  ],
+  "generated": 3138,
+  "distinct": 3138,
+  "queue": 1563,
+  "depth": 3,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\nINVARIANTS NoWitnessReact\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_react_checked.log"
+}

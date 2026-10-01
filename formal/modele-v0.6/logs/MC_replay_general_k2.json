@@ -1,0 +1,30 @@
+{
+  "name": "MC_replay_general_k2",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.65,
+  "workers": 1,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "RegistryImmutable"
+  ],
+  "generated": 15,
+  "distinct": 14,
+  "queue": 0,
+  "depth": 14,
+  "configuration": "SPECIFICATION Replay\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 2\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryImmutable BlockMetadataCorrect\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [],
+  "log": "logs/MC_replay_general_k2.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_replay_general_k2.cfg": "702254a8e6fe96ab08e62252696c2d70079db445ae1fd0278898af22221ad7e8",
+    "MC_replay_general_k2.tla": "865354f45bfae8600398b08854345c41bd6dddea579cfb925b7219061870f720",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

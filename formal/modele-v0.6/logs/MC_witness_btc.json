@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_btc",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.59,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessBTCStop"
+  ],
+  "generated": 402,
+  "distinct": 168,
+  "queue": 123,
+  "depth": 4,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\n MaxReorg = 1\n Dbtc = 3\nINVARIANTS NoWitnessBTCStop\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_btc.log"
+}

@@ -1,0 +1,420 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_witness_money_checked.cfg", "MC_witness_money_checked.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 91 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 48049] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_witness_money_checked.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/MoneyChecked.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MoneyChecked
+Semantic processing of module MC_witness_money_checked
+Starting... (2026-09-30 20:35:27)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 20:35:27.
+Error: Invariant NoWitnessMoney is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "idle"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 2: <Begin line 17, col 12 to line 19, col 61 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "import"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 3: <Load line 20, col 8 to line 21, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "notify"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 4: <Notify line 22, col 10 to line 23, col 86 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "spend"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 5: <Crash line 30, col 9 to line 31, col 92 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"spend"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "idle"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 6: <Begin line 17, col 12 to line 19, col 61 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"spend"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "import"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 7: <Load line 20, col 8 to line 21, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"spend"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "notify"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 8: <Crash line 30, col 9 to line 31, col 92 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"notify", "spend"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "idle"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 9: <Begin line 17, col 12 to line 19, col 61 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"notify", "spend"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "import"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 10: <Load line 20, col 8 to line 21, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"notify", "spend"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "notify"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 11: <Notify line 22, col 10 to line 23, col 86 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"notify", "spend"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "spend"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 12: <Spend line 24, col 9 to line 25, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"notify", "spend"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "commit"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 13: <Crash line 30, col 9 to line 31, col 92 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"notify", "spend", "commit"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "idle"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 14: <Begin line 17, col 12 to line 19, col 61 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"notify", "spend", "commit"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "import"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 15: <Crash line 30, col 9 to line 31, col 92 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "idle"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 16: <Begin line 17, col 12 to line 19, col 61 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 1
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "import"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 17: <Load line 20, col 8 to line 21, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 1
+/\ work = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+/\ phase = "notify"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 18: <Notify line 22, col 10 to line 23, col 86 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 1
+/\ work = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+/\ phase = "spend"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 19: <Spend line 24, col 9 to line 25, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 1
+/\ work = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+/\ phase = "commit"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 20: <Commit line 26, col 10 to line 29, col 49 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 1
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 1
+/\ work = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+/\ phase = "idle"
+/\ paths = {0, 1}
+/\ visible = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+
+State 21: <Begin line 17, col 12 to line 19, col 61 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 1
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 2
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "import"
+/\ paths = {0, 1}
+/\ visible = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+
+State 22: <Load line 20, col 8 to line 21, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 1
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 2
+/\ work = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+/\ phase = "notify"
+/\ paths = {0, 1}
+/\ visible = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+
+State 23: <Notify line 22, col 10 to line 23, col 86 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 1
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 2
+/\ work = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+/\ phase = "spend"
+/\ paths = {0, 1}
+/\ visible = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+
+State 24: <Spend line 24, col 9 to line 25, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 1
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 2
+/\ work = [ alice |-> 3,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+/\ phase = "commit"
+/\ paths = {0, 1}
+/\ visible = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+
+State 25: <Commit line 26, col 10 to line 29, col 49 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 2
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 2
+/\ work = [ alice |-> 3,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+/\ phase = "idle"
+/\ paths = {0, 1, 2}
+/\ visible = [ alice |-> 3,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+
+State 26: <Withdraw line 32, col 12 to line 33, col 67 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = FALSE
+/\ stop = TRUE
+/\ tip = 2
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 2
+/\ work = [ alice |-> 3,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+/\ phase = "idle"
+/\ paths = {0, 1, 2}
+/\ visible = [ alice |-> 3,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+
+State 27: <Undo line 34, col 8 to line 35, col 61 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = FALSE
+/\ stop = TRUE
+/\ tip = 0
+/\ crashed = {"import", "notify", "spend", "commit"}
+/\ target = 2
+/\ work = [ alice |-> 3,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+/\ phase = "idle"
+/\ paths = {0, 1, 2}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+8820 states generated, 3847 distinct states found, 125 states left on queue.
+The depth of the complete state graph search is 27.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 4 and the 95th percentile is 3).
+Finished in 00s at (2026-09-30 20:35:27)
+
+exit=12

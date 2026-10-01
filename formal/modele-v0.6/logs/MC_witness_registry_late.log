@@ -1,0 +1,108 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_witness_registry_late.cfg", "MC_witness_registry_late.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 82 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 48097] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_witness_registry_late.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryWindowChecked.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryWindowChecked
+Semantic processing of module MC_witness_registry_late
+Starting... (2026-09-30 20:35:38)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 20:35:38.
+Error: Invariant NoWitnessLate is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 0
+/\ phase = "idle"
+/\ installed = 4
+
+State 2: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 1
+/\ phase = "idle"
+/\ installed = 4
+
+State 3: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 2
+/\ phase = "idle"
+/\ installed = 4
+
+State 4: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 3
+/\ phase = "idle"
+/\ installed = 4
+
+State 5: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 4
+/\ phase = "idle"
+/\ installed = 4
+
+State 6: <Skip line 28, col 9 to line 29, col 69 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 5
+/\ phase = "idle"
+/\ installed = 4
+
+State 7: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<[slot |-> 5, mature |-> TRUE, op |-> 2]>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 5
+/\ phase = "prepared"
+/\ installed = 4
+
+State 8: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = TRUE
+/\ chain = <<[slot |-> 5, mature |-> TRUE, op |-> 2]>>
+/\ s = 6
+/\ phase = "idle"
+/\ installed = 4
+
+434 states generated, 353 distinct states found, 175 states left on queue.
+The depth of the complete state graph search is 10.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 3 and the 95th percentile is 3).
+Finished in 00s at (2026-09-30 20:35:38)
+
+exit=12

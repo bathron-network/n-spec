@@ -1,0 +1,557 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-fp", "0", "-metadir", "<TMPDIR>", "-config", "MC_explore_suffix_PivotDeep.cfg", "MC_explore_suffix_PivotDeep.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 0 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 63831] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_explore_suffix_PivotDeep.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/Replay_PivotDeep.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModel_PivotDeep.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryModel_PivotDeep
+Semantic processing of module Replay_PivotDeep
+Semantic processing of module MC_explore_suffix_PivotDeep
+Starting... (2026-10-01 00:09:31)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-01 00:09:31.
+Progress(21) at 2026-10-01 00:09:34: 52 457 states generated (52 457 s/min), 23 635 distinct states found (23 635 ds/min), 14 246 states left on queue.
+Error: Invariant NoWitnessDeepSync is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 1
+/\ chains = <<<<1>>, <<1>>>>
+/\ step = 0
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 2: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 1
+/\ chains = <<<<1, 16>>, <<1>>>>
+/\ step = 1
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<1, 1>>,
+     tip |-> <<1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 3: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = FALSE
+/\ slot = 1
+/\ chains = <<<<1, 16>>, <<1>>>>
+/\ step = 2
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 4: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 1
+/\ chains = <<<<1, 16>>, <<1, 16>>>>
+/\ step = 3
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 5: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 2
+/\ chains = <<<<1, 16>>, <<1, 16>>>>
+/\ step = 4
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 6: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 3
+/\ chains = <<<<1, 16>>, <<1, 16>>>>
+/\ step = 5
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 7: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 4
+/\ chains = <<<<1, 16>>, <<1, 16>>>>
+/\ step = 6
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> 1 ],
+   [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 8: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 4
+/\ chains = <<<<1, 16, 19>>, <<1, 16>>>>
+/\ step = 7
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<2, 1>>,
+     tip |-> <<1, 16>>,
+     anchor |-> <<>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 9: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 4
+/\ chains = <<<<1, 16, 19>>, <<1, 16>>>>
+/\ step = 8
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 10: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 5
+/\ chains = <<<<1, 16, 19>>, <<1, 16>>>>
+/\ step = 9
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 11: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 6
+/\ chains = <<<<1, 16, 19>>, <<1, 16>>>>
+/\ step = 10
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 12: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 7
+/\ chains = <<<<1, 16, 19>>, <<1, 16>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 13: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {35}
+/\ journal = {}
+/\ forked = TRUE
+/\ slot = 7
+/\ chains = <<<<1, 16, 19>>, <<1, 16, 35>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> 4 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 14: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 7
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 15: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 8
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 16: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 9
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 17: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35, 38}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 9
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35, 38>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 18: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35, 38}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 10
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35, 38>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 19: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35, 38}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 11
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35, 38>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 20: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35, 38}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 12
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35, 38>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 21: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35, 38, 41}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 12
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35, 38, 41>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 22: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35, 38, 41}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ] }
+/\ forked = TRUE
+/\ slot = 12
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35, 38, 41>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 1>>,
+     tip |-> <<1, 16, 19, 22>>,
+     anchor |-> <<1, 16>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+State 23: <SNext line 11, col 10 to line 12, col 36 of module MC_explore_suffix_PivotDeep>
+/\ mature = {22, 35, 38, 41}
+/\ journal = { [ slot |-> 7,
+    D |-> <<1, 16>>,
+    prev |-> <<1, 16, 19>>,
+    t |-> 0,
+    node |-> 1,
+    kind |-> "installation",
+    chain |-> <<1, 16, 19, 22>>,
+    disc |-> 0,
+    prevD |-> <<0>> ],
+  [ slot |-> 12,
+    D |-> <<>>,
+    prev |-> <<1, 16, 19, 22>>,
+    t |-> 1,
+    node |-> 1,
+    kind |-> "adoption",
+    chain |-> <<1, 16, 35, 38, 41>>,
+    disc |-> 2,
+    prevD |-> <<1, 16>> ] }
+/\ forked = TRUE
+/\ slot = 12
+/\ chains = <<<<1, 16, 19, 22>>, <<1, 16, 35, 38, 41>>>>
+/\ step = 11
+/\ vis = {<<1, 1>>, <<1, 2>>, <<2, 1>>}
+/\ local = << [ seen |-> <<4, 5>>,
+     tip |-> <<1, 16, 35, 38, 41>>,
+     anchor |-> <<1, 16, 35>>,
+     mode |-> "RUN",
+     signed |-> 7 ],
+   [ seen |-> <<3, 1>>,
+     tip |-> <<1, 16, 19>>,
+     anchor |-> <<1>>,
+     mode |-> "RUN",
+     signed |-> -1 ] >>
+
+356388 states generated, 159906 distinct states found, 91643 states left on queue.
+The depth of the complete state graph search is 23.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 8 and the 95th percentile is 4).
+Finished in 25s at (2026-10-01 00:09:56)
+
+exit=12

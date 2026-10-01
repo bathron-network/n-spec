@@ -1,0 +1,21 @@
+{
+  "name": "MC_mirror_off_11",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 1.24,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "RegistryImmutable"
+  ],
+  "generated": 20290,
+  "distinct": 4668,
+  "queue": 2385,
+  "depth": 9,
+  "configuration": "SPECIFICATION ShardSpec\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 5\n  KReg = 1\n  MaxReorg = 4\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryImmutable RegistryStableOnCommonPrefix BlockMetadataCorrect\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = FALSE\n",
+  "collision": [],
+  "log": "logs/MC_mirror_off_11.log"
+}

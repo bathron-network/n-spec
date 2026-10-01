@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_brake",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.9,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 10,
+  "distinct": 10,
+  "queue": 0,
+  "depth": 10,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n W = 1000\n Scenario = \"slow\"\n Mutation = \"zero_brake\"\n Horizon = 20\nINVARIANTS Mechanical\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 0.0"
+  ],
+  "log": "logs/MC_mut_brake.log"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_scan_Unknown",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.53,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessUnknown"
+  ],
+  "generated": 33,
+  "distinct": 23,
+  "queue": 15,
+  "depth": 3,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Scenario = \"matching\"\nINVARIANTS NoWitnessUnknown\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_scan_Unknown.log"
+}

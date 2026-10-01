@@ -1,0 +1,23 @@
+Error: Invariant NoWitnessRankExit is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ btc = TRUE
+/\ decision = [temporal |-> TRUE, base |-> "MAINTAIN", primary |-> "STOP_H1", positive |-> {}]
+/\ cache = TRUE
+/\ ranking = 0
+
+State 2: <Update line 12, col 15 to line 12, col 79 of module H1Reevaluation>
+/\ btc = TRUE
+/\ decision = [ temporal |-> FALSE,
+  base |-> "STOP_DEEP",
+  primary |-> "STOP_DEEP",
+  positive |-> {} ]
+/\ cache = TRUE
+/\ ranking = 1
+
+67 states generated, 12 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 2 and the 95th percentile is 2).
+Finished in 00s at (2026-09-30 20:35:32)
+
+exit=12

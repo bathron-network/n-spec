@@ -1,0 +1,30 @@
+{
+  "name": "MC_witness_registry_late",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.57,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessLate"
+  ],
+  "generated": 434,
+  "distinct": 353,
+  "queue": 175,
+  "depth": 10,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS Threshold=2 Mutation=\"none\"\nINVARIANT NoWitnessLate\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_registry_late.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_witness_registry_late.cfg": "6b56e635c11aba3f5410519b3392abf7d788e32fb051b400ee04f563dbb4c150",
+    "MC_witness_registry_late.tla": "f2cf0efcf4bfc618bf86fe20f9ec3141b6c424243d6d901b698865455b28efb0",
+    "RegistryWindowChecked.tla": "239ef154d9a690c5d54818ff53504902655b6f2b74e908a4e6878f8044689fe2",
+    "run.py": "2fc1f40bf6cf7a0c27cc20e2cd90562bb94d8827ce1399ae6c00aa3f39dd1ebc",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

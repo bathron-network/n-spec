@@ -1,0 +1,6310 @@
+{
+  "seed": 20260930,
+  "samples_per_cell": 4096,
+  "horizon": 14400,
+  "workers": 8,
+  "cell_cpu_limit": 15,
+  "hard_total_reservation_seconds": 1744.0,
+  "prior_cpu_reservation_seconds": 600.0,
+  "cells": 64,
+  "analysis": {
+    "rows": 384,
+    "conditional": 144,
+    "cpu_seconds": 1.083687
+  },
+  "wall_seconds": 104.941834291,
+  "parent_cpu_seconds": 1.6600190000000001,
+  "children_cpu_seconds": 619.837538,
+  "total_cpu_seconds": 621.497557,
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.0.2",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "cpu_count": 14,
+  "command": [
+    "etudes/n-spec/cp-reg/sim/run.py",
+    "--out",
+    "etudes/n-spec/cp-reg/sim/results",
+    "--prior-cpu-reservation",
+    "600"
+  ],
+  "source_sha256": {
+    "run.py": "26d01a6d55e904728eaccba3ad6b35460681be348aca1b99c7a697150193cf11",
+    "check.py": "b820ac49e42fb0e46f787233e1d37f1ab21bb6fc006cc88743e66ef4d8e0fa0f",
+    "model.py": "8750810db8a211f2e5a5d673b180310710659a36a83b4f8eca16fb84e6a57186"
+  },
+  "envelope_violations": 0,
+  "summaries": [
+    {
+      "cell": "b0.10_u0.2_d0.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.2,
+        "h": 0.18000000000000002,
+        "alpha": 0.7200000000000001,
+        "f": 0.28,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.6428571428571429,
+        "reduced_bad": 0.3571428571428571
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        353.0,
+        500.0,
+        555.0,
+        682.0500000000002,
+        911.0
+      ],
+      "max_blocks_quantiles": [
+        49.0,
+        69.0,
+        76.0,
+        93.0,
+        122.0
+      ],
+      "mean_public_growth": 0.18004950629340277,
+      "mean_favorable_starts": 8394.304443359375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 11336,
+            "start_slot": 11336,
+            "release_slot": 11639,
+            "public_prefix_blocks": 2157,
+            "public_total_blocks": 2198,
+            "private_added": 42,
+            "disconnected": 41,
+            "first_difference": 11336,
+            "age": 303,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 11336,
+            "start_slot": 11336,
+            "release_slot": 11639,
+            "public_prefix_blocks": 2157,
+            "public_total_blocks": 2198,
+            "private_added": 42,
+            "disconnected": 41,
+            "first_difference": 11336,
+            "age": 303,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 7323,
+            "start_slot": 7323,
+            "release_slot": 7632,
+            "public_prefix_blocks": 1331,
+            "public_total_blocks": 1372,
+            "private_added": 41,
+            "disconnected": 41,
+            "first_difference": 7323,
+            "age": 309,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 7323,
+            "start_slot": 7323,
+            "release_slot": 7632,
+            "public_prefix_blocks": 1331,
+            "public_total_blocks": 1372,
+            "private_added": 41,
+            "disconnected": 41,
+            "first_difference": 7323,
+            "age": 309,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 11.956695999999999,
+      "wall_seconds": 16.481576916999998
+    },
+    {
+      "cell": "b0.10_u0.2_d0.5",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.2,
+        "h": 0.18000000000000002,
+        "alpha": 0.7200000000000001,
+        "f": 0.28,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.6428571428571429,
+        "reduced_bad": 0.3571428571428571
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        353.0,
+        500.0,
+        555.0,
+        682.0500000000002,
+        911.0
+      ],
+      "max_blocks_quantiles": [
+        49.0,
+        69.0,
+        76.0,
+        93.0,
+        122.0
+      ],
+      "mean_public_growth": 0.18004950629340277,
+      "mean_favorable_starts": 8394.304443359375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 11336,
+            "start_slot": 11336,
+            "release_slot": 11639,
+            "public_prefix_blocks": 2157,
+            "public_total_blocks": 2198,
+            "private_added": 42,
+            "disconnected": 41,
+            "first_difference": 11336,
+            "age": 303,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 11336,
+            "start_slot": 11336,
+            "release_slot": 11639,
+            "public_prefix_blocks": 2157,
+            "public_total_blocks": 2198,
+            "private_added": 42,
+            "disconnected": 41,
+            "first_difference": 11336,
+            "age": 303,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 7323,
+            "start_slot": 7323,
+            "release_slot": 7632,
+            "public_prefix_blocks": 1331,
+            "public_total_blocks": 1372,
+            "private_added": 41,
+            "disconnected": 41,
+            "first_difference": 7323,
+            "age": 309,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 7323,
+            "start_slot": 7323,
+            "release_slot": 7632,
+            "public_prefix_blocks": 1331,
+            "public_total_blocks": 1372,
+            "private_added": 41,
+            "disconnected": 41,
+            "first_difference": 7323,
+            "age": 309,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.22897,
+      "wall_seconds": 14.064300542
+    },
+    {
+      "cell": "b0.10_u0.2_d1.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.2,
+        "h": 0.18000000000000002,
+        "alpha": 0.7200000000000001,
+        "f": 0.28,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.46285714285714286,
+        "reduced_bad": 0.5371428571428571
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        448.0,
+        637.0,
+        714.0,
+        872.1000000000004,
+        1539.0
+      ],
+      "max_blocks_quantiles": [
+        59.0,
+        85.0,
+        94.0,
+        115.0,
+        204.0
+      ],
+      "mean_public_growth": 0.16408515082465278,
+      "mean_favorable_starts": 4343.545166015625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 5639,
+            "start_slot": 11278,
+            "release_slot": 11675,
+            "public_prefix_blocks": 1933,
+            "public_total_blocks": 1984,
+            "private_added": 51,
+            "disconnected": 51,
+            "first_difference": 11279,
+            "age": 396,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5639,
+            "start_slot": 11278,
+            "release_slot": 11675,
+            "public_prefix_blocks": 1933,
+            "public_total_blocks": 1984,
+            "private_added": 51,
+            "disconnected": 51,
+            "first_difference": 11279,
+            "age": 396,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 3658,
+            "start_slot": 7316,
+            "release_slot": 7667,
+            "public_prefix_blocks": 1216,
+            "public_total_blocks": 1261,
+            "private_added": 45,
+            "disconnected": 45,
+            "first_difference": 7322,
+            "age": 345,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 3658,
+            "start_slot": 7316,
+            "release_slot": 7667,
+            "public_prefix_blocks": 1216,
+            "public_total_blocks": 1261,
+            "private_added": 45,
+            "disconnected": 45,
+            "first_difference": 7322,
+            "age": 345,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 9.482058,
+      "wall_seconds": 13.094397334
+    },
+    {
+      "cell": "b0.10_u0.2_d2.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.2,
+        "h": 0.18000000000000002,
+        "alpha": 0.7200000000000001,
+        "f": 0.28,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.33325714285714286,
+        "reduced_bad": 0.6667428571428571
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        586.0,
+        855.0,
+        964.0,
+        1184.250000000001,
+        2131.0
+      ],
+      "max_blocks_quantiles": [
+        75.0,
+        110.0,
+        123.0,
+        154.0,
+        266.0
+      ],
+      "mean_public_growth": 0.15008692423502604,
+      "mean_favorable_starts": 3034.29736328125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 3766,
+            "start_slot": 11298,
+            "release_slot": 11843,
+            "public_prefix_blocks": 1753,
+            "public_total_blocks": 1819,
+            "private_added": 66,
+            "disconnected": 66,
+            "first_difference": 11298,
+            "age": 545,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 3760,
+            "start_slot": 11280,
+            "release_slot": 11822,
+            "public_prefix_blocks": 1750,
+            "public_total_blocks": 1816,
+            "private_added": 66,
+            "disconnected": 66,
+            "first_difference": 11282,
+            "age": 540,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 2952,
+            "start_slot": 8856,
+            "release_slot": 9353,
+            "public_prefix_blocks": 1335,
+            "public_total_blocks": 1397,
+            "private_added": 62,
+            "disconnected": 62,
+            "first_difference": 8857,
+            "age": 496,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 2950,
+            "start_slot": 8850,
+            "release_slot": 9347,
+            "public_prefix_blocks": 1334,
+            "public_total_blocks": 1396,
+            "private_added": 62,
+            "disconnected": 62,
+            "first_difference": 8855,
+            "age": 492,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 8.255862,
+      "wall_seconds": 11.436046166
+    },
+    {
+      "cell": "b0.10_u0.4_d0.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.4,
+        "h": 0.36000000000000004,
+        "alpha": 0.54,
+        "f": 0.4600000000000001,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.7826086956521738,
+        "reduced_bad": 0.21739130434782616
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        67.0,
+        88.0,
+        96.0,
+        113.0,
+        156.0
+      ],
+      "max_blocks_quantiles": [
+        15.0,
+        19.0,
+        21.0,
+        25.0,
+        32.0
+      ],
+      "mean_public_growth": 0.3600079854329427,
+      "mean_favorable_starts": 4244.358642578125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 4311,
+            "start_slot": 4311,
+            "release_slot": 4378,
+            "public_prefix_blocks": 1477,
+            "public_total_blocks": 1491,
+            "private_added": 15,
+            "disconnected": 14,
+            "first_difference": 4315,
+            "age": 63,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 1920,
+            "start_slot": 1920,
+            "release_slot": 1967,
+            "public_prefix_blocks": 644,
+            "public_total_blocks": 658,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 1920,
+            "age": 47,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 8357,
+            "start_slot": 8357,
+            "release_slot": 8414,
+            "public_prefix_blocks": 2967,
+            "public_total_blocks": 2976,
+            "private_added": 9,
+            "disconnected": 9,
+            "first_difference": 8357,
+            "age": 57,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 1559,
+            "start_slot": 1559,
+            "release_slot": 1603,
+            "public_prefix_blocks": 543,
+            "public_total_blocks": 555,
+            "private_added": 12,
+            "disconnected": 12,
+            "first_difference": 1560,
+            "age": 43,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 12.003247,
+      "wall_seconds": 20.625875292
+    },
+    {
+      "cell": "b0.10_u0.4_d0.5",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.4,
+        "h": 0.36000000000000004,
+        "alpha": 0.54,
+        "f": 0.4600000000000001,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.7826086956521738,
+        "reduced_bad": 0.21739130434782616
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        67.0,
+        88.0,
+        96.0,
+        113.0,
+        156.0
+      ],
+      "max_blocks_quantiles": [
+        15.0,
+        19.0,
+        21.0,
+        25.0,
+        32.0
+      ],
+      "mean_public_growth": 0.3600079854329427,
+      "mean_favorable_starts": 4244.358642578125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 4311,
+            "start_slot": 4311,
+            "release_slot": 4378,
+            "public_prefix_blocks": 1477,
+            "public_total_blocks": 1491,
+            "private_added": 15,
+            "disconnected": 14,
+            "first_difference": 4315,
+            "age": 63,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 1920,
+            "start_slot": 1920,
+            "release_slot": 1967,
+            "public_prefix_blocks": 644,
+            "public_total_blocks": 658,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 1920,
+            "age": 47,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 8357,
+            "start_slot": 8357,
+            "release_slot": 8414,
+            "public_prefix_blocks": 2967,
+            "public_total_blocks": 2976,
+            "private_added": 9,
+            "disconnected": 9,
+            "first_difference": 8357,
+            "age": 57,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 1559,
+            "start_slot": 1559,
+            "release_slot": 1603,
+            "public_prefix_blocks": 543,
+            "public_total_blocks": 555,
+            "private_added": 12,
+            "disconnected": 12,
+            "first_difference": 1560,
+            "age": 43,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 12.131659,
+      "wall_seconds": 20.603095084000003
+    },
+    {
+      "cell": "b0.10_u0.4_d1.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.4,
+        "h": 0.36000000000000004,
+        "alpha": 0.54,
+        "f": 0.4600000000000001,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.4226086956521738,
+        "reduced_bad": 0.5773913043478263
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        80.0,
+        107.0,
+        119.0,
+        139.05000000000018,
+        220.0
+      ],
+      "max_blocks_quantiles": [
+        17.0,
+        22.0,
+        24.0,
+        29.0,
+        44.0
+      ],
+      "mean_public_growth": 0.29623116387261283,
+      "mean_favorable_starts": 2133.698486328125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 2144,
+            "start_slot": 4288,
+            "release_slot": 4389,
+            "public_prefix_blocks": 1206,
+            "public_total_blocks": 1226,
+            "private_added": 21,
+            "disconnected": 20,
+            "first_difference": 4291,
+            "age": 98,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 2144,
+            "start_slot": 4288,
+            "release_slot": 4389,
+            "public_prefix_blocks": 1206,
+            "public_total_blocks": 1226,
+            "private_added": 21,
+            "disconnected": 20,
+            "first_difference": 4291,
+            "age": 98,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 3840,
+            "start_slot": 7680,
+            "release_slot": 7747,
+            "public_prefix_blocks": 2246,
+            "public_total_blocks": 2259,
+            "private_added": 13,
+            "disconnected": 13,
+            "first_difference": 7680,
+            "age": 67,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 780,
+            "start_slot": 1560,
+            "release_slot": 1607,
+            "public_prefix_blocks": 443,
+            "public_total_blocks": 456,
+            "private_added": 13,
+            "disconnected": 13,
+            "first_difference": 1560,
+            "age": 47,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 9.501683,
+      "wall_seconds": 15.41618725
+    },
+    {
+      "cell": "b0.10_u0.4_d2.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.4,
+        "h": 0.36000000000000004,
+        "alpha": 0.54,
+        "f": 0.4600000000000001,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.22820869565217383,
+        "reduced_bad": 0.7717913043478262
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        101.0,
+        139.0,
+        151.0,
+        182.10000000000036,
+        289.0
+      ],
+      "max_blocks_quantiles": [
+        20.0,
+        27.0,
+        29.0,
+        35.0,
+        51.0
+      ],
+      "mean_public_growth": 0.2479980977376302,
+      "mean_favorable_starts": 1485.8271484375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 1429,
+            "start_slot": 4287,
+            "release_slot": 4391,
+            "public_prefix_blocks": 1021,
+            "public_total_blocks": 1041,
+            "private_added": 21,
+            "disconnected": 20,
+            "first_difference": 4291,
+            "age": 100,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 1429,
+            "start_slot": 4287,
+            "release_slot": 4391,
+            "public_prefix_blocks": 1021,
+            "public_total_blocks": 1041,
+            "private_added": 21,
+            "disconnected": 20,
+            "first_difference": 4291,
+            "age": 100,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 4227,
+            "start_slot": 12681,
+            "release_slot": 12773,
+            "public_prefix_blocks": 3109,
+            "public_total_blocks": 3128,
+            "private_added": 19,
+            "disconnected": 19,
+            "first_difference": 12681,
+            "age": 92,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 4227,
+            "start_slot": 12681,
+            "release_slot": 12773,
+            "public_prefix_blocks": 3109,
+            "public_total_blocks": 3128,
+            "private_added": 19,
+            "disconnected": 19,
+            "first_difference": 12681,
+            "age": 92,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 7.232187000000001,
+      "wall_seconds": 12.03079875
+    },
+    {
+      "cell": "b0.10_u0.7_d0.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.7,
+        "h": 0.63,
+        "alpha": 0.2700000000000001,
+        "f": 0.73,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.863013698630137,
+        "reduced_bad": 0.136986301369863
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        24.0,
+        31.0,
+        34.0,
+        39.05000000000018,
+        54.0
+      ],
+      "max_blocks_quantiles": [
+        8.0,
+        11.0,
+        12.0,
+        14.0,
+        19.0
+      ],
+      "mean_public_growth": 0.6300942654079861,
+      "mean_favorable_starts": 2399.703369140625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 9839,
+            "start_slot": 9839,
+            "release_slot": 9872,
+            "public_prefix_blocks": 6173,
+            "public_total_blocks": 6184,
+            "private_added": 11,
+            "disconnected": 11,
+            "first_difference": 9839,
+            "age": 33,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 9839,
+            "start_slot": 9839,
+            "release_slot": 9872,
+            "public_prefix_blocks": 6173,
+            "public_total_blocks": 6184,
+            "private_added": 11,
+            "disconnected": 11,
+            "first_difference": 9839,
+            "age": 33,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 7188,
+            "start_slot": 7188,
+            "release_slot": 7215,
+            "public_prefix_blocks": 4491,
+            "public_total_blocks": 4501,
+            "private_added": 11,
+            "disconnected": 10,
+            "first_difference": 7188,
+            "age": 27,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 7188,
+            "start_slot": 7188,
+            "release_slot": 7215,
+            "public_prefix_blocks": 4491,
+            "public_total_blocks": 4501,
+            "private_added": 11,
+            "disconnected": 10,
+            "first_difference": 7188,
+            "age": 27,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 11.776413,
+      "wall_seconds": 27.607402750000002
+    },
+    {
+      "cell": "b0.10_u0.7_d0.5",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.7,
+        "h": 0.63,
+        "alpha": 0.2700000000000001,
+        "f": 0.73,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.863013698630137,
+        "reduced_bad": 0.136986301369863
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        24.0,
+        31.0,
+        34.0,
+        39.05000000000018,
+        54.0
+      ],
+      "max_blocks_quantiles": [
+        8.0,
+        11.0,
+        12.0,
+        14.0,
+        19.0
+      ],
+      "mean_public_growth": 0.6300942654079861,
+      "mean_favorable_starts": 2399.703369140625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 9839,
+            "start_slot": 9839,
+            "release_slot": 9872,
+            "public_prefix_blocks": 6173,
+            "public_total_blocks": 6184,
+            "private_added": 11,
+            "disconnected": 11,
+            "first_difference": 9839,
+            "age": 33,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 9839,
+            "start_slot": 9839,
+            "release_slot": 9872,
+            "public_prefix_blocks": 6173,
+            "public_total_blocks": 6184,
+            "private_added": 11,
+            "disconnected": 11,
+            "first_difference": 9839,
+            "age": 33,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 7188,
+            "start_slot": 7188,
+            "release_slot": 7215,
+            "public_prefix_blocks": 4491,
+            "public_total_blocks": 4501,
+            "private_added": 11,
+            "disconnected": 10,
+            "first_difference": 7188,
+            "age": 27,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 7188,
+            "start_slot": 7188,
+            "release_slot": 7215,
+            "public_prefix_blocks": 4491,
+            "public_total_blocks": 4501,
+            "private_added": 11,
+            "disconnected": 10,
+            "first_difference": 7188,
+            "age": 27,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 11.587860000000001,
+      "wall_seconds": 27.202556082999997
+    },
+    {
+      "cell": "b0.10_u0.7_d1.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.7,
+        "h": 0.63,
+        "alpha": 0.2700000000000001,
+        "f": 0.73,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.23301369863013702,
+        "reduced_bad": 0.766986301369863
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        30.0,
+        40.0,
+        43.0,
+        51.0,
+        71.0
+      ],
+      "max_blocks_quantiles": [
+        10.0,
+        13.0,
+        14.0,
+        16.0,
+        22.0
+      ],
+      "mean_public_growth": 0.43468585544162325,
+      "mean_favorable_starts": 1166.01953125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 4918,
+            "start_slot": 9836,
+            "release_slot": 9887,
+            "public_prefix_blocks": 4286,
+            "public_total_blocks": 4302,
+            "private_added": 16,
+            "disconnected": 16,
+            "first_difference": 9838,
+            "age": 49,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 4918,
+            "start_slot": 9836,
+            "release_slot": 9887,
+            "public_prefix_blocks": 4286,
+            "public_total_blocks": 4302,
+            "private_added": 16,
+            "disconnected": 16,
+            "first_difference": 9838,
+            "age": 49,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 3592,
+            "start_slot": 7184,
+            "release_slot": 7215,
+            "public_prefix_blocks": 3104,
+            "public_total_blocks": 3115,
+            "private_added": 11,
+            "disconnected": 11,
+            "first_difference": 7184,
+            "age": 31,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 3592,
+            "start_slot": 7184,
+            "release_slot": 7215,
+            "public_prefix_blocks": 3104,
+            "public_total_blocks": 3115,
+            "private_added": 11,
+            "disconnected": 11,
+            "first_difference": 7184,
+            "age": 31,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 8.946711,
+      "wall_seconds": 22.004574165999998
+    },
+    {
+      "cell": "b0.10_u0.7_d2.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 0.7,
+        "h": 0.63,
+        "alpha": 0.2700000000000001,
+        "f": 0.73,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.06291369863013699,
+        "reduced_bad": 0.937086301369863
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        41.0,
+        56.0,
+        62.0,
+        76.0,
+        130.0
+      ],
+      "max_blocks_quantiles": [
+        12.0,
+        15.0,
+        17.0,
+        20.0,
+        36.0
+      ],
+      "mean_public_growth": 0.32265328301323787,
+      "mean_favorable_starts": 833.00390625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 3276,
+            "start_slot": 9828,
+            "release_slot": 9887,
+            "public_prefix_blocks": 3155,
+            "public_total_blocks": 3171,
+            "private_added": 16,
+            "disconnected": 16,
+            "first_difference": 9828,
+            "age": 59,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 3276,
+            "start_slot": 9828,
+            "release_slot": 9887,
+            "public_prefix_blocks": 3155,
+            "public_total_blocks": 3171,
+            "private_added": 16,
+            "disconnected": 16,
+            "first_difference": 9828,
+            "age": 59,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 2396,
+            "start_slot": 7188,
+            "release_slot": 7220,
+            "public_prefix_blocks": 2309,
+            "public_total_blocks": 2319,
+            "private_added": 11,
+            "disconnected": 10,
+            "first_difference": 7188,
+            "age": 32,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 2395,
+            "start_slot": 7185,
+            "release_slot": 7217,
+            "public_prefix_blocks": 2308,
+            "public_total_blocks": 2318,
+            "private_added": 11,
+            "disconnected": 10,
+            "first_difference": 7186,
+            "age": 31,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.602587,
+      "wall_seconds": 18.336894042
+    },
+    {
+      "cell": "b0.10_u1.0_d0.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 1.0,
+        "h": 0.9,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.9,
+        "reduced_bad": 0.09999999999999998
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        12.0,
+        15.0,
+        17.0,
+        19.0,
+        35.0
+      ],
+      "max_blocks_quantiles": [
+        6.0,
+        8.0,
+        9.0,
+        10.0,
+        18.0
+      ],
+      "mean_public_growth": 0.9000113593207465,
+      "mean_favorable_starts": 1663.517333984375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 5371,
+            "start_slot": 5371,
+            "release_slot": 5382,
+            "public_prefix_blocks": 4846,
+            "public_total_blocks": 4852,
+            "private_added": 6,
+            "disconnected": 6,
+            "first_difference": 5371,
+            "age": 11,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5371,
+            "start_slot": 5371,
+            "release_slot": 5382,
+            "public_prefix_blocks": 4846,
+            "public_total_blocks": 4852,
+            "private_added": 6,
+            "disconnected": 6,
+            "first_difference": 5371,
+            "age": 11,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 9933,
+            "start_slot": 9933,
+            "release_slot": 9943,
+            "public_prefix_blocks": 8909,
+            "public_total_blocks": 8914,
+            "private_added": 6,
+            "disconnected": 5,
+            "first_difference": 9933,
+            "age": 10,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 1884,
+            "start_slot": 1884,
+            "release_slot": 1893,
+            "public_prefix_blocks": 1694,
+            "public_total_blocks": 1699,
+            "private_added": 5,
+            "disconnected": 5,
+            "first_difference": 1884,
+            "age": 9,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 12.006925,
+      "wall_seconds": 28.204053041
+    },
+    {
+      "cell": "b0.10_u1.0_d0.5",
+      "parameters": {
+        "beta": 0.1,
+        "u": 1.0,
+        "h": 0.9,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.9,
+        "reduced_bad": 0.09999999999999998
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        12.0,
+        15.0,
+        17.0,
+        19.0,
+        35.0
+      ],
+      "max_blocks_quantiles": [
+        6.0,
+        8.0,
+        9.0,
+        10.0,
+        18.0
+      ],
+      "mean_public_growth": 0.9000113593207465,
+      "mean_favorable_starts": 1663.517333984375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 5371,
+            "start_slot": 5371,
+            "release_slot": 5382,
+            "public_prefix_blocks": 4846,
+            "public_total_blocks": 4852,
+            "private_added": 6,
+            "disconnected": 6,
+            "first_difference": 5371,
+            "age": 11,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5371,
+            "start_slot": 5371,
+            "release_slot": 5382,
+            "public_prefix_blocks": 4846,
+            "public_total_blocks": 4852,
+            "private_added": 6,
+            "disconnected": 6,
+            "first_difference": 5371,
+            "age": 11,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 9933,
+            "start_slot": 9933,
+            "release_slot": 9943,
+            "public_prefix_blocks": 8909,
+            "public_total_blocks": 8914,
+            "private_added": 6,
+            "disconnected": 5,
+            "first_difference": 9933,
+            "age": 10,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 1884,
+            "start_slot": 1884,
+            "release_slot": 1893,
+            "public_prefix_blocks": 1694,
+            "public_total_blocks": 1699,
+            "private_added": 5,
+            "disconnected": 5,
+            "first_difference": 1884,
+            "age": 9,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 12.018422,
+      "wall_seconds": 28.26168325
+    },
+    {
+      "cell": "b0.10_u1.0_d1.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 1.0,
+        "h": 0.9,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.0,
+        "reduced_bad": 1.0
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        17.0,
+        23.0,
+        25.0,
+        29.0,
+        45.0
+      ],
+      "max_blocks_quantiles": [
+        7.0,
+        10.0,
+        10.0,
+        12.0,
+        18.0
+      ],
+      "mean_public_growth": 0.5013395012749566,
+      "mean_favorable_starts": 831.351318359375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 3478,
+            "start_slot": 6956,
+            "release_slot": 6975,
+            "public_prefix_blocks": 3485,
+            "public_total_blocks": 3493,
+            "private_added": 8,
+            "disconnected": 8,
+            "first_difference": 6956,
+            "age": 19,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 3478,
+            "start_slot": 6956,
+            "release_slot": 6975,
+            "public_prefix_blocks": 3485,
+            "public_total_blocks": 3493,
+            "private_added": 8,
+            "disconnected": 8,
+            "first_difference": 6956,
+            "age": 19,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 3061,
+            "start_slot": 6122,
+            "release_slot": 6137,
+            "public_prefix_blocks": 3067,
+            "public_total_blocks": 3073,
+            "private_added": 6,
+            "disconnected": 6,
+            "first_difference": 6122,
+            "age": 15,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 3060,
+            "start_slot": 6120,
+            "release_slot": 6135,
+            "public_prefix_blocks": 3066,
+            "public_total_blocks": 3072,
+            "private_added": 6,
+            "disconnected": 6,
+            "first_difference": 6121,
+            "age": 14,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 8.951835,
+      "wall_seconds": 21.986096917
+    },
+    {
+      "cell": "b0.10_u1.0_d2.0",
+      "parameters": {
+        "beta": 0.1,
+        "u": 1.0,
+        "h": 0.9,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.0,
+        "reduced_bad": 1.0
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        0,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        29.0,
+        38.0,
+        41.0,
+        50.0,
+        68.0
+      ],
+      "max_blocks_quantiles": [
+        9.0,
+        12.5,
+        14.0,
+        16.0,
+        22.0
+      ],
+      "mean_public_growth": 0.3455938381618924,
+      "mean_favorable_starts": 593.40478515625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 4559,
+            "start_slot": 13677,
+            "release_slot": 13703,
+            "public_prefix_blocks": 4707,
+            "public_total_blocks": 4716,
+            "private_added": 9,
+            "disconnected": 9,
+            "first_difference": 13677,
+            "age": 26,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 4559,
+            "start_slot": 13677,
+            "release_slot": 13703,
+            "public_prefix_blocks": 4707,
+            "public_total_blocks": 4716,
+            "private_added": 9,
+            "disconnected": 9,
+            "first_difference": 13677,
+            "age": 26,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 1005,
+            "start_slot": 3015,
+            "release_slot": 3041,
+            "public_prefix_blocks": 1036,
+            "public_total_blocks": 1045,
+            "private_added": 9,
+            "disconnected": 9,
+            "first_difference": 3015,
+            "age": 26,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 1005,
+            "start_slot": 3015,
+            "release_slot": 3041,
+            "public_prefix_blocks": 1036,
+            "public_total_blocks": 1045,
+            "private_added": 9,
+            "disconnected": 9,
+            "first_difference": 3015,
+            "age": 26,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 7.706104,
+      "wall_seconds": 18.51676475
+    },
+    {
+      "cell": "b0.20_u0.2_d0.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.2,
+        "h": 0.16000000000000003,
+        "alpha": 0.6400000000000001,
+        "f": 0.36000000000000004,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.4444444444444445,
+        "reduced_bad": 0.5555555555555556
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2304.0,
+        2361.0,
+        2377.0,
+        2412.0,
+        2468.0
+      ],
+      "mean_public_growth": 0.16002037896050347,
+      "mean_favorable_starts": 14374.915771484375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2286,
+            "private_added": 2921,
+            "disconnected": 2286,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2286,
+            "private_added": 2921,
+            "disconnected": 2286,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2293,
+            "private_added": 2900,
+            "disconnected": 2293,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2293,
+            "private_added": 2900,
+            "disconnected": 2293,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 9.696519,
+      "wall_seconds": 10.231779207999999
+    },
+    {
+      "cell": "b0.20_u0.2_d0.5",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.2,
+        "h": 0.16000000000000003,
+        "alpha": 0.6400000000000001,
+        "f": 0.36000000000000004,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.4444444444444445,
+        "reduced_bad": 0.5555555555555556
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2304.0,
+        2361.0,
+        2377.0,
+        2412.0,
+        2468.0
+      ],
+      "mean_public_growth": 0.16002037896050347,
+      "mean_favorable_starts": 14374.915771484375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2286,
+            "private_added": 2921,
+            "disconnected": 2286,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2286,
+            "private_added": 2921,
+            "disconnected": 2286,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2293,
+            "private_added": 2900,
+            "disconnected": 2293,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2293,
+            "private_added": 2900,
+            "disconnected": 2293,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 11.856974,
+      "wall_seconds": 12.845164416000001
+    },
+    {
+      "cell": "b0.20_u0.2_d1.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.2,
+        "h": 0.16000000000000003,
+        "alpha": 0.6400000000000001,
+        "f": 0.36000000000000004,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.28444444444444444,
+        "reduced_bad": 0.7155555555555555
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2123.0,
+        2172.0,
+        2186.0,
+        2216.05,
+        2274.0
+      ],
+      "mean_public_growth": 0.14742146809895834,
+      "mean_favorable_starts": 7189.9658203125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2125,
+            "private_added": 2921,
+            "disconnected": 2125,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2125,
+            "private_added": 2921,
+            "disconnected": 2125,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2122,
+            "private_added": 2900,
+            "disconnected": 2122,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2122,
+            "private_added": 2900,
+            "disconnected": 2122,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 8.949891000000001,
+      "wall_seconds": 9.608210333999999
+    },
+    {
+      "cell": "b0.20_u0.2_d2.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.2,
+        "h": 0.16000000000000003,
+        "alpha": 0.6400000000000001,
+        "f": 0.36000000000000004,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.1820444444444444,
+        "reduced_bad": 0.8179555555555555
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        1960.0,
+        2005.0,
+        2017.0,
+        2045.0,
+        2075.0
+      ],
+      "mean_public_growth": 0.13618138631184895,
+      "mean_favorable_starts": 4794.394287109375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1957,
+            "private_added": 2921,
+            "disconnected": 1957,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1957,
+            "private_added": 2921,
+            "disconnected": 1957,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1960,
+            "private_added": 2900,
+            "disconnected": 1960,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1960,
+            "private_added": 2900,
+            "disconnected": 1960,
+            "first_difference": 4,
+            "age": 14395,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.90504,
+      "wall_seconds": 8.483486000000001
+    },
+    {
+      "cell": "b0.20_u0.4_d0.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.4,
+        "h": 0.32000000000000006,
+        "alpha": 0.48,
+        "f": 0.52,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.6153846153846155,
+        "reduced_bad": 0.38461538461538447
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        312.0,
+        439.0,
+        485.0,
+        605.0,
+        818.0
+      ],
+      "max_blocks_quantiles": [
+        80.0,
+        113.0,
+        125.0,
+        153.0,
+        213.0
+      ],
+      "mean_public_growth": 0.31990210639105904,
+      "mean_favorable_starts": 9401.584228515625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 6428,
+            "start_slot": 6428,
+            "release_slot": 6727,
+            "public_prefix_blocks": 2075,
+            "public_total_blocks": 2147,
+            "private_added": 72,
+            "disconnected": 72,
+            "first_difference": 6434,
+            "age": 293,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 6428,
+            "start_slot": 6428,
+            "release_slot": 6727,
+            "public_prefix_blocks": 2075,
+            "public_total_blocks": 2147,
+            "private_added": 72,
+            "disconnected": 72,
+            "first_difference": 6434,
+            "age": 293,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 5589,
+            "start_slot": 5589,
+            "release_slot": 6143,
+            "public_prefix_blocks": 1790,
+            "public_total_blocks": 1936,
+            "private_added": 146,
+            "disconnected": 146,
+            "first_difference": 5589,
+            "age": 554,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5580,
+            "start_slot": 5580,
+            "release_slot": 6133,
+            "public_prefix_blocks": 1785,
+            "public_total_blocks": 1932,
+            "private_added": 147,
+            "disconnected": 147,
+            "first_difference": 5580,
+            "age": 553,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 9.226682,
+      "wall_seconds": 9.888597375000002
+    },
+    {
+      "cell": "b0.20_u0.4_d0.5",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.4,
+        "h": 0.32000000000000006,
+        "alpha": 0.48,
+        "f": 0.52,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.6153846153846155,
+        "reduced_bad": 0.38461538461538447
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        312.0,
+        439.0,
+        485.0,
+        605.0,
+        818.0
+      ],
+      "max_blocks_quantiles": [
+        80.0,
+        113.0,
+        125.0,
+        153.0,
+        213.0
+      ],
+      "mean_public_growth": 0.31990210639105904,
+      "mean_favorable_starts": 9401.584228515625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 6428,
+            "start_slot": 6428,
+            "release_slot": 6727,
+            "public_prefix_blocks": 2075,
+            "public_total_blocks": 2147,
+            "private_added": 72,
+            "disconnected": 72,
+            "first_difference": 6434,
+            "age": 293,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 6428,
+            "start_slot": 6428,
+            "release_slot": 6727,
+            "public_prefix_blocks": 2075,
+            "public_total_blocks": 2147,
+            "private_added": 72,
+            "disconnected": 72,
+            "first_difference": 6434,
+            "age": 293,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 5589,
+            "start_slot": 5589,
+            "release_slot": 6143,
+            "public_prefix_blocks": 1790,
+            "public_total_blocks": 1936,
+            "private_added": 146,
+            "disconnected": 146,
+            "first_difference": 5589,
+            "age": 554,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5580,
+            "start_slot": 5580,
+            "release_slot": 6133,
+            "public_prefix_blocks": 1785,
+            "public_total_blocks": 1932,
+            "private_added": 147,
+            "disconnected": 147,
+            "first_difference": 5580,
+            "age": 553,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 11.528287,
+      "wall_seconds": 12.559263042
+    },
+    {
+      "cell": "b0.20_u0.4_d1.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.4,
+        "h": 0.32000000000000006,
+        "alpha": 0.48,
+        "f": 0.52,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.29538461538461547,
+        "reduced_bad": 0.7046153846153845
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        587.0,
+        849.0,
+        959.25,
+        1187.300000000001,
+        1804.0
+      ],
+      "max_blocks_quantiles": [
+        141.0,
+        204.0,
+        231.0,
+        285.0500000000002,
+        433.0
+      ],
+      "mean_public_growth": 0.2695141262478299,
+      "mean_favorable_starts": 5128.659912109375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 4266,
+            "start_slot": 8532,
+            "release_slot": 9131,
+            "public_prefix_blocks": 2322,
+            "public_total_blocks": 2469,
+            "private_added": 148,
+            "disconnected": 147,
+            "first_difference": 8532,
+            "age": 599,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 4266,
+            "start_slot": 8532,
+            "release_slot": 9131,
+            "public_prefix_blocks": 2322,
+            "public_total_blocks": 2469,
+            "private_added": 148,
+            "disconnected": 147,
+            "first_difference": 8532,
+            "age": 599,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 2656,
+            "start_slot": 5312,
+            "release_slot": 6165,
+            "public_prefix_blocks": 1424,
+            "public_total_blocks": 1631,
+            "private_added": 207,
+            "disconnected": 207,
+            "first_difference": 5312,
+            "age": 853,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 2656,
+            "start_slot": 5312,
+            "release_slot": 6165,
+            "public_prefix_blocks": 1424,
+            "public_total_blocks": 1631,
+            "private_added": 207,
+            "disconnected": 207,
+            "first_difference": 5312,
+            "age": 853,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 7.656496000000001,
+      "wall_seconds": 8.384072709
+    },
+    {
+      "cell": "b0.20_u0.4_d2.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.4,
+        "h": 0.32000000000000006,
+        "alpha": 0.48,
+        "f": 0.52,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.14178461538461543,
+        "reduced_bad": 0.8582153846153846
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        1672.0,
+        2702.0,
+        3093.25,
+        3982.0,
+        7512.0
+      ],
+      "max_blocks_quantiles": [
+        368.0,
+        594.0,
+        681.25,
+        872.2500000000009,
+        1612.0
+      ],
+      "mean_public_growth": 0.23008224487304688,
+      "mean_favorable_starts": 3942.899658203125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 1683,
+            "start_slot": 5049,
+            "release_slot": 6872,
+            "public_prefix_blocks": 1187,
+            "public_total_blocks": 1584,
+            "private_added": 398,
+            "disconnected": 397,
+            "first_difference": 5049,
+            "age": 1823,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 1683,
+            "start_slot": 5049,
+            "release_slot": 6872,
+            "public_prefix_blocks": 1187,
+            "public_total_blocks": 1584,
+            "private_added": 398,
+            "disconnected": 397,
+            "first_difference": 5049,
+            "age": 1823,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 1302,
+            "start_slot": 3906,
+            "release_slot": 6131,
+            "public_prefix_blocks": 889,
+            "public_total_blocks": 1374,
+            "private_added": 486,
+            "disconnected": 485,
+            "first_difference": 3908,
+            "age": 2223,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 1302,
+            "start_slot": 3906,
+            "release_slot": 6131,
+            "public_prefix_blocks": 889,
+            "public_total_blocks": 1374,
+            "private_added": 486,
+            "disconnected": 485,
+            "first_difference": 3908,
+            "age": 2223,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.869489,
+      "wall_seconds": 8.615458041
+    },
+    {
+      "cell": "b0.20_u0.7_d0.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.7,
+        "h": 0.5599999999999999,
+        "alpha": 0.24000000000000005,
+        "f": 0.76,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.7368421052631579,
+        "reduced_bad": 0.26315789473684215
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        61.0,
+        79.0,
+        86.0,
+        104.0,
+        137.0
+      ],
+      "max_blocks_quantiles": [
+        23.0,
+        30.0,
+        32.0,
+        39.0,
+        50.0
+      ],
+      "mean_public_growth": 0.5599908955891927,
+      "mean_favorable_starts": 5464.009033203125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 5375,
+            "start_slot": 5375,
+            "release_slot": 5435,
+            "public_prefix_blocks": 3029,
+            "public_total_blocks": 3052,
+            "private_added": 23,
+            "disconnected": 23,
+            "first_difference": 5375,
+            "age": 60,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5374,
+            "start_slot": 5374,
+            "release_slot": 5432,
+            "public_prefix_blocks": 3028,
+            "public_total_blocks": 3051,
+            "private_added": 23,
+            "disconnected": 23,
+            "first_difference": 5374,
+            "age": 58,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 11874,
+            "start_slot": 11874,
+            "release_slot": 11941,
+            "public_prefix_blocks": 6585,
+            "public_total_blocks": 6606,
+            "private_added": 21,
+            "disconnected": 21,
+            "first_difference": 11874,
+            "age": 67,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 7471,
+            "start_slot": 7471,
+            "release_slot": 7523,
+            "public_prefix_blocks": 4204,
+            "public_total_blocks": 4225,
+            "private_added": 21,
+            "disconnected": 21,
+            "first_difference": 7471,
+            "age": 52,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 12.30297,
+      "wall_seconds": 14.433677584
+    },
+    {
+      "cell": "b0.20_u0.7_d0.5",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.7,
+        "h": 0.5599999999999999,
+        "alpha": 0.24000000000000005,
+        "f": 0.76,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.7368421052631579,
+        "reduced_bad": 0.26315789473684215
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        61.0,
+        79.0,
+        86.0,
+        104.0,
+        137.0
+      ],
+      "max_blocks_quantiles": [
+        23.0,
+        30.0,
+        32.0,
+        39.0,
+        50.0
+      ],
+      "mean_public_growth": 0.5599908955891927,
+      "mean_favorable_starts": 5464.009033203125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 5375,
+            "start_slot": 5375,
+            "release_slot": 5435,
+            "public_prefix_blocks": 3029,
+            "public_total_blocks": 3052,
+            "private_added": 23,
+            "disconnected": 23,
+            "first_difference": 5375,
+            "age": 60,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5374,
+            "start_slot": 5374,
+            "release_slot": 5432,
+            "public_prefix_blocks": 3028,
+            "public_total_blocks": 3051,
+            "private_added": 23,
+            "disconnected": 23,
+            "first_difference": 5374,
+            "age": 58,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 11874,
+            "start_slot": 11874,
+            "release_slot": 11941,
+            "public_prefix_blocks": 6585,
+            "public_total_blocks": 6606,
+            "private_added": 21,
+            "disconnected": 21,
+            "first_difference": 11874,
+            "age": 67,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 7471,
+            "start_slot": 7471,
+            "release_slot": 7523,
+            "public_prefix_blocks": 4204,
+            "public_total_blocks": 4225,
+            "private_added": 21,
+            "disconnected": 21,
+            "first_difference": 7471,
+            "age": 52,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 12.578145,
+      "wall_seconds": 14.402032875000002
+    },
+    {
+      "cell": "b0.20_u0.7_d1.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.7,
+        "h": 0.5599999999999999,
+        "alpha": 0.24000000000000005,
+        "f": 0.76,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.17684210526315788,
+        "reduced_bad": 0.8231578947368421
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        99.0,
+        133.0,
+        145.0,
+        173.05000000000018,
+        225.0
+      ],
+      "max_blocks_quantiles": [
+        33.0,
+        44.0,
+        48.0,
+        58.0,
+        75.0
+      ],
+      "mean_public_growth": 0.4056534491644965,
+      "mean_favorable_starts": 2873.79833984375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 2672,
+            "start_slot": 5344,
+            "release_slot": 5435,
+            "public_prefix_blocks": 2188,
+            "public_total_blocks": 2216,
+            "private_added": 29,
+            "disconnected": 28,
+            "first_difference": 5344,
+            "age": 91,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 2672,
+            "start_slot": 5344,
+            "release_slot": 5435,
+            "public_prefix_blocks": 2188,
+            "public_total_blocks": 2216,
+            "private_added": 29,
+            "disconnected": 28,
+            "first_difference": 5344,
+            "age": 91,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 5078,
+            "start_slot": 10156,
+            "release_slot": 10257,
+            "public_prefix_blocks": 4100,
+            "public_total_blocks": 4133,
+            "private_added": 33,
+            "disconnected": 33,
+            "first_difference": 10156,
+            "age": 101,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5078,
+            "start_slot": 10156,
+            "release_slot": 10257,
+            "public_prefix_blocks": 4100,
+            "public_total_blocks": 4133,
+            "private_added": 33,
+            "disconnected": 33,
+            "first_difference": 10156,
+            "age": 101,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 8.875738,
+      "wall_seconds": 10.164498167
+    },
+    {
+      "cell": "b0.20_u0.7_d2.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 0.7,
+        "h": 0.5599999999999999,
+        "alpha": 0.24000000000000005,
+        "f": 0.76,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.04244210526315789,
+        "reduced_bad": 0.9575578947368422
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        203.0,
+        280.0,
+        311.0,
+        380.0,
+        725.0
+      ],
+      "max_blocks_quantiles": [
+        58.0,
+        80.0,
+        88.25,
+        110.0,
+        209.0
+      ],
+      "mean_public_growth": 0.3098476155598958,
+      "mean_favorable_starts": 2283.8359375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 1025,
+            "start_slot": 3075,
+            "release_slot": 3242,
+            "public_prefix_blocks": 964,
+            "public_total_blocks": 1009,
+            "private_added": 45,
+            "disconnected": 45,
+            "first_difference": 3075,
+            "age": 167,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 4353,
+            "start_slot": 13059,
+            "release_slot": 13217,
+            "public_prefix_blocks": 4068,
+            "public_total_blocks": 4114,
+            "private_added": 46,
+            "disconnected": 46,
+            "first_difference": 13059,
+            "age": 158,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 2487,
+            "start_slot": 7461,
+            "release_slot": 7625,
+            "public_prefix_blocks": 2320,
+            "public_total_blocks": 2368,
+            "private_added": 48,
+            "disconnected": 48,
+            "first_difference": 7461,
+            "age": 164,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 2486,
+            "start_slot": 7458,
+            "release_slot": 7622,
+            "public_prefix_blocks": 2319,
+            "public_total_blocks": 2367,
+            "private_added": 48,
+            "disconnected": 48,
+            "first_difference": 7460,
+            "age": 162,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 7.263327,
+      "wall_seconds": 8.205277417000001
+    },
+    {
+      "cell": "b0.20_u1.0_d0.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 1.0,
+        "h": 0.8,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.8,
+        "reduced_bad": 0.19999999999999996
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        27.0,
+        36.0,
+        39.0,
+        45.0,
+        57.0
+      ],
+      "max_blocks_quantiles": [
+        14.0,
+        18.0,
+        20.0,
+        23.0,
+        29.0
+      ],
+      "mean_public_growth": 0.8000400627983941,
+      "mean_favorable_starts": 3814.48291015625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 1053,
+            "start_slot": 1053,
+            "release_slot": 1080,
+            "public_prefix_blocks": 862,
+            "public_total_blocks": 876,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 1053,
+            "age": 27,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 1053,
+            "start_slot": 1053,
+            "release_slot": 1080,
+            "public_prefix_blocks": 862,
+            "public_total_blocks": 876,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 1053,
+            "age": 27,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 10538,
+            "start_slot": 10538,
+            "release_slot": 10565,
+            "public_prefix_blocks": 8422,
+            "public_total_blocks": 8436,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 10538,
+            "age": 27,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 10538,
+            "start_slot": 10538,
+            "release_slot": 10565,
+            "public_prefix_blocks": 8422,
+            "public_total_blocks": 8436,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 10538,
+            "age": 27,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 12.165425,
+      "wall_seconds": 15.074452083
+    },
+    {
+      "cell": "b0.20_u1.0_d0.5",
+      "parameters": {
+        "beta": 0.2,
+        "u": 1.0,
+        "h": 0.8,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.8,
+        "reduced_bad": 0.19999999999999996
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        27.0,
+        36.0,
+        39.0,
+        45.0,
+        57.0
+      ],
+      "max_blocks_quantiles": [
+        14.0,
+        18.0,
+        20.0,
+        23.0,
+        29.0
+      ],
+      "mean_public_growth": 0.8000400627983941,
+      "mean_favorable_starts": 3814.48291015625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 1053,
+            "start_slot": 1053,
+            "release_slot": 1080,
+            "public_prefix_blocks": 862,
+            "public_total_blocks": 876,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 1053,
+            "age": 27,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 1053,
+            "start_slot": 1053,
+            "release_slot": 1080,
+            "public_prefix_blocks": 862,
+            "public_total_blocks": 876,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 1053,
+            "age": 27,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 10538,
+            "start_slot": 10538,
+            "release_slot": 10565,
+            "public_prefix_blocks": 8422,
+            "public_total_blocks": 8436,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 10538,
+            "age": 27,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 10538,
+            "start_slot": 10538,
+            "release_slot": 10565,
+            "public_prefix_blocks": 8422,
+            "public_total_blocks": 8436,
+            "private_added": 14,
+            "disconnected": 14,
+            "first_difference": 10538,
+            "age": 27,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.316056,
+      "wall_seconds": 11.865129
+    },
+    {
+      "cell": "b0.20_u1.0_d1.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 1.0,
+        "h": 0.8,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.0,
+        "reduced_bad": 1.0
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        49.0,
+        63.0,
+        69.0,
+        85.0,
+        147.0
+      ],
+      "max_blocks_quantiles": [
+        20.0,
+        26.0,
+        29.0,
+        35.0,
+        61.0
+      ],
+      "mean_public_growth": 0.48501195271809894,
+      "mean_favorable_starts": 1983.19580078125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 526,
+            "start_slot": 1052,
+            "release_slot": 1115,
+            "public_prefix_blocks": 506,
+            "public_total_blocks": 532,
+            "private_added": 26,
+            "disconnected": 26,
+            "first_difference": 1052,
+            "age": 63,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 526,
+            "start_slot": 1052,
+            "release_slot": 1115,
+            "public_prefix_blocks": 506,
+            "public_total_blocks": 532,
+            "private_added": 26,
+            "disconnected": 26,
+            "first_difference": 1052,
+            "age": 63,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 5263,
+            "start_slot": 10526,
+            "release_slot": 10579,
+            "public_prefix_blocks": 5100,
+            "public_total_blocks": 5121,
+            "private_added": 21,
+            "disconnected": 21,
+            "first_difference": 10526,
+            "age": 53,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5263,
+            "start_slot": 10526,
+            "release_slot": 10579,
+            "public_prefix_blocks": 5100,
+            "public_total_blocks": 5121,
+            "private_added": 21,
+            "disconnected": 21,
+            "first_difference": 10526,
+            "age": 53,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 9.44256,
+      "wall_seconds": 11.092293333999999
+    },
+    {
+      "cell": "b0.20_u1.0_d2.0",
+      "parameters": {
+        "beta": 0.2,
+        "u": 1.0,
+        "h": 0.8,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.0,
+        "reduced_bad": 1.0
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        1,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        113.0,
+        155.0,
+        169.0,
+        206.0,
+        266.0
+      ],
+      "max_blocks_quantiles": [
+        37.0,
+        50.0,
+        54.0,
+        67.0,
+        87.0
+      ],
+      "mean_public_growth": 0.340624033610026,
+      "mean_favorable_starts": 1655.242431640625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 324,
+            "start_slot": 972,
+            "release_slot": 1124,
+            "public_prefix_blocks": 333,
+            "public_total_blocks": 381,
+            "private_added": 48,
+            "disconnected": 48,
+            "first_difference": 973,
+            "age": 151,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 324,
+            "start_slot": 972,
+            "release_slot": 1124,
+            "public_prefix_blocks": 333,
+            "public_total_blocks": 381,
+            "private_added": 48,
+            "disconnected": 48,
+            "first_difference": 973,
+            "age": 151,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 2906,
+            "start_slot": 8718,
+            "release_slot": 8825,
+            "public_prefix_blocks": 2955,
+            "public_total_blocks": 2990,
+            "private_added": 35,
+            "disconnected": 35,
+            "first_difference": 8718,
+            "age": 107,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 2906,
+            "start_slot": 8718,
+            "release_slot": 8825,
+            "public_prefix_blocks": 2955,
+            "public_total_blocks": 2990,
+            "private_added": 35,
+            "disconnected": 35,
+            "first_difference": 8718,
+            "age": 107,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 8.248515,
+      "wall_seconds": 9.802733250000001
+    },
+    {
+      "cell": "b0.25_u0.2_d0.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.2,
+        "h": 0.15000000000000002,
+        "alpha": 0.6000000000000001,
+        "f": 0.4,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.37500000000000006,
+        "reduced_bad": 0.625
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2161.0,
+        2215.0,
+        2231.0,
+        2263.0,
+        2305.0
+      ],
+      "mean_public_growth": 0.15004457261827256,
+      "mean_favorable_starts": 14387.5361328125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2110,
+            "private_added": 3624,
+            "disconnected": 2110,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2110,
+            "private_added": 3624,
+            "disconnected": 2110,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2134,
+            "private_added": 3580,
+            "disconnected": 2134,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2134,
+            "private_added": 3580,
+            "disconnected": 2134,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 10.512054,
+      "wall_seconds": 11.072930375
+    },
+    {
+      "cell": "b0.25_u0.2_d0.5",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.2,
+        "h": 0.15000000000000002,
+        "alpha": 0.6000000000000001,
+        "f": 0.4,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.37500000000000006,
+        "reduced_bad": 0.625
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2161.0,
+        2215.0,
+        2231.0,
+        2263.0,
+        2305.0
+      ],
+      "mean_public_growth": 0.15004457261827256,
+      "mean_favorable_starts": 14387.5361328125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2110,
+            "private_added": 3624,
+            "disconnected": 2110,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2110,
+            "private_added": 3624,
+            "disconnected": 2110,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2134,
+            "private_added": 3580,
+            "disconnected": 2134,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2134,
+            "private_added": 3580,
+            "disconnected": 2134,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 10.591669,
+      "wall_seconds": 11.222159917
+    },
+    {
+      "cell": "b0.25_u0.2_d1.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.2,
+        "h": 0.15000000000000002,
+        "alpha": 0.6000000000000001,
+        "f": 0.4,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.22500000000000003,
+        "reduced_bad": 0.7749999999999999
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2001.0,
+        2050.0,
+        2064.0,
+        2091.0,
+        2146.0
+      ],
+      "mean_public_growth": 0.1389664035373264,
+      "mean_favorable_starts": 7194.31298828125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1972,
+            "private_added": 3624,
+            "disconnected": 1972,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1972,
+            "private_added": 3624,
+            "disconnected": 1972,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1985,
+            "private_added": 3580,
+            "disconnected": 1985,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1985,
+            "private_added": 3580,
+            "disconnected": 1985,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 8.17749,
+      "wall_seconds": 8.634841083
+    },
+    {
+      "cell": "b0.25_u0.2_d2.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.2,
+        "h": 0.15000000000000002,
+        "alpha": 0.6000000000000001,
+        "f": 0.4,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.135,
+        "reduced_bad": 0.865
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        1857.5,
+        1901.0,
+        1914.0,
+        1941.0,
+        1975.0
+      ],
+      "mean_public_growth": 0.12901531643337674,
+      "mean_favorable_starts": 4796.564453125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1823,
+            "private_added": 3624,
+            "disconnected": 1823,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1823,
+            "private_added": 3624,
+            "disconnected": 1823,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1844,
+            "private_added": 3580,
+            "disconnected": 1844,
+            "first_difference": 2,
+            "age": 14397,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1844,
+            "private_added": 3580,
+            "disconnected": 1844,
+            "first_difference": 2,
+            "age": 14397,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.02599,
+      "wall_seconds": 7.403645166
+    },
+    {
+      "cell": "b0.25_u0.4_d0.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.4,
+        "h": 0.30000000000000004,
+        "alpha": 0.44999999999999996,
+        "f": 0.55,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.5454545454545455,
+        "reduced_bad": 0.4545454545454545
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        1273.0,
+        1977.0,
+        2267.75,
+        2987.05,
+        4820.0
+      ],
+      "max_blocks_quantiles": [
+        350.5,
+        544.5,
+        623.25,
+        813.1000000000004,
+        1333.0
+      ],
+      "mean_public_growth": 0.29999559190538194,
+      "mean_favorable_starts": 12231.3857421875,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 2254,
+            "start_slot": 2254,
+            "release_slot": 3128,
+            "public_prefix_blocks": 694,
+            "public_total_blocks": 934,
+            "private_added": 241,
+            "disconnected": 240,
+            "first_difference": 2254,
+            "age": 874,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 2250,
+            "start_slot": 2250,
+            "release_slot": 3119,
+            "public_prefix_blocks": 691,
+            "public_total_blocks": 932,
+            "private_added": 241,
+            "disconnected": 241,
+            "first_difference": 2251,
+            "age": 868,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 8611,
+            "start_slot": 8611,
+            "release_slot": 10149,
+            "public_prefix_blocks": 2551,
+            "public_total_blocks": 2968,
+            "private_added": 417,
+            "disconnected": 417,
+            "first_difference": 8611,
+            "age": 1538,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 8611,
+            "start_slot": 8611,
+            "release_slot": 10149,
+            "public_prefix_blocks": 2551,
+            "public_total_blocks": 2968,
+            "private_added": 417,
+            "disconnected": 417,
+            "first_difference": 8611,
+            "age": 1538,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.706718,
+      "wall_seconds": 11.508864083
+    },
+    {
+      "cell": "b0.25_u0.4_d0.5",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.4,
+        "h": 0.30000000000000004,
+        "alpha": 0.44999999999999996,
+        "f": 0.55,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.5454545454545455,
+        "reduced_bad": 0.4545454545454545
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        1273.0,
+        1977.0,
+        2267.75,
+        2987.05,
+        4820.0
+      ],
+      "max_blocks_quantiles": [
+        350.5,
+        544.5,
+        623.25,
+        813.1000000000004,
+        1333.0
+      ],
+      "mean_public_growth": 0.29999559190538194,
+      "mean_favorable_starts": 12231.3857421875,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 2254,
+            "start_slot": 2254,
+            "release_slot": 3128,
+            "public_prefix_blocks": 694,
+            "public_total_blocks": 934,
+            "private_added": 241,
+            "disconnected": 240,
+            "first_difference": 2254,
+            "age": 874,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 2250,
+            "start_slot": 2250,
+            "release_slot": 3119,
+            "public_prefix_blocks": 691,
+            "public_total_blocks": 932,
+            "private_added": 241,
+            "disconnected": 241,
+            "first_difference": 2251,
+            "age": 868,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 8611,
+            "start_slot": 8611,
+            "release_slot": 10149,
+            "public_prefix_blocks": 2551,
+            "public_total_blocks": 2968,
+            "private_added": 417,
+            "disconnected": 417,
+            "first_difference": 8611,
+            "age": 1538,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 8611,
+            "start_slot": 8611,
+            "release_slot": 10149,
+            "public_prefix_blocks": 2551,
+            "public_total_blocks": 2968,
+            "private_added": 417,
+            "disconnected": 417,
+            "first_difference": 8611,
+            "age": 1538,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.505316,
+      "wall_seconds": 11.29646
+    },
+    {
+      "cell": "b0.25_u0.4_d1.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.4,
+        "h": 0.30000000000000004,
+        "alpha": 0.44999999999999996,
+        "f": 0.55,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.24545454545454545,
+        "reduced_bad": 0.7545454545454545
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        9873.0,
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2501.0,
+        3627.0,
+        3647.0,
+        3676.0,
+        3716.0
+      ],
+      "mean_public_growth": 0.2556976318359375,
+      "mean_favorable_starts": 6945.738037109375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 2974,
+            "start_slot": 5948,
+            "release_slot": 11859,
+            "public_prefix_blocks": 1570,
+            "public_total_blocks": 3070,
+            "private_added": 1500,
+            "disconnected": 1500,
+            "first_difference": 5948,
+            "age": 5911,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 2974,
+            "start_slot": 5948,
+            "release_slot": 11859,
+            "public_prefix_blocks": 1570,
+            "public_total_blocks": 3070,
+            "private_added": 1500,
+            "disconnected": 1500,
+            "first_difference": 5948,
+            "age": 5911,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3669,
+            "private_added": 3704,
+            "disconnected": 3669,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3669,
+            "private_added": 3704,
+            "disconnected": 3669,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 8.838859999999999,
+      "wall_seconds": 9.647032417
+    },
+    {
+      "cell": "b0.25_u0.4_d2.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.4,
+        "h": 0.30000000000000004,
+        "alpha": 0.44999999999999996,
+        "f": 0.55,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.11045454545454544,
+        "reduced_bad": 0.8895454545454545
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        3174.0,
+        3218.0,
+        3229.0,
+        3248.05,
+        3300.0
+      ],
+      "mean_public_growth": 0.22042512681749132,
+      "mean_favorable_starts": 4788.869384765625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3221,
+            "private_added": 3544,
+            "disconnected": 3221,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3221,
+            "private_added": 3544,
+            "disconnected": 3221,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3175,
+            "private_added": 3704,
+            "disconnected": 3175,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3175,
+            "private_added": 3704,
+            "disconnected": 3175,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.7975710000000005,
+      "wall_seconds": 8.482062041
+    },
+    {
+      "cell": "b0.25_u0.7_d0.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.7,
+        "h": 0.5249999999999999,
+        "alpha": 0.22500000000000003,
+        "f": 0.7749999999999999,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.6774193548387096,
+        "reduced_bad": 0.32258064516129037
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        105.0,
+        138.5,
+        152.0,
+        182.0,
+        274.0
+      ],
+      "max_blocks_quantiles": [
+        41.0,
+        53.0,
+        59.0,
+        70.0,
+        105.0
+      ],
+      "mean_public_growth": 0.5250268046061198,
+      "mean_favorable_starts": 7246.73876953125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 12089,
+            "start_slot": 12089,
+            "release_slot": 12169,
+            "public_prefix_blocks": 6435,
+            "public_total_blocks": 6469,
+            "private_added": 34,
+            "disconnected": 34,
+            "first_difference": 12090,
+            "age": 79,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 12089,
+            "start_slot": 12089,
+            "release_slot": 12169,
+            "public_prefix_blocks": 6435,
+            "public_total_blocks": 6469,
+            "private_added": 34,
+            "disconnected": 34,
+            "first_difference": 12090,
+            "age": 79,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 4920,
+            "start_slot": 4920,
+            "release_slot": 5031,
+            "public_prefix_blocks": 2585,
+            "public_total_blocks": 2627,
+            "private_added": 43,
+            "disconnected": 42,
+            "first_difference": 4920,
+            "age": 111,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 4920,
+            "start_slot": 4920,
+            "release_slot": 5031,
+            "public_prefix_blocks": 2585,
+            "public_total_blocks": 2627,
+            "private_added": 43,
+            "disconnected": 42,
+            "first_difference": 4920,
+            "age": 111,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 11.024709,
+      "wall_seconds": 11.755839
+    },
+    {
+      "cell": "b0.25_u0.7_d0.5",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.7,
+        "h": 0.5249999999999999,
+        "alpha": 0.22500000000000003,
+        "f": 0.7749999999999999,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.6774193548387096,
+        "reduced_bad": 0.32258064516129037
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        105.0,
+        138.5,
+        152.0,
+        182.0,
+        274.0
+      ],
+      "max_blocks_quantiles": [
+        41.0,
+        53.0,
+        59.0,
+        70.0,
+        105.0
+      ],
+      "mean_public_growth": 0.5250268046061198,
+      "mean_favorable_starts": 7246.73876953125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 12089,
+            "start_slot": 12089,
+            "release_slot": 12169,
+            "public_prefix_blocks": 6435,
+            "public_total_blocks": 6469,
+            "private_added": 34,
+            "disconnected": 34,
+            "first_difference": 12090,
+            "age": 79,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 12089,
+            "start_slot": 12089,
+            "release_slot": 12169,
+            "public_prefix_blocks": 6435,
+            "public_total_blocks": 6469,
+            "private_added": 34,
+            "disconnected": 34,
+            "first_difference": 12090,
+            "age": 79,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 4920,
+            "start_slot": 4920,
+            "release_slot": 5031,
+            "public_prefix_blocks": 2585,
+            "public_total_blocks": 2627,
+            "private_added": 43,
+            "disconnected": 42,
+            "first_difference": 4920,
+            "age": 111,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 4920,
+            "start_slot": 4920,
+            "release_slot": 5031,
+            "public_prefix_blocks": 2585,
+            "public_total_blocks": 2627,
+            "private_added": 43,
+            "disconnected": 42,
+            "first_difference": 4920,
+            "age": 111,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 10.991729,
+      "wall_seconds": 11.773131292
+    },
+    {
+      "cell": "b0.25_u0.7_d1.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.7,
+        "h": 0.5249999999999999,
+        "alpha": 0.22500000000000003,
+        "f": 0.7749999999999999,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.15241935483870972,
+        "reduced_bad": 0.8475806451612903
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        211.0,
+        290.0,
+        318.0,
+        399.0,
+        563.0
+      ],
+      "max_blocks_quantiles": [
+        72.0,
+        98.0,
+        109.0,
+        132.05000000000018,
+        193.0
+      ],
+      "mean_public_growth": 0.38933773464626736,
+      "mean_favorable_starts": 4001.433837890625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 6974,
+            "start_slot": 13948,
+            "release_slot": 14083,
+            "public_prefix_blocks": 5488,
+            "public_total_blocks": 5538,
+            "private_added": 50,
+            "disconnected": 50,
+            "first_difference": 13948,
+            "age": 135,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 6974,
+            "start_slot": 13948,
+            "release_slot": 14083,
+            "public_prefix_blocks": 5488,
+            "public_total_blocks": 5538,
+            "private_added": 50,
+            "disconnected": 50,
+            "first_difference": 13948,
+            "age": 135,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 2396,
+            "start_slot": 4792,
+            "release_slot": 5143,
+            "public_prefix_blocks": 1877,
+            "public_total_blocks": 1991,
+            "private_added": 115,
+            "disconnected": 114,
+            "first_difference": 4792,
+            "age": 351,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 2396,
+            "start_slot": 4792,
+            "release_slot": 5143,
+            "public_prefix_blocks": 1877,
+            "public_total_blocks": 1991,
+            "private_added": 115,
+            "disconnected": 114,
+            "first_difference": 4792,
+            "age": 351,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 8.133689,
+      "wall_seconds": 8.602223375000001
+    },
+    {
+      "cell": "b0.25_u0.7_d2.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 0.7,
+        "h": 0.5249999999999999,
+        "alpha": 0.22500000000000003,
+        "f": 0.7749999999999999,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.0342943548387097,
+        "reduced_bad": 0.9657056451612903
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        760.0,
+        1124.0,
+        1268.0,
+        1614.250000000001,
+        2201.0
+      ],
+      "max_blocks_quantiles": [
+        220.0,
+        325.5,
+        366.0,
+        468.2000000000007,
+        635.0
+      ],
+      "mean_public_growth": 0.301899905734592,
+      "mean_favorable_starts": 3419.251220703125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 2141,
+            "start_slot": 6423,
+            "release_slot": 6893,
+            "public_prefix_blocks": 1970,
+            "public_total_blocks": 2102,
+            "private_added": 132,
+            "disconnected": 132,
+            "first_difference": 6424,
+            "age": 469,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 4139,
+            "start_slot": 12417,
+            "release_slot": 12878,
+            "public_prefix_blocks": 3779,
+            "public_total_blocks": 3914,
+            "private_added": 135,
+            "disconnected": 135,
+            "first_difference": 12418,
+            "age": 460,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 3595,
+            "start_slot": 10785,
+            "release_slot": 11423,
+            "public_prefix_blocks": 3285,
+            "public_total_blocks": 3464,
+            "private_added": 180,
+            "disconnected": 179,
+            "first_difference": 10785,
+            "age": 638,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 3595,
+            "start_slot": 10785,
+            "release_slot": 11423,
+            "public_prefix_blocks": 3285,
+            "public_total_blocks": 3464,
+            "private_added": 180,
+            "disconnected": 179,
+            "first_difference": 10785,
+            "age": 638,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.066924,
+      "wall_seconds": 7.438589917
+    },
+    {
+      "cell": "b0.25_u1.0_d0.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 1.0,
+        "h": 0.75,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.75,
+        "reduced_bad": 0.25
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        42.0,
+        55.0,
+        59.0,
+        71.0,
+        99.0
+      ],
+      "max_blocks_quantiles": [
+        21.0,
+        28.0,
+        30.0,
+        36.0,
+        50.0
+      ],
+      "mean_public_growth": 0.750030025906033,
+      "mean_favorable_starts": 5098.490966796875,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 9117,
+            "start_slot": 9117,
+            "release_slot": 9160,
+            "public_prefix_blocks": 6777,
+            "public_total_blocks": 6799,
+            "private_added": 22,
+            "disconnected": 22,
+            "first_difference": 9117,
+            "age": 43,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 9117,
+            "start_slot": 9117,
+            "release_slot": 9160,
+            "public_prefix_blocks": 6777,
+            "public_total_blocks": 6799,
+            "private_added": 22,
+            "disconnected": 22,
+            "first_difference": 9117,
+            "age": 43,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 5123,
+            "start_slot": 5123,
+            "release_slot": 5166,
+            "public_prefix_blocks": 3841,
+            "public_total_blocks": 3863,
+            "private_added": 22,
+            "disconnected": 22,
+            "first_difference": 5123,
+            "age": 43,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5123,
+            "start_slot": 5123,
+            "release_slot": 5166,
+            "public_prefix_blocks": 3841,
+            "public_total_blocks": 3863,
+            "private_added": 22,
+            "disconnected": 22,
+            "first_difference": 5123,
+            "age": 43,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 11.295743,
+      "wall_seconds": 11.9353715
+    },
+    {
+      "cell": "b0.25_u1.0_d0.5",
+      "parameters": {
+        "beta": 0.25,
+        "u": 1.0,
+        "h": 0.75,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.75,
+        "reduced_bad": 0.25
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        42.0,
+        55.0,
+        59.0,
+        71.0,
+        99.0
+      ],
+      "max_blocks_quantiles": [
+        21.0,
+        28.0,
+        30.0,
+        36.0,
+        50.0
+      ],
+      "mean_public_growth": 0.750030025906033,
+      "mean_favorable_starts": 5098.490966796875,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 9117,
+            "start_slot": 9117,
+            "release_slot": 9160,
+            "public_prefix_blocks": 6777,
+            "public_total_blocks": 6799,
+            "private_added": 22,
+            "disconnected": 22,
+            "first_difference": 9117,
+            "age": 43,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 9117,
+            "start_slot": 9117,
+            "release_slot": 9160,
+            "public_prefix_blocks": 6777,
+            "public_total_blocks": 6799,
+            "private_added": 22,
+            "disconnected": 22,
+            "first_difference": 9117,
+            "age": 43,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 5123,
+            "start_slot": 5123,
+            "release_slot": 5166,
+            "public_prefix_blocks": 3841,
+            "public_total_blocks": 3863,
+            "private_added": 22,
+            "disconnected": 22,
+            "first_difference": 5123,
+            "age": 43,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5123,
+            "start_slot": 5123,
+            "release_slot": 5166,
+            "public_prefix_blocks": 3841,
+            "public_total_blocks": 3863,
+            "private_added": 22,
+            "disconnected": 22,
+            "first_difference": 5123,
+            "age": 43,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 11.042682999999998,
+      "wall_seconds": 11.679132542000001
+    },
+    {
+      "cell": "b0.25_u1.0_d1.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 1.0,
+        "h": 0.75,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.0,
+        "reduced_bad": 1.0
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        85.0,
+        113.0,
+        123.0,
+        147.0,
+        215.0
+      ],
+      "max_blocks_quantiles": [
+        35.0,
+        46.0,
+        51.0,
+        61.0,
+        88.0
+      ],
+      "mean_public_growth": 0.47316002739800345,
+      "mean_favorable_starts": 2751.095947265625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 5234,
+            "start_slot": 10468,
+            "release_slot": 10545,
+            "public_prefix_blocks": 4925,
+            "public_total_blocks": 4957,
+            "private_added": 32,
+            "disconnected": 32,
+            "first_difference": 10468,
+            "age": 77,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5234,
+            "start_slot": 10468,
+            "release_slot": 10545,
+            "public_prefix_blocks": 4925,
+            "public_total_blocks": 4957,
+            "private_added": 32,
+            "disconnected": 32,
+            "first_difference": 10468,
+            "age": 77,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 4849,
+            "start_slot": 9698,
+            "release_slot": 9803,
+            "public_prefix_blocks": 4554,
+            "public_total_blocks": 4596,
+            "private_added": 43,
+            "disconnected": 42,
+            "first_difference": 9698,
+            "age": 105,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 4880,
+            "start_slot": 9760,
+            "release_slot": 9865,
+            "public_prefix_blocks": 4579,
+            "public_total_blocks": 4623,
+            "private_added": 45,
+            "disconnected": 44,
+            "first_difference": 9760,
+            "age": 105,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 8.57569,
+      "wall_seconds": 9.112204708
+    },
+    {
+      "cell": "b0.25_u1.0_d2.0",
+      "parameters": {
+        "beta": 0.25,
+        "u": 1.0,
+        "h": 0.75,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.0,
+        "reduced_bad": 1.0
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        2,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        287.0,
+        403.0,
+        443.5,
+        535.0500000000002,
+        701.0
+      ],
+      "max_blocks_quantiles": [
+        94.0,
+        131.0,
+        144.0,
+        175.0,
+        231.0
+      ],
+      "mean_public_growth": 0.3368966844346788,
+      "mean_favorable_starts": 2536.344970703125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 4282,
+            "start_slot": 12846,
+            "release_slot": 13253,
+            "public_prefix_blocks": 4329,
+            "public_total_blocks": 4462,
+            "private_added": 133,
+            "disconnected": 133,
+            "first_difference": 12846,
+            "age": 407,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 4282,
+            "start_slot": 12846,
+            "release_slot": 13253,
+            "public_prefix_blocks": 4329,
+            "public_total_blocks": 4462,
+            "private_added": 133,
+            "disconnected": 133,
+            "first_difference": 12846,
+            "age": 407,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 3221,
+            "start_slot": 9663,
+            "release_slot": 9992,
+            "public_prefix_blocks": 3252,
+            "public_total_blocks": 3362,
+            "private_added": 111,
+            "disconnected": 110,
+            "first_difference": 9663,
+            "age": 329,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 3221,
+            "start_slot": 9663,
+            "release_slot": 9992,
+            "public_prefix_blocks": 3252,
+            "public_total_blocks": 3362,
+            "private_added": 111,
+            "disconnected": 110,
+            "first_difference": 9663,
+            "age": 329,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.0869159999999995,
+      "wall_seconds": 7.500199374999999
+    },
+    {
+      "cell": "b0.30_u0.2_d0.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.2,
+        "h": 0.13999999999999999,
+        "alpha": 0.5599999999999999,
+        "f": 0.43999999999999995,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.3181818181818182,
+        "reduced_bad": 0.6818181818181819
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2016.0,
+        2069.0,
+        2084.0,
+        2110.0,
+        2178.0
+      ],
+      "mean_public_growth": 0.13998784383138022,
+      "mean_favorable_starts": 14390.089599609375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1998,
+            "private_added": 4268,
+            "disconnected": 1998,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1998,
+            "private_added": 4268,
+            "disconnected": 1998,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2104,
+            "private_added": 4334,
+            "disconnected": 2104,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2104,
+            "private_added": 4334,
+            "disconnected": 2104,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 9.914337,
+      "wall_seconds": 10.131328458
+    },
+    {
+      "cell": "b0.30_u0.2_d0.5",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.2,
+        "h": 0.13999999999999999,
+        "alpha": 0.5599999999999999,
+        "f": 0.43999999999999995,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.3181818181818182,
+        "reduced_bad": 0.6818181818181819
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        2016.0,
+        2069.0,
+        2084.0,
+        2110.0,
+        2178.0
+      ],
+      "mean_public_growth": 0.13998784383138022,
+      "mean_favorable_starts": 14390.089599609375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1998,
+            "private_added": 4268,
+            "disconnected": 1998,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1998,
+            "private_added": 4268,
+            "disconnected": 1998,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2104,
+            "private_added": 4334,
+            "disconnected": 2104,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 2104,
+            "private_added": 4334,
+            "disconnected": 2104,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 9.976507,
+      "wall_seconds": 10.17252925
+    },
+    {
+      "cell": "b0.30_u0.2_d1.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.2,
+        "h": 0.13999999999999999,
+        "alpha": 0.5599999999999999,
+        "f": 0.43999999999999995,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.1781818181818182,
+        "reduced_bad": 0.8218181818181818
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        1876.0,
+        1925.0,
+        1939.0,
+        1965.0500000000002,
+        2020.0
+      ],
+      "mean_public_growth": 0.1303286404079861,
+      "mean_favorable_starts": 7195.39990234375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1869,
+            "private_added": 4268,
+            "disconnected": 1869,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1869,
+            "private_added": 4268,
+            "disconnected": 1869,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1954,
+            "private_added": 4334,
+            "disconnected": 1954,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1954,
+            "private_added": 4334,
+            "disconnected": 1954,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.47079,
+      "wall_seconds": 7.592473625
+    },
+    {
+      "cell": "b0.30_u0.2_d2.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.2,
+        "h": 0.13999999999999999,
+        "alpha": 0.5599999999999999,
+        "f": 0.43999999999999995,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.0997818181818182,
+        "reduced_bad": 0.9002181818181818
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        3
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14398.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        1751.0,
+        1793.0,
+        1807.0,
+        1828.0,
+        1873.0
+      ],
+      "mean_public_growth": 0.12158986409505208,
+      "mean_favorable_starts": 4797.17041015625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1748,
+            "private_added": 4268,
+            "disconnected": 1748,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1748,
+            "private_added": 4268,
+            "disconnected": 1748,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1809,
+            "private_added": 4334,
+            "disconnected": 1809,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 1809,
+            "private_added": 4334,
+            "disconnected": 1809,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 6.775448,
+      "wall_seconds": 6.949001917
+    },
+    {
+      "cell": "b0.30_u0.4_d0.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.4,
+        "h": 0.27999999999999997,
+        "alpha": 0.42,
+        "f": 0.58,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.48275862068965514,
+        "reduced_bad": 0.5172413793103449
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        4033.0,
+        4100.0,
+        4120.25,
+        4164.05,
+        4222.0
+      ],
+      "mean_public_growth": 0.2799881998697917,
+      "mean_favorable_starts": 14355.2802734375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4016,
+            "private_added": 4208,
+            "disconnected": 4016,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4016,
+            "private_added": 4208,
+            "disconnected": 4016,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4131,
+            "private_added": 4302,
+            "disconnected": 4131,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4131,
+            "private_added": 4302,
+            "disconnected": 4131,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.812005000000001,
+      "wall_seconds": 11.117086624999999
+    },
+    {
+      "cell": "b0.30_u0.4_d0.5",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.4,
+        "h": 0.27999999999999997,
+        "alpha": 0.42,
+        "f": 0.58,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.48275862068965514,
+        "reduced_bad": 0.5172413793103449
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        4033.0,
+        4100.0,
+        4120.25,
+        4164.05,
+        4222.0
+      ],
+      "mean_public_growth": 0.2799881998697917,
+      "mean_favorable_starts": 14355.2802734375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4016,
+            "private_added": 4208,
+            "disconnected": 4016,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4016,
+            "private_added": 4208,
+            "disconnected": 4016,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4131,
+            "private_added": 4302,
+            "disconnected": 4131,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4131,
+            "private_added": 4302,
+            "disconnected": 4131,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.933972,
+      "wall_seconds": 11.277951458999999
+    },
+    {
+      "cell": "b0.30_u0.4_d1.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.4,
+        "h": 0.27999999999999997,
+        "alpha": 0.42,
+        "f": 0.58,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.20275862068965517,
+        "reduced_bad": 0.7972413793103448
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        3477.0,
+        3531.0,
+        3547.0,
+        3580.0,
+        3629.0
+      ],
+      "mean_public_growth": 0.24142645941840277,
+      "mean_favorable_starts": 7191.632568359375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3457,
+            "private_added": 4208,
+            "disconnected": 3457,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3457,
+            "private_added": 4208,
+            "disconnected": 3457,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3536,
+            "private_added": 4302,
+            "disconnected": 3536,
+            "first_difference": 1,
+            "age": 14398,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3536,
+            "private_added": 4302,
+            "disconnected": 3536,
+            "first_difference": 1,
+            "age": 14398,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 8.238354000000001,
+      "wall_seconds": 8.462501292
+    },
+    {
+      "cell": "b0.30_u0.4_d2.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.4,
+        "h": 0.27999999999999997,
+        "alpha": 0.42,
+        "f": 0.58,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.08515862068965518,
+        "reduced_bad": 0.9148413793103448
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        2
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        3026.0,
+        3070.0,
+        3082.0,
+        3109.05,
+        3142.0
+      ],
+      "mean_public_growth": 0.21016087849934895,
+      "mean_favorable_starts": 4796.29833984375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3043,
+            "private_added": 4208,
+            "disconnected": 3043,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3043,
+            "private_added": 4208,
+            "disconnected": 3043,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3062,
+            "private_added": 4302,
+            "disconnected": 3062,
+            "first_difference": 1,
+            "age": 14398,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 3062,
+            "private_added": 4302,
+            "disconnected": 3062,
+            "first_difference": 1,
+            "age": 14398,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.3467769999999994,
+      "wall_seconds": 7.5859398339999995
+    },
+    {
+      "cell": "b0.30_u0.7_d0.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.7,
+        "h": 0.48999999999999994,
+        "alpha": 0.21000000000000002,
+        "f": 0.7899999999999999,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.620253164556962,
+        "reduced_bad": 0.379746835443038
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        206.0,
+        278.0,
+        306.0,
+        367.10000000000036,
+        535.0
+      ],
+      "max_blocks_quantiles": [
+        81.0,
+        110.0,
+        121.0,
+        145.05000000000018,
+        212.0
+      ],
+      "mean_public_growth": 0.49005279541015623,
+      "mean_favorable_starts": 9213.43798828125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 546,
+            "start_slot": 546,
+            "release_slot": 765,
+            "public_prefix_blocks": 278,
+            "public_total_blocks": 363,
+            "private_added": 85,
+            "disconnected": 85,
+            "first_difference": 546,
+            "age": 219,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5374,
+            "start_slot": 5374,
+            "release_slot": 5591,
+            "public_prefix_blocks": 2587,
+            "public_total_blocks": 2674,
+            "private_added": 87,
+            "disconnected": 87,
+            "first_difference": 5375,
+            "age": 216,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 11480,
+            "start_slot": 11480,
+            "release_slot": 11665,
+            "public_prefix_blocks": 5573,
+            "public_total_blocks": 5650,
+            "private_added": 77,
+            "disconnected": 77,
+            "first_difference": 11480,
+            "age": 185,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 11480,
+            "start_slot": 11480,
+            "release_slot": 11665,
+            "public_prefix_blocks": 5573,
+            "public_total_blocks": 5650,
+            "private_added": 77,
+            "disconnected": 77,
+            "first_difference": 11480,
+            "age": 185,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.330777999999999,
+      "wall_seconds": 10.706185125000001
+    },
+    {
+      "cell": "b0.30_u0.7_d0.5",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.7,
+        "h": 0.48999999999999994,
+        "alpha": 0.21000000000000002,
+        "f": 0.7899999999999999,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.620253164556962,
+        "reduced_bad": 0.379746835443038
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        206.0,
+        278.0,
+        306.0,
+        367.10000000000036,
+        535.0
+      ],
+      "max_blocks_quantiles": [
+        81.0,
+        110.0,
+        121.0,
+        145.05000000000018,
+        212.0
+      ],
+      "mean_public_growth": 0.49005279541015623,
+      "mean_favorable_starts": 9213.43798828125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 546,
+            "start_slot": 546,
+            "release_slot": 765,
+            "public_prefix_blocks": 278,
+            "public_total_blocks": 363,
+            "private_added": 85,
+            "disconnected": 85,
+            "first_difference": 546,
+            "age": 219,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5374,
+            "start_slot": 5374,
+            "release_slot": 5591,
+            "public_prefix_blocks": 2587,
+            "public_total_blocks": 2674,
+            "private_added": 87,
+            "disconnected": 87,
+            "first_difference": 5375,
+            "age": 216,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 11480,
+            "start_slot": 11480,
+            "release_slot": 11665,
+            "public_prefix_blocks": 5573,
+            "public_total_blocks": 5650,
+            "private_added": 77,
+            "disconnected": 77,
+            "first_difference": 11480,
+            "age": 185,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 11480,
+            "start_slot": 11480,
+            "release_slot": 11665,
+            "public_prefix_blocks": 5573,
+            "public_total_blocks": 5650,
+            "private_added": 77,
+            "disconnected": 77,
+            "first_difference": 11480,
+            "age": 185,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.140776,
+      "wall_seconds": 10.438167666
+    },
+    {
+      "cell": "b0.30_u0.7_d1.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.7,
+        "h": 0.48999999999999994,
+        "alpha": 0.21000000000000002,
+        "f": 0.7899999999999999,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.13025316455696206,
+        "reduced_bad": 0.869746835443038
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        665.0,
+        963.0,
+        1067.5,
+        1359.3500000000013,
+        2375.0
+      ],
+      "max_blocks_quantiles": [
+        229.0,
+        333.0,
+        367.0,
+        468.0,
+        816.0
+      ],
+      "mean_public_growth": 0.3718502468532986,
+      "mean_favorable_starts": 5382.428466796875,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 2413,
+            "start_slot": 4826,
+            "release_slot": 5725,
+            "public_prefix_blocks": 1770,
+            "public_total_blocks": 2075,
+            "private_added": 305,
+            "disconnected": 305,
+            "first_difference": 4826,
+            "age": 899,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 2412,
+            "start_slot": 4824,
+            "release_slot": 5723,
+            "public_prefix_blocks": 1769,
+            "public_total_blocks": 2074,
+            "private_added": 305,
+            "disconnected": 305,
+            "first_difference": 4825,
+            "age": 898,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 5553,
+            "start_slot": 11106,
+            "release_slot": 11729,
+            "public_prefix_blocks": 4109,
+            "public_total_blocks": 4329,
+            "private_added": 220,
+            "disconnected": 220,
+            "first_difference": 11106,
+            "age": 623,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5552,
+            "start_slot": 11104,
+            "release_slot": 11727,
+            "public_prefix_blocks": 4108,
+            "public_total_blocks": 4328,
+            "private_added": 220,
+            "disconnected": 220,
+            "first_difference": 11105,
+            "age": 622,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 7.528595,
+      "wall_seconds": 7.783331917
+    },
+    {
+      "cell": "b0.30_u0.7_d2.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 0.7,
+        "h": 0.48999999999999994,
+        "alpha": 0.21000000000000002,
+        "f": 0.7899999999999999,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.027353164556962045,
+        "reduced_bad": 0.972646835443038
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        1
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0,
+        14399.0
+      ],
+      "max_blocks_quantiles": [
+        4214.0,
+        4244.0,
+        4251.0,
+        4266.05,
+        4298.0
+      ],
+      "mean_public_growth": 0.29286883884006076,
+      "mean_favorable_starts": 4754.47119140625,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4199,
+            "private_added": 4332,
+            "disconnected": 4199,
+            "first_difference": 1,
+            "age": 14398,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4199,
+            "private_added": 4332,
+            "disconnected": 4199,
+            "first_difference": 1,
+            "age": 14398,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4229,
+            "private_added": 4477,
+            "disconnected": 4229,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          },
+          "depth": {
+            "start_group": 0,
+            "start_slot": 0,
+            "release_slot": 14399,
+            "public_prefix_blocks": 0,
+            "public_total_blocks": 4229,
+            "private_added": 4477,
+            "disconnected": 4229,
+            "first_difference": 0,
+            "age": 14399,
+            "tie_favorable": false
+          }
+        }
+      ],
+      "cpu_seconds": 7.282576,
+      "wall_seconds": 7.505950667
+    },
+    {
+      "cell": "b0.30_u1.0_d0.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 1.0,
+        "h": 0.7,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 0.0,
+        "d": 0,
+        "reduced_good": 0.7,
+        "reduced_bad": 0.30000000000000004
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        67.0,
+        87.0,
+        94.0,
+        113.0,
+        153.0
+      ],
+      "max_blocks_quantiles": [
+        34.0,
+        44.0,
+        47.0,
+        57.0,
+        77.0
+      ],
+      "mean_public_growth": 0.6999629720052083,
+      "mean_favorable_starts": 6541.55078125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 13305,
+            "start_slot": 13305,
+            "release_slot": 13384,
+            "public_prefix_blocks": 9241,
+            "public_total_blocks": 9281,
+            "private_added": 40,
+            "disconnected": 40,
+            "first_difference": 13305,
+            "age": 79,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 13305,
+            "start_slot": 13305,
+            "release_slot": 13384,
+            "public_prefix_blocks": 9241,
+            "public_total_blocks": 9281,
+            "private_added": 40,
+            "disconnected": 40,
+            "first_difference": 13305,
+            "age": 79,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 2875,
+            "start_slot": 2875,
+            "release_slot": 2940,
+            "public_prefix_blocks": 2014,
+            "public_total_blocks": 2047,
+            "private_added": 33,
+            "disconnected": 33,
+            "first_difference": 2875,
+            "age": 65,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 2875,
+            "start_slot": 2875,
+            "release_slot": 2940,
+            "public_prefix_blocks": 2014,
+            "public_total_blocks": 2047,
+            "private_added": 33,
+            "disconnected": 33,
+            "first_difference": 2875,
+            "age": 65,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.43236,
+      "wall_seconds": 10.794635209
+    },
+    {
+      "cell": "b0.30_u1.0_d0.5",
+      "parameters": {
+        "beta": 0.3,
+        "u": 1.0,
+        "h": 0.7,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 0.5,
+        "d": 0,
+        "reduced_good": 0.7,
+        "reduced_bad": 0.30000000000000004
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        67.0,
+        87.0,
+        94.0,
+        113.0,
+        153.0
+      ],
+      "max_blocks_quantiles": [
+        34.0,
+        44.0,
+        47.0,
+        57.0,
+        77.0
+      ],
+      "mean_public_growth": 0.6999629720052083,
+      "mean_favorable_starts": 6541.55078125,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 13305,
+            "start_slot": 13305,
+            "release_slot": 13384,
+            "public_prefix_blocks": 9241,
+            "public_total_blocks": 9281,
+            "private_added": 40,
+            "disconnected": 40,
+            "first_difference": 13305,
+            "age": 79,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 13305,
+            "start_slot": 13305,
+            "release_slot": 13384,
+            "public_prefix_blocks": 9241,
+            "public_total_blocks": 9281,
+            "private_added": 40,
+            "disconnected": 40,
+            "first_difference": 13305,
+            "age": 79,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 2875,
+            "start_slot": 2875,
+            "release_slot": 2940,
+            "public_prefix_blocks": 2014,
+            "public_total_blocks": 2047,
+            "private_added": 33,
+            "disconnected": 33,
+            "first_difference": 2875,
+            "age": 65,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 2875,
+            "start_slot": 2875,
+            "release_slot": 2940,
+            "public_prefix_blocks": 2014,
+            "public_total_blocks": 2047,
+            "private_added": 33,
+            "disconnected": 33,
+            "first_difference": 2875,
+            "age": 65,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 10.358668,
+      "wall_seconds": 10.686026208000001
+    },
+    {
+      "cell": "b0.30_u1.0_d1.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 1.0,
+        "h": 0.7,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 1.0,
+        "d": 1,
+        "reduced_good": 0.0,
+        "reduced_bad": 1.0
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        169.0,
+        231.0,
+        255.0,
+        315.10000000000036,
+        447.0
+      ],
+      "max_blocks_quantiles": [
+        70.0,
+        95.0,
+        105.0,
+        128.05000000000018,
+        187.0
+      ],
+      "mean_public_growth": 0.45880723741319446,
+      "mean_favorable_starts": 3713.724365234375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 6349,
+            "start_slot": 12698,
+            "release_slot": 12845,
+            "public_prefix_blocks": 5778,
+            "public_total_blocks": 5836,
+            "private_added": 58,
+            "disconnected": 58,
+            "first_difference": 12698,
+            "age": 147,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 641,
+            "start_slot": 1282,
+            "release_slot": 1427,
+            "public_prefix_blocks": 572,
+            "public_total_blocks": 630,
+            "private_added": 59,
+            "disconnected": 58,
+            "first_difference": 1282,
+            "age": 145,
+            "tie_favorable": false
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 5252,
+            "start_slot": 10504,
+            "release_slot": 10655,
+            "public_prefix_blocks": 4818,
+            "public_total_blocks": 4882,
+            "private_added": 64,
+            "disconnected": 64,
+            "first_difference": 10504,
+            "age": 151,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 5252,
+            "start_slot": 10504,
+            "release_slot": 10655,
+            "public_prefix_blocks": 4818,
+            "public_total_blocks": 4882,
+            "private_added": 64,
+            "disconnected": 64,
+            "first_difference": 10504,
+            "age": 151,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 7.506837,
+      "wall_seconds": 7.748200791
+    },
+    {
+      "cell": "b0.30_u1.0_d2.0",
+      "parameters": {
+        "beta": 0.3,
+        "u": 1.0,
+        "h": 0.7,
+        "alpha": 0.0,
+        "f": 1.0,
+        "delay": 2.0,
+        "d": 2,
+        "reduced_good": 0.0,
+        "reduced_bad": 1.0
+      },
+      "samples": 4096,
+      "horizon": 14400,
+      "seed_entropy": [
+        20260930,
+        1,
+        3,
+        0
+      ],
+      "honest_active_identities": 64,
+      "max_age_quantiles": [
+        1466.0,
+        2330.0,
+        2675.0,
+        3474.2000000000044,
+        5777.0
+      ],
+      "max_blocks_quantiles": [
+        481.0,
+        762.5,
+        872.75,
+        1138.2000000000007,
+        1883.0
+      ],
+      "mean_public_growth": 0.3319359842936198,
+      "mean_favorable_starts": 3813.34130859375,
+      "envelope_violations": 0,
+      "examples": [
+        {
+          "rep": 0,
+          "age": {
+            "start_group": 284,
+            "start_slot": 852,
+            "release_slot": 2462,
+            "public_prefix_blocks": 284,
+            "public_total_blocks": 807,
+            "private_added": 523,
+            "disconnected": 523,
+            "first_difference": 852,
+            "age": 1610,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 283,
+            "start_slot": 849,
+            "release_slot": 2459,
+            "public_prefix_blocks": 283,
+            "public_total_blocks": 806,
+            "private_added": 523,
+            "disconnected": 523,
+            "first_difference": 850,
+            "age": 1609,
+            "tie_favorable": true
+          }
+        },
+        {
+          "rep": 1,
+          "age": {
+            "start_group": 1430,
+            "start_slot": 4290,
+            "release_slot": 5972,
+            "public_prefix_blocks": 1416,
+            "public_total_blocks": 1970,
+            "private_added": 554,
+            "disconnected": 554,
+            "first_difference": 4290,
+            "age": 1682,
+            "tie_favorable": true
+          },
+          "depth": {
+            "start_group": 1430,
+            "start_slot": 4290,
+            "release_slot": 5972,
+            "public_prefix_blocks": 1416,
+            "public_total_blocks": 1970,
+            "private_added": 554,
+            "disconnected": 554,
+            "first_difference": 4290,
+            "age": 1682,
+            "tie_favorable": true
+          }
+        }
+      ],
+      "cpu_seconds": 6.4709200000000004,
+      "wall_seconds": 6.68135675
+    }
+  ]
+}

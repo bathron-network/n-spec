@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_forget_seal",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.52,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "G0"
+  ],
+  "generated": 22,
+  "distinct": 20,
+  "queue": 12,
+  "depth": 3,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"forget_seal\"\n MaxReorg = 1\n Dbtc = 3\nINVARIANTS G0\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_mut_forget_seal.log"
+}

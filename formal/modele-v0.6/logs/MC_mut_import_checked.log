@@ -1,0 +1,120 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_mut_import_checked.cfg", "MC_mut_import_checked.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 26 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 47868] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_mut_import_checked.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/MoneyChecked.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MoneyChecked
+Semantic processing of module MC_mut_import_checked
+Starting... (2026-09-30 20:34:13)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 20:34:14.
+Error: Invariant MON1 is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 0
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "idle"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 2: <Begin line 17, col 12 to line 19, col 61 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 2
+/\ work = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+/\ phase = "import"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 3: <Load line 20, col 8 to line 21, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 2
+/\ work = [ alice |-> 10,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+/\ phase = "notify"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 4: <Notify line 22, col 10 to line 23, col 86 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 2
+/\ work = [ alice |-> 20,
+  bob |-> 0,
+  fees |-> 0,
+  imports |-> {"btc-outpoint"},
+  spent |-> {} ]
+/\ phase = "spend"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 5: <Spend line 24, col 9 to line 25, col 87 of module MoneyChecked>
+/\ audit = TRUE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 0
+/\ crashed = {}
+/\ target = 2
+/\ work = [ alice |-> 13,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+/\ phase = "commit"
+/\ paths = {0}
+/\ visible = [alice |-> 0, bob |-> 0, fees |-> 0, imports |-> {}, spent |-> {}]
+
+State 6: <Commit line 26, col 10 to line 29, col 49 of module MoneyChecked>
+/\ audit = FALSE
+/\ source = TRUE
+/\ stop = FALSE
+/\ tip = 2
+/\ crashed = {}
+/\ target = 2
+/\ work = [ alice |-> 13,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+/\ phase = "idle"
+/\ paths = {0, 2}
+/\ visible = [ alice |-> 13,
+  bob |-> 6,
+  fees |-> 1,
+  imports |-> {"btc-outpoint"},
+  spent |-> {"alice-input"} ]
+
+211 states generated, 125 distinct states found, 45 states left on queue.
+The depth of the complete state graph search is 8.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 4 and the 95th percentile is 4).
+Finished in 00s at (2026-09-30 20:34:14)
+
+exit=12

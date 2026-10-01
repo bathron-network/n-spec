@@ -1,0 +1,30 @@
+{
+  "name": "MC_deliv_mut_brake_shared",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.58,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "ConsEqual"
+  ],
+  "generated": 89,
+  "distinct": 70,
+  "queue": 35,
+  "depth": 6,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n  MaxSlot = 6\n  MaxReorg = 1\n  EpochLen = 3\n  Owner <- MCOwner\n  Ids = {\"A\", \"H\", \"O\"}\n  WShort = 2\n  WLong = 4\n  KDepth = 2\n  ObjSlot = 1\n  RhoRef <- MCRhoRef\n  Rhos <- MCRhos\n  HealthNum = 7\n  HealthDen = 10\n  Mutation = \"BRAKE_SHARED\"\nINVARIANTS ConsEqual\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_mut_brake_shared.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_deliv_mut_brake_shared.cfg": "0f673ae9d70bd8f82907df80b9607f41956ecd6a842b6a871222c0147c369929",
+    "MC_deliv_mut_brake_shared.tla": "d74665d8acafdf38cddf8bc3654f3582189ef2846eb9fa18a2932224b3e4eda1",
+    "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

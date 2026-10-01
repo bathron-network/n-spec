@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_068_arithmetic",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.53,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessHealth"
+  ],
+  "generated": null,
+  "distinct": null,
+  "queue": null,
+  "depth": null,
+  "configuration": "SPECIFICATION Spec\nINVARIANTS NoWitnessHealth\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_068_arithmetic.log"
+}

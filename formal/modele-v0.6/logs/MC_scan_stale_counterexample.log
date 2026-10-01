@@ -1,0 +1,77 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_scan_stale_counterexample.cfg", "MC_scan_stale_counterexample.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 28 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 43098] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_scan_stale_counterexample.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/H1Scan.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module H1Scan
+Semantic processing of module MC_scan_stale_counterexample
+Starting... (2026-09-30 19:36:37)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 19:36:37.
+Error: Invariant NoStaleVeto is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ btcHeight = 2
+/\ scan = {}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 2: <Scan line 26, col 11 to line 27, col 46 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {2}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 3: <Scan line 26, col 11 to line 27, col 46 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {1, 2}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 4: <Scan line 26, col 11 to line 27, col 46 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {1, 2, 3}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 5: <Resolve line 28, col 14 to line 29, col 43 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {1, 2, 3}
+/\ objects = {"xC"}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 6: <Bitcoin line 30, col 14 to line 31, col 41 of module H1Scan>
+/\ btcHeight = 5
+/\ scan = {1, 2, 3}
+/\ objects = {"xC"}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 7: <Resolve line 28, col 14 to line 29, col 43 of module H1Scan>
+/\ btcHeight = 5
+/\ scan = {1, 2, 3}
+/\ objects = {"xC", "xW"}
+/\ rank = "C"
+/\ cache = FALSE
+
+4503 states generated, 621 distinct states found, 209 states left on queue.
+The depth of the complete state graph search is 7.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 10 and the 95th percentile is 5).
+Finished in 00s at (2026-09-30 19:36:37)
+
+exit=12

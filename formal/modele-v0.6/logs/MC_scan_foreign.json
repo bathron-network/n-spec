@@ -1,0 +1,21 @@
+{
+  "name": "MC_scan_foreign",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.59,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 8449,
+  "distinct": 768,
+  "queue": 0,
+  "depth": 10,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Scenario = \"foreign\"\nINVARIANTS TrueComplete ForeignIrrelevant ResolvedDecidable\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 3.2E-13"
+  ],
+  "log": "logs/MC_scan_foreign.log"
+}

@@ -1,0 +1,31 @@
+Error: Invariant G0 is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 3>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 2: <Reorg line 45, col 12 to line 47, col 55 of module AnchorBTC>
+/\ mode = <<"RECHECK", "RECHECK">>
+/\ btc = {"b4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 3>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+22 states generated, 20 distinct states found, 12 states left on queue.
+The depth of the complete state graph search is 3.
+Finished in 00s at (2026-09-30 19:36:23)
+
+exit=12

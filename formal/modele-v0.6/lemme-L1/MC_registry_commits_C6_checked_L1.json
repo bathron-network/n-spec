@@ -1,0 +1,32 @@
+{
+  "name": "MC_registry_commits_C6_checked_L1",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 1.18,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 92353,
+  "distinct": 43264,
+  "queue": 0,
+  "depth": 5,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n MaxReorg = 2\n Mutation = \"none\"\nINVARIANTS C6 NoOtherStructural\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 1.2E-10",
+    "  based on the actual fingerprints:  val = 2.3E-11"
+  ],
+  "log": "logs/reproductions/lemme_L1_codex/MC_registry_commits_C6_checked_L1.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_registry_commits_C6_checked_L1.cfg": "d1c414b6e8de1d7914e9c793433fbe2abca33e02addc9c0b35bb51e0cd6b9600",
+    "MC_registry_commits_C6_checked_L1.tla": "a2f67da5b9650f2afe033ae56d36e5714721e2633a643fe6bc03b4717c782dab",
+    "RegistryCommitmentsChecked.tla": "d1aeb9e05c69cb6c1bf5a0b808be5f557d57973bbb5ac3059f1ae022cbe5f7a9",
+    "RegistryCommitmentsChecked_L1.tla": "faf3d684fcad40d5c17cc1895f579e88c1a8e2210f0b47a323b9177870357161",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

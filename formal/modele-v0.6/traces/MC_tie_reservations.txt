@@ -1,0 +1,28 @@
+Error: Invariant ReservationsConverge is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ seen = <<{"A"}, {"B"}>>
+/\ reserved = <<"none", "none">>
+
+State 2: <Deliver line 7, col 14 to line 7, col 72 of module TieDelivery>
+/\ seen = <<{"A", "B"}, {"B"}>>
+/\ reserved = <<"none", "none">>
+
+State 3: <Reserve line 8, col 14 to line 9, col 18 of module TieDelivery>
+/\ seen = <<{"A", "B"}, {"B"}>>
+/\ reserved = <<"A", "none">>
+
+State 4: <Reserve line 8, col 14 to line 9, col 18 of module TieDelivery>
+/\ seen = <<{"A", "B"}, {"B"}>>
+/\ reserved = <<"A", "B">>
+
+State 5: <Deliver line 7, col 14 to line 7, col 72 of module TieDelivery>
+/\ seen = <<{"A", "B"}, {"A", "B"}>>
+/\ reserved = <<"A", "B">>
+
+57 states generated, 20 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 5.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 4 and the 95th percentile is 4).
+Finished in 00s at (2026-09-30 19:36:38)
+
+exit=12

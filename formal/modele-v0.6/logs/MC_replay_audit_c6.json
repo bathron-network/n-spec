@@ -1,0 +1,31 @@
+{
+  "name": "MC_replay_audit_c6",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.62,
+  "workers": 1,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 15,
+  "distinct": 13,
+  "queue": 0,
+  "depth": 13,
+  "configuration": "SPECIFICATION Replay\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 1\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK C6Global\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 1.4E-18"
+  ],
+  "log": "logs/MC_replay_audit_c6.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_replay_audit_c6.cfg": "0601b7946f557884847cdfb963c673cf8502ac65f34158671de24ee30f0252e1",
+    "MC_replay_audit_c6.tla": "f3ed51ed9c9d197925fc8ccd26257d82c346e13b1675f75cb2d371cd007fe14c",
+    "RegistryAudit.tla": "f7a9bea98293eaadf1e54c0cb2e5c3bc7876e2e35aa1d266ababf6fa9be0eb96",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

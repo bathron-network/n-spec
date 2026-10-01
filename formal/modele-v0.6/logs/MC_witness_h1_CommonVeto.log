@@ -1,0 +1,68 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_witness_h1_CommonVeto.cfg", "MC_witness_h1_CommonVeto.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 77 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 43167] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_witness_h1_CommonVeto.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/H1Orders.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module H1Orders
+Semantic processing of module MC_witness_h1_CommonVeto
+Starting... (2026-09-30 19:37:06)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 19:37:06.
+Error: Invariant NoWitnessCommonVeto is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ result = <<"FALSE", "FALSE">>
+/\ adopted = <<"G", "G">>
+/\ received = <<{}, {}>>
+/\ evicted = {}
+/\ auth = <<{}, {}>>
+
+State 2: <Deliver line 36, col 2 to line 45, col 21 of module H1Orders>
+/\ audit = TRUE
+/\ result = <<"FALSE", "FALSE">>
+/\ adopted = <<"G", "G">>
+/\ received = <<{"F"}, {}>>
+/\ evicted = {}
+/\ auth = <<{}, {}>>
+
+State 3: <Deliver line 36, col 2 to line 45, col 21 of module H1Orders>
+/\ audit = TRUE
+/\ result = <<"FALSE", "FALSE">>
+/\ adopted = <<"G", "G">>
+/\ received = <<{"F"}, {"F"}>>
+/\ evicted = {}
+/\ auth = <<{}, {}>>
+
+State 4: <Deliver line 36, col 2 to line 45, col 21 of module H1Orders>
+/\ audit = TRUE
+/\ result = <<"TRUE", "FALSE">>
+/\ adopted = <<"G", "G">>
+/\ received = <<{"F", "C", "W", "L", "BTC", "A"}, {"F"}>>
+/\ evicted = {}
+/\ auth = <<{}, {}>>
+
+State 5: <Deliver line 36, col 2 to line 45, col 21 of module H1Orders>
+/\ audit = TRUE
+/\ result = <<"TRUE", "TRUE">>
+/\ adopted = <<"G", "G">>
+/\ received = <<{"F", "C", "W", "L", "BTC", "A"}, {"F", "C", "W", "L", "BTC", "A"}>>
+/\ evicted = {}
+/\ auth = <<{}, {}>>
+
+13669 states generated, 4649 distinct states found, 4412 states left on queue.
+The depth of the complete state graph search is 6.
+The average outdegree of the complete state graph is 18 (minimum is 1, the maximum 31 and the 95th percentile is 31).
+Finished in 00s at (2026-09-30 19:37:06)
+
+exit=12

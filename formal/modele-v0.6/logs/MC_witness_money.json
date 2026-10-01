@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_money",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.59,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessMoney"
+  ],
+  "generated": 8805,
+  "distinct": 3833,
+  "queue": 118,
+  "depth": 27,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\nINVARIANTS NoWitnessMoney\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_money.log"
+}

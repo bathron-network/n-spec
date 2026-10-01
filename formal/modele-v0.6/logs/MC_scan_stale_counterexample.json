@@ -1,0 +1,21 @@
+{
+  "name": "MC_scan_stale_counterexample",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.58,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoStaleVeto"
+  ],
+  "generated": 4503,
+  "distinct": 621,
+  "queue": 209,
+  "depth": 7,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Scenario = \"stale\"\nINVARIANTS NoStaleVeto\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_scan_stale_counterexample.log"
+}

@@ -1,0 +1,240 @@
+{
+  "comparisons": [
+    {
+      "copy": "historical/MC_broken_h1promote.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_broken_h1promote.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "9811f94981cbf66e59a5adbcd1bd23f4a17998d64786c0f0788bdb014cbb2f59"
+    },
+    {
+      "copy": "historical/MC_broken_h1promote.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_broken_h1promote.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "9a53366bc5719fcd7c2db3a8066b7796ca41d758227af8d14bd747810ad52eef"
+    },
+    {
+      "copy": "historical/MC_broken_tipsnapshot.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_broken_tipsnapshot.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "19eafbe6e77d75799db4a140a3a3387345e1e1170f80a502bf0e783d2de486eb"
+    },
+    {
+      "copy": "historical/MC_broken_tipsnapshot.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_broken_tipsnapshot.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "2af733c447a4d65c07ffa8b9bd2c4f60cef584e943a3f74cea219d211a9166d0"
+    },
+    {
+      "copy": "historical/MC_live.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_live.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "79bab6ea6297690482fd94bee6778e025bf91caee27a29903e4df8dbb50ec6a6"
+    },
+    {
+      "copy": "historical/MC_live.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_live.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "aa9195845d63dd038db2aaf7de83f88b89bf4337340f7e29b1e62fa5c36e6ea6"
+    },
+    {
+      "copy": "historical/MC_live_recovery.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_live_recovery.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "79bab6ea6297690482fd94bee6778e025bf91caee27a29903e4df8dbb50ec6a6"
+    },
+    {
+      "copy": "historical/MC_live_recovery.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_live_recovery.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "239a080b5411d30492332c9cf06c1b2ddb56c468d12ccbefd8d14e5f34620bee"
+    },
+    {
+      "copy": "historical/MC_replay_h1.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_replay_h1.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "4080d5a3bea260be11c3126eeade9cfb7a5d4a051bc55762ce8a05604b64fdb1"
+    },
+    {
+      "copy": "historical/MC_replay_h1.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_replay_h1.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "b0dbb8e8c3553d8d06c6b978eaef07bbc090e77c7c9d27aa7657593d6a0bdbfa"
+    },
+    {
+      "copy": "historical/MC_replay_spec.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_replay_spec.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "88c653aa616be60b86de97e83967b4122f1fd9c57cd8e49e845c349da8ad1cff"
+    },
+    {
+      "copy": "historical/MC_replay_spec.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_replay_spec.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "c033f1146c5566ea86a9b6e4107479aa878e3d56b09ed1b34de166f587babd78"
+    },
+    {
+      "copy": "historical/MC_replay_spec_adopt.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_replay_spec_adopt.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "ce708a06e75dade4e2993945924a5af73499a36a56a49289bf1135c18e84d7e9"
+    },
+    {
+      "copy": "historical/MC_replay_spec_adopt.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_replay_spec_adopt.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "85688b21d6269f8656f316fc777629eb1eb897badbb02365feb4b219122410d3"
+    },
+    {
+      "copy": "historical/MC_replay_tip.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_replay_tip.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "10d477b5fbcafbfde16e9d69e1f0aaf95b93cfdf9398de7f3774c941be429fe6"
+    },
+    {
+      "copy": "historical/MC_replay_tip.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_replay_tip.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "e6d109eac4e10f8a066f89c417258ab2634b826ac226be973df8f49b0f8e8cd6"
+    },
+    {
+      "copy": "historical/MC_safe.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_safe.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "3ec3f2d4998c9fa6d70c0e0659a743abb56e5dcb922571bfaa8e2e1bff59a7b6"
+    },
+    {
+      "copy": "historical/MC_safe.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_safe.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "a718f684f62564ced5464ee806a59d896b041f8794aa322bdfea83466ca620ab"
+    },
+    {
+      "copy": "historical/MC_spec_registryreorg.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_spec_registryreorg.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "0e83e18c2c632edd03ccd326fbc653ba032c3159725b85931031e1d9d4ea39d3"
+    },
+    {
+      "copy": "historical/MC_spec_registryreorg.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_spec_registryreorg.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "cf046b58d415fae824967444783140cbaa8950f9c767e792e7e183364e7dae5b"
+    },
+    {
+      "copy": "historical/MC_witness_empty.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_witness_empty.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "ebfb45607af2254a627f9799b5a7bad97703914e47403386fc9296477c47736a"
+    },
+    {
+      "copy": "historical/MC_witness_empty.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_witness_empty.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "9926a88a3935daa6205070bb4bb0d4a94b309f01e251f9832c9926a33efa89d4"
+    },
+    {
+      "copy": "historical/MC_witness_equivocation.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_witness_equivocation.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "5596b9f778273986a5c7ad60df024b05d23c7fe2e20fadc312243845a1a16496"
+    },
+    {
+      "copy": "historical/MC_witness_equivocation.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_witness_equivocation.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "958f0d0a20aa6ab8f0a56548bf3831d180009ac2a2ec32d256d15336a69e87a1"
+    },
+    {
+      "copy": "historical/MC_witness_twoempty.cfg",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_witness_twoempty.cfg",
+      "exists": true,
+      "same": true,
+      "sha256": "5e5264de8cc697d95f5710f6df69a49e911c26a00ebc6f098c8836195ad0a3f7"
+    },
+    {
+      "copy": "historical/MC_witness_twoempty.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/MC_witness_twoempty.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "a506f7313784efb0f91cf536007ff6a3c4f81ba83e30605dbd40610b07972cb3"
+    },
+    {
+      "copy": "historical/NModel.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/NModel.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "e251cb08d2a7c2595f10147e0e78187d707b675694cc95ca320e718c702f0e8e"
+    },
+    {
+      "copy": "historical/RAPPORT-TLA-N.md",
+      "original": "etudes/n-spec/tla/modele-v0.5/RAPPORT-TLA-N.md",
+      "exists": true,
+      "same": true,
+      "sha256": "6328a1fa25486eb2963d6b85ef322dd6d988d57c574c9f44f2d0eacf32be7861"
+    },
+    {
+      "copy": "historical/correctif-D/CORRECTIF-REGISTRE.md",
+      "original": "etudes/n-spec/tla/modele-v0.5/correctif-registre/CORRECTIF-REGISTRE.md",
+      "exists": true,
+      "same": true,
+      "sha256": "a2c7b6ce14ab1b298ac8f890fbbedb652c5c5734694eddac249917a7e8eaa4aa"
+    },
+    {
+      "copy": "historical/correctif-D/NModel_v06.tla",
+      "original": "etudes/n-spec/tla/modele-v0.5/correctif-registre/NModel_v06.tla",
+      "exists": true,
+      "same": true,
+      "sha256": "b275ca6426125a6cf0069c7dc31fc786f4ee4039514ffb68022df959ac14c087"
+    },
+    {
+      "copy": "historical/run.sh",
+      "original": "etudes/n-spec/tla/modele-v0.5/run.sh",
+      "exists": true,
+      "same": true,
+      "sha256": "8ecd092beac3a20ea736fae728c12cb52d6f3986f47bf07cb4a1287bf960dba9"
+    },
+    {
+      "copy": "tla2tools.jar",
+      "original": "etudes/n-spec/tla/modele-v0.5/tla2tools.jar",
+      "exists": true,
+      "same": true,
+      "sha256": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88"
+    },
+    {
+      "copy": "tools/LocalTLC.java",
+      "original": "etudes/n-spec/tla/modele-v0.5/tools/LocalTLC.java",
+      "exists": true,
+      "same": true,
+      "sha256": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+    }
+  ],
+  "normative_sources": {
+    "etudes/n-spec/MANDAT-TLA-v0.6.md": "0385c39e9dbc3fdbe104c3bde6ecf9538b754c4edad3f7ae07dd9f3e0e57804c",
+    "etudes/n-spec/N-SPEC-v0.6.md": "6eab20af3af8129f125f70cfff8ac1a43e8e36b0ce99a1237ff3fd5e4bc68110"
+  },
+  "note": "Comparaison des copies initiales conservées aux sources actuellement présentes ; aucune assertion sur des fichiers non copiés."
+}

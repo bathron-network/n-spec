@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_scan_Decidable",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.61,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessDecidable"
+  ],
+  "generated": 4899,
+  "distinct": 648,
+  "queue": 200,
+  "depth": 7,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Scenario = \"matching\"\nINVARIANTS NoWitnessDecidable\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_scan_Decidable.log"
+}

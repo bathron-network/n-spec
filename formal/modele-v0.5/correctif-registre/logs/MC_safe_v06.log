@@ -1,0 +1,33 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 128 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 33425] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file <tmp>
+Parsing file <tmp>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module NModel_v06
+Semantic processing of module MC_safe_v06
+Starting... (2026-09-30 17:41:29)
+Computing initial states...
+Computed 2 initial states...
+Finished computing initial states: 4 distinct states generated at 2026-09-30 17:41:30.
+Progress(8) at 2026-09-30 17:41:33: 22 989 states generated (22 989 s/min), 5 195 distinct states found (5 195 ds/min), 2 565 states left on queue.
+Progress(12) at 2026-09-30 17:42:33: 231 309 states generated (208 320 s/min), 44 575 distinct states found (39 380 ds/min), 15 561 states left on queue.
+Progress(14) at 2026-09-30 17:43:33: 479 971 states generated (248 662 s/min), 76 962 distinct states found (32 387 ds/min), 11 228 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 2.8E-9
+  based on the actual fingerprints:  val = 1.2E-9
+639168 states generated, 93112 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 21.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 8 and the 95th percentile is 3).
+Finished in 02min 38s at (2026-09-30 17:44:08)
+exit=0

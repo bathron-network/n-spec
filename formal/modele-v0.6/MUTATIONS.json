@@ -1,0 +1,166 @@
+[
+  {
+    "label": "Cliché sur pointe",
+    "name": "MC_mut_registry_tip_checked",
+    "expected": [
+      "ARule"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "ARule"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "Suppression du seuil A",
+    "name": "MC_mut_registry_no_threshold_checked",
+    "expected": [
+      "ARule"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "ARule"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "Registre engagé utilisé comme veto",
+    "name": "MC_mut_registry_lock_checked",
+    "expected": [
+      "NoJournalVeto"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "NoJournalVeto"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "H1 promoteur",
+    "name": "MC_mut_h1_promote_checked",
+    "expected": [
+      "H1Subset"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "H1Subset"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "H1 limité à l’adoptée",
+    "name": "MC_mut_h1_adopted_only_checked",
+    "expected": [
+      "H1Order",
+      "H1NonVacuity",
+      "NoContinuation"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "H1NonVacuity"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "MAINTAIN saute H1",
+    "name": "MC_mut_h1_maintain_checked",
+    "expected": [
+      "H1Order",
+      "H1NonVacuity",
+      "NoContinuation"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "NoContinuation"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "Deep dépend d’une ancre locale",
+    "name": "MC_mut_h1_anchor_deep_checked",
+    "expected": [
+      "H1Order",
+      "H1Orientation"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "H1Orientation"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "Frein annule tous les budgets",
+    "name": "MC_mut_brake_checked",
+    "expected": [
+      "Mechanical"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "Mechanical"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "ADD efface le passif",
+    "name": "MC_mut_add_checked",
+    "expected": [
+      "AddNoReset"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "AddNoReset"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "Ancre libre à la pointe",
+    "name": "MC_mut_free_anchor_checked",
+    "expected": [
+      "AnchorExact"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "AnchorExact"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "Scellement oublié",
+    "name": "MC_mut_forget_seal_checked",
+    "expected": [
+      "G0"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "G0"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "Réservation par génération",
+    "name": "MC_mut_generation_checked",
+    "expected": [
+      "S1"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "S1"
+    ],
+    "sensitive": true
+  },
+  {
+    "label": "Import non idempotent",
+    "name": "MC_mut_import_checked",
+    "expected": [
+      "MON1",
+      "MON2",
+      "MON3",
+      "MON4"
+    ],
+    "status": "FAIL",
+    "observed": [
+      "MON1"
+    ],
+    "sensitive": true
+  }
+]

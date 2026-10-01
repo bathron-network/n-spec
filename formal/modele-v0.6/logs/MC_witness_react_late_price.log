@@ -1,0 +1,101 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_witness_react_late_price.cfg", "MC_witness_react_late_price.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 78 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 50012] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_witness_react_late_price.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/AdmissionsChecked.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module AdmissionsChecked
+Semantic processing of module MC_witness_react_late_price
+Starting... (2026-09-30 20:58:57)
+Computing initial states...
+Computed 2 initial states...
+Computed 4 initial states...
+Computed 8 initial states...
+Computed 16 initial states...
+Computed 32 initial states...
+Computed 64 initial states...
+Computed 128 initial states...
+Computed 256 initial states...
+Computed 512 initial states...
+Finished computing initial states: 960 distinct states generated at 2026-09-30 20:58:57.
+Error: Invariant NoWitnessLatePrice is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ depth = 60
+/\ after = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ consumed = FALSE
+/\ burnAmount = 10
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = FALSE
+/\ exclude = TRUE
+/\ before = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 0
+/\ priceOK = TRUE
+/\ reference = "exact_dossier_x"
+/\ currentPrice = 10
+
+State 2: <Add line 12, col 7 to line 19, col 108 of module AdmissionsChecked>
+/\ audit = TRUE
+/\ depth = 60
+/\ after = [state |-> "EXCLUDED", reset |-> 2, queue |-> 3, active |-> 0, dormant |-> 5]
+/\ consumed = FALSE
+/\ burnAmount = 10
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = FALSE
+/\ exclude = TRUE
+/\ before = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 1
+/\ priceOK = TRUE
+/\ reference = "exact_dossier_x"
+/\ currentPrice = 10
+
+State 3: <Reprice line 25, col 11 to line 26, col 113 of module AdmissionsChecked>
+/\ audit = TRUE
+/\ depth = 60
+/\ after = [state |-> "EXCLUDED", reset |-> 2, queue |-> 3, active |-> 0, dormant |-> 5]
+/\ consumed = FALSE
+/\ burnAmount = 10
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = FALSE
+/\ exclude = TRUE
+/\ before = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 1
+/\ priceOK = TRUE
+/\ reference = "exact_dossier_x"
+/\ currentPrice = 20
+
+State 4: <ReactExam line 20, col 13 to line 22, col 114 of module AdmissionsChecked>
+/\ audit = TRUE
+/\ depth = 60
+/\ after = [state |-> "EXCLUDED", reset |-> 2, queue |-> 3, active |-> 0, dormant |-> 5]
+/\ consumed = FALSE
+/\ burnAmount = 10
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = TRUE
+/\ exclude = TRUE
+/\ before = [state |-> "QUEUED", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 2
+/\ priceOK = TRUE
+/\ reference = "exact_dossier_x"
+/\ currentPrice = 20
+
+5064 states generated, 5064 distinct states found, 1916 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 2 and the 95th percentile is 2).
+Finished in 00s at (2026-09-30 20:58:57)
+
+exit=12

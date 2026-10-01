@@ -1,0 +1,44 @@
+Error: Invariant NoWitnessSealOnly is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ mode = <<"RUN", "RUN">>
+/\ btc = {"a4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 2: <Reorg line 46, col 12 to line 48, col 55 of module AnchorBTCChecked>
+/\ mode = <<"RECHECK", "RECHECK">>
+/\ btc = {"b4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+State 3: <Select line 37, col 2 to line 45, col 41 of module AnchorBTCChecked>
+/\ mode = <<"STOP_BTC", "RECHECK">>
+/\ btc = {"b4"}
+/\ seal = TRUE
+/\ tips = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ audit = TRUE
+/\ chosen = <<{}, {}>>
+/\ anchor = <<[branch |-> "G", height |-> 0], [branch |-> "G", height |-> 0]>>
+/\ rank = <<3, 2>>
+/\ seed = FALSE
+/\ seen = <<{"A"}, {"B"}>>
+
+152 states generated, 85 distinct states found, 67 states left on queue.
+The depth of the complete state graph search is 3.
+The average outdegree of the complete state graph is 6 (minimum is 2, the maximum 9 and the 95th percentile is 9).
+Finished in 00s at (2026-09-30 20:35:31)
+
+exit=12

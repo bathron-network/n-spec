@@ -1,0 +1,28 @@
+Error: Invariant NoWitnessUnknown is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ btcHeight = 2
+/\ scan = {}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 2: <Scan line 26, col 11 to line 27, col 46 of module H1Scan>
+/\ btcHeight = 2
+/\ scan = {2}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+State 3: <Bitcoin line 30, col 14 to line 31, col 41 of module H1Scan>
+/\ btcHeight = 4
+/\ scan = {2}
+/\ objects = {}
+/\ rank = "C"
+/\ cache = FALSE
+
+33 states generated, 23 distinct states found, 15 states left on queue.
+The depth of the complete state graph search is 3.
+Finished in 00s at (2026-09-30 19:39:00)
+
+exit=12

@@ -1,0 +1,19 @@
+{
+  "name": "MC_witness_registry_Reject",
+  "status": "INCOMPLET",
+  "exit": 75,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 327,
+  "distinct": 190,
+  "queue": 97,
+  "depth": 9,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Threshold = 2\n Mutation = \"none\"\nINVARIANTS NoWitnessReject\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_registry_Reject.log"
+}

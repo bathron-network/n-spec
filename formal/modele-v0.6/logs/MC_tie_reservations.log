@@ -1,0 +1,48 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_tie_reservations.cfg", "MC_tie_reservations.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 124 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 43102] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_tie_reservations.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/TieDelivery.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module TieDelivery
+Semantic processing of module MC_tie_reservations
+Starting... (2026-09-30 19:36:38)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 19:36:38.
+Error: Invariant ReservationsConverge is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ seen = <<{"A"}, {"B"}>>
+/\ reserved = <<"none", "none">>
+
+State 2: <Deliver line 7, col 14 to line 7, col 72 of module TieDelivery>
+/\ seen = <<{"A", "B"}, {"B"}>>
+/\ reserved = <<"none", "none">>
+
+State 3: <Reserve line 8, col 14 to line 9, col 18 of module TieDelivery>
+/\ seen = <<{"A", "B"}, {"B"}>>
+/\ reserved = <<"A", "none">>
+
+State 4: <Reserve line 8, col 14 to line 9, col 18 of module TieDelivery>
+/\ seen = <<{"A", "B"}, {"B"}>>
+/\ reserved = <<"A", "B">>
+
+State 5: <Deliver line 7, col 14 to line 7, col 72 of module TieDelivery>
+/\ seen = <<{"A", "B"}, {"A", "B"}>>
+/\ reserved = <<"A", "B">>
+
+57 states generated, 20 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 5.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 4 and the 95th percentile is 4).
+Finished in 00s at (2026-09-30 19:36:38)
+
+exit=12

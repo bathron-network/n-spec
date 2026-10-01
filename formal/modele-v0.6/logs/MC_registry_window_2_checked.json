@@ -1,0 +1,21 @@
+{
+  "name": "MC_registry_window_2_checked",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.58,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 1889,
+  "distinct": 1388,
+  "queue": 0,
+  "depth": 13,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Threshold = 2\n Mutation = \"none\"\nINVARIANTS ARule NoCircularity\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 3.8E-14"
+  ],
+  "log": "logs/MC_registry_window_2_checked.log"
+}

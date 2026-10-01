@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_import",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 1193,
+  "distinct": 558,
+  "queue": 0,
+  "depth": 21,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"duplicate\"\nINVARIANTS MON1 MON2 MON3 MON4\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 1.9E-14"
+  ],
+  "log": "logs/MC_mut_import.log"
+}

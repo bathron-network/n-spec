@@ -1,0 +1,98 @@
+{
+  "cell": "b0.20_u1.0_d2.0",
+  "parameters": {
+    "beta": 0.2,
+    "u": 1.0,
+    "h": 0.8,
+    "alpha": 0.0,
+    "f": 1.0,
+    "delay": 2.0,
+    "d": 2,
+    "reduced_good": 0.0,
+    "reduced_bad": 1.0
+  },
+  "samples": 4096,
+  "horizon": 14400,
+  "seed_entropy": [
+    20260930,
+    1,
+    1,
+    0
+  ],
+  "honest_active_identities": 64,
+  "max_age_quantiles": [
+    113.0,
+    155.0,
+    169.0,
+    206.0,
+    266.0
+  ],
+  "max_blocks_quantiles": [
+    37.0,
+    50.0,
+    54.0,
+    67.0,
+    87.0
+  ],
+  "mean_public_growth": 0.340624033610026,
+  "mean_favorable_starts": 1655.242431640625,
+  "envelope_violations": 0,
+  "examples": [
+    {
+      "rep": 0,
+      "age": {
+        "start_group": 324,
+        "start_slot": 972,
+        "release_slot": 1124,
+        "public_prefix_blocks": 333,
+        "public_total_blocks": 381,
+        "private_added": 48,
+        "disconnected": 48,
+        "first_difference": 973,
+        "age": 151,
+        "tie_favorable": true
+      },
+      "depth": {
+        "start_group": 324,
+        "start_slot": 972,
+        "release_slot": 1124,
+        "public_prefix_blocks": 333,
+        "public_total_blocks": 381,
+        "private_added": 48,
+        "disconnected": 48,
+        "first_difference": 973,
+        "age": 151,
+        "tie_favorable": true
+      }
+    },
+    {
+      "rep": 1,
+      "age": {
+        "start_group": 2906,
+        "start_slot": 8718,
+        "release_slot": 8825,
+        "public_prefix_blocks": 2955,
+        "public_total_blocks": 2990,
+        "private_added": 35,
+        "disconnected": 35,
+        "first_difference": 8718,
+        "age": 107,
+        "tie_favorable": true
+      },
+      "depth": {
+        "start_group": 2906,
+        "start_slot": 8718,
+        "release_slot": 8825,
+        "public_prefix_blocks": 2955,
+        "public_total_blocks": 2990,
+        "private_added": 35,
+        "disconnected": 35,
+        "first_difference": 8718,
+        "age": 107,
+        "tie_favorable": true
+      }
+    }
+  ],
+  "cpu_seconds": 8.248515,
+  "wall_seconds": 9.802733250000001
+}

@@ -1,0 +1,21 @@
+{
+  "name": "MC_money_checked",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.57,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 9637,
+  "distinct": 4128,
+  "queue": 0,
+  "depth": 35,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"none\"\nINVARIANTS MON1 MON2 MON3 MON4 MON5\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 1.2E-12"
+  ],
+  "log": "logs/MC_money_checked.log"
+}

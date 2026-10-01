@@ -1,0 +1,30 @@
+{
+  "name": "MC_registry_equivalence_1",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.64,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 8,
+  "distinct": 4,
+  "queue": 0,
+  "depth": 1,
+  "configuration": "SPECIFICATION Static\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 5\n  KReg = 1\n  MaxReorg = 1\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS Equivalent RegistryEquivalent\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 8.7E-19"
+  ],
+  "log": "logs/MC_registry_equivalence_1.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_registry_equivalence_1.cfg": "b40eb4c6ae69db68d161995ecc6049fc86fc246d1aa3c94f03ee60f7c020f775",
+    "MC_registry_equivalence_1.tla": "0b0fb2f40666e3f3d6bf60f92c07dce97e56062016d911a55f7aea18fd94a610",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

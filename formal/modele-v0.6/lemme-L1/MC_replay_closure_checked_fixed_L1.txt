@@ -1,0 +1,54 @@
+Error: Invariant NoWitnessPivot is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ steps = <<0, 0>>
+/\ journal = {}
+/\ step = 0
+/\ audit = TRUE
+/\ tip = <<<<>>, <<>>>>
+
+State 2: <ReplayNext line 4, col 14 to line 7, col 16 of module MC_replay_closure_checked_fixed_L1>
+/\ steps = <<1, 0>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<0>>>>,
+    chain |-> <<0, 11, 13>>,
+    kind |-> "signature",
+    R |-> <<3, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {0}, weights |-> <<3, 1, 1>>],
+    calendar |-> (4 :> 3 @@ 5 :> 0),
+    node |-> 1 ] }
+/\ step = 1
+/\ audit = TRUE
+/\ tip = <<<<0, 11, 13>>, <<>>>>
+
+State 3: <ReplayNext line 4, col 14 to line 7, col 16 of module MC_replay_closure_checked_fixed_L1>
+/\ steps = <<2, 0>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<>>>>,
+    chain |-> <<0, 23>>,
+    kind |-> "adoption",
+    R |-> <<2, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {}, weights |-> <<2, 1, 1>>],
+    calendar |-> (4 :> 2 @@ 5 :> 3),
+    node |-> 1 ],
+  [ D |-> <<<<>>, <<>>, <<0>>>>,
+    chain |-> <<0, 11, 13>>,
+    kind |-> "signature",
+    R |-> <<3, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {0}, weights |-> <<3, 1, 1>>],
+    calendar |-> (4 :> 3 @@ 5 :> 0),
+    node |-> 1 ] }
+/\ step = 2
+/\ audit = TRUE
+/\ tip = <<<<0, 23>>, <<>>>>
+
+3 states generated, 3 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 3.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 1 and the 95th percentile is 1).
+Finished in 00s at (2026-09-30 23:05:18)
+
+exit=12

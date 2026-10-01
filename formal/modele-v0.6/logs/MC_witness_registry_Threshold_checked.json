@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_registry_Threshold_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessThreshold"
+  ],
+  "generated": 311,
+  "distinct": 253,
+  "queue": 123,
+  "depth": 9,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Threshold = 2\n Mutation = \"none\"\nINVARIANTS NoWitnessThreshold\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_registry_Threshold_checked.log"
+}

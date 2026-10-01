@@ -1,0 +1,198 @@
+{
+ "label": "pivot_profond_final",
+ "launcher": "run.sh/run.py livres, non modifies",
+ "runs": [
+  {
+   "name": "MC_explore_mixed_PivotDeep",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessMixedSync"
+   ],
+   "generated": 1182746,
+   "distinct": 523997,
+   "queue": 300487,
+   "depth": 16,
+   "seconds": 41.39,
+   "configuration": "SPECIFICATION Spec\nCONSTANTS SlotsPerEpoch=4 KReg=2 MaxReorg=2 MatMin=6 BtcMat=7 EndSlot=12\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural NoWitnessMixedSync\nCHECK_DEADLOCK FALSE\n"
+  },
+  {
+   "name": "MC_explore_suffix_PivotDeep",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepSync"
+   ],
+   "generated": 356388,
+   "distinct": 159906,
+   "queue": 91643,
+   "depth": 23,
+   "seconds": 25.31,
+   "configuration": "SPECIFICATION SSpec\nCONSTANTS SlotsPerEpoch=4 KReg=2 MaxReorg=2 MatMin=6 BtcMat=7 EndSlot=12\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural NoWitnessDeepSync\nCHECK_DEADLOCK FALSE\n"
+  },
+  {
+   "name": "MC_explore_sync_PivotDeep",
+   "status": "INCOMPLET",
+   "violations": [],
+   "generated": 11356236,
+   "distinct": 5211850,
+   "queue": 3056203,
+   "depth": null,
+   "seconds": 569.19,
+   "configuration": "SPECIFICATION Spec\nCONSTANTS SlotsPerEpoch=4 KReg=2 MaxReorg=2 MatMin=6 BtcMat=7 EndSlot=12\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural NoWitnessDeepSync\nCHECK_DEADLOCK FALSE\n"
+  },
+  {
+   "name": "MC_explore_sync_restricted_PivotDeep",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepSync"
+   ],
+   "generated": 2130084,
+   "distinct": 1082953,
+   "queue": 562133,
+   "depth": 19,
+   "seconds": 109.37,
+   "configuration": "SPECIFICATION RSpec\nCONSTANTS SlotsPerEpoch=4 KReg=2 MaxReorg=2 MatMin=6 BtcMat=7 EndSlot=12\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural NoWitnessDeepSync\nCHECK_DEADLOCK FALSE\n"
+  },
+  {
+   "name": "MC_replay_aftersig_PivotDeep",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepAfterSig"
+   ],
+   "generated": 42,
+   "distinct": 42,
+   "queue": 0,
+   "depth": 42,
+   "seconds": 3.73,
+   "configuration": "SPECIFICATION Replay\nCONSTANTS SlotsPerEpoch=8 KReg=4 MaxReorg=4 MatMin=12 BtcMat=14 EndSlot=21\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural PathNotStuck NoWitnessDeepAfterSig\nCHECK_DEADLOCK FALSE\n"
+  },
+  {
+   "name": "MC_replay_shallow_PivotDeep",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessPivot"
+   ],
+   "generated": 33,
+   "distinct": 33,
+   "queue": 0,
+   "depth": 33,
+   "seconds": 0.88,
+   "configuration": "SPECIFICATION Replay\nCONSTANTS SlotsPerEpoch=8 KReg=4 MaxReorg=4 MatMin=12 BtcMat=14 EndSlot=17\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural PathNotStuck DeepAbsent NoWitnessPivot\nCHECK_DEADLOCK FALSE\n"
+  },
+  {
+   "name": "MC_replay_stop_PivotDeep",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepStop"
+   ],
+   "generated": 44,
+   "distinct": 44,
+   "queue": 0,
+   "depth": 44,
+   "seconds": 1.04,
+   "configuration": "SPECIFICATION Replay\nCONSTANTS SlotsPerEpoch=8 KReg=4 MaxReorg=4 MatMin=12 BtcMat=14 EndSlot=21\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural PathNotStuck DeepAbsent NoWitnessDeepStop\nCHECK_DEADLOCK FALSE\n"
+  },
+  {
+   "name": "MC_replay_sync_PivotDeep",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepSyncBeforeStart"
+   ],
+   "generated": 32,
+   "distinct": 32,
+   "queue": 0,
+   "depth": 32,
+   "seconds": 1.45,
+   "configuration": "SPECIFICATION Replay\nCONSTANTS SlotsPerEpoch=8 KReg=4 MaxReorg=4 MatMin=12 BtcMat=14 EndSlot=16\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural PathNotStuck NoWitnessDeepSyncBeforeStart\nCHECK_DEADLOCK FALSE\n"
+  }
+ ],
+ "archives_non_retenues": [
+  {
+   "file": "incomplets/MC_explore_sync_PivotDeep.monitor-bug.json",
+   "status": "INCOMPLET",
+   "violations": [],
+   "distinct": 429534,
+   "note": "modele anterieur a la version finale; non utilise comme resultat"
+  },
+  {
+   "file": "incomplets/MC_replay_sync_PivotDeep.config-error.json",
+   "status": "INCOMPLET",
+   "violations": [],
+   "distinct": null,
+   "note": "modele anterieur a la version finale; non utilise comme resultat"
+  },
+  {
+   "file": "incomplets/MC_replay_sync_PivotDeep.monitor-bug.json",
+   "status": "FAIL",
+   "violations": [
+    "NoOtherStructural"
+   ],
+   "distinct": 27,
+   "note": "modele anterieur a la version finale; non utilise comme resultat"
+  },
+  {
+   "file": "preliminaire/logs/MC_explore_sync_PivotDeep.json",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepSync"
+   ],
+   "distinct": 484914,
+   "note": "modele anterieur a la version finale; non utilise comme resultat"
+  },
+  {
+   "file": "preliminaire/logs/MC_replay_aftersig_PivotDeep.json",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepAfterSig"
+   ],
+   "distinct": 42,
+   "note": "modele anterieur a la version finale; non utilise comme resultat"
+  },
+  {
+   "file": "preliminaire/logs/MC_replay_shallow_PivotDeep.json",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessPivot"
+   ],
+   "distinct": 33,
+   "note": "modele anterieur a la version finale; non utilise comme resultat"
+  },
+  {
+   "file": "preliminaire/logs/MC_replay_stop_PivotDeep.json",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepStop"
+   ],
+   "distinct": 44,
+   "note": "modele anterieur a la version finale; non utilise comme resultat"
+  },
+  {
+   "file": "preliminaire/logs/MC_replay_sync_PivotDeep.json",
+   "status": "TÉMOIN",
+   "violations": [
+    "NoWitnessDeepSyncBeforeStart"
+   ],
+   "distinct": 32,
+   "note": "modele anterieur a la version finale; non utilise comme resultat"
+  }
+ ],
+ "sha256_modules": {
+  "modules/MC_explore_mixed_PivotDeep.cfg": "7810524e531eb6ea2f956dfb9f93b2ffbd40a92f2fac14038e2b5b18c0915abb",
+  "modules/MC_explore_mixed_PivotDeep.tla": "30416b3f0311feba2cd8a3d645f33a4c287ea3bfdbbfb777fa9f0aef61ae3695",
+  "modules/MC_explore_suffix_PivotDeep.cfg": "7fb9b3fdead765768b27bdfbb2e888d00248f3c627bb4819510a5fb1c16e493c",
+  "modules/MC_explore_suffix_PivotDeep.tla": "4c9d7372ce4c2497ff10961999d157e37f4d034a5b784e9a72f5d5e168dd0ad9",
+  "modules/MC_explore_sync_PivotDeep.cfg": "7a12aec78597ba619ebaded43e5b6cc096415cc04162632d2ebe9ee998675cbd",
+  "modules/MC_explore_sync_PivotDeep.tla": "79ff356a74f8214c5a6b88909505e4d50dee8523bc3fa0302be6729610fbaa31",
+  "modules/MC_explore_sync_restricted_PivotDeep.cfg": "6c7f7db513a8b967be891ee7c8e7bef90bfe3f2a6e5cc2dde7e640abc258b003",
+  "modules/MC_explore_sync_restricted_PivotDeep.tla": "eea351db6110bb989a720c312b0f0076a5f6f7f3c58e9691a19367d73d118035",
+  "modules/MC_replay_aftersig_PivotDeep.cfg": "ad7a29b70132328d97b9969292430168618058b1af3d909ee3c9064b11ffb71f",
+  "modules/MC_replay_aftersig_PivotDeep.tla": "f0e9c0eda4bc0504a494b74c4977db5ed746cc36edac3b57d89c95735dc9b1c0",
+  "modules/MC_replay_shallow_PivotDeep.cfg": "a3853fcdafbdba2f39ec6f08b76c9dc7de1f3c805c4d7c3899421d687f974294",
+  "modules/MC_replay_shallow_PivotDeep.tla": "b958761e269f9c9d94b952b4e13d130cd83be8fc0f66e62b3991108580ed855d",
+  "modules/MC_replay_stop_PivotDeep.cfg": "ce0a325ec5f019118141221617ad58858ff3067605a9eab5d210a9c819daa2aa",
+  "modules/MC_replay_stop_PivotDeep.tla": "5c6a65378557a0748e8733cee503994e07f5347724e9c600eed9c1e06a3aab17",
+  "modules/MC_replay_sync_PivotDeep.cfg": "08a3507f27c65248f2231cdeb5b3909951a253ebd091e456a4f0172791a10e5c",
+  "modules/MC_replay_sync_PivotDeep.tla": "b1c9e12c07954b73ebdc6249c91856107587324a803c1415593c8a8d761ee08c",
+  "modules/RegistryModel_PivotDeep.tla": "9438ddd08991cb8b359fb77c7458ddcd59826c2262acdea9c78601196dc685e8",
+  "modules/Replay_PivotDeep.tla": "1633724a39933bf23960811e5026092cc3e89259c953e743660e94933aac82a6"
+ }
+}

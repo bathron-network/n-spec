@@ -1,0 +1,133 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_witness_registry_Above_checked.cfg", "MC_witness_registry_Above_checked.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 55 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 48069] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_witness_registry_Above_checked.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryWindowChecked.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryWindowChecked
+Semantic processing of module MC_witness_registry_Above_checked
+Starting... (2026-09-30 20:35:28)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 20:35:28.
+Error: Invariant NoWitnessAbove is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 0
+/\ phase = "idle"
+/\ installed = 4
+
+State 2: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<[slot |-> 0, mature |-> FALSE, op |-> 0]>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<>>
+/\ s = 0
+/\ phase = "prepared"
+/\ installed = 4
+
+State 3: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<[slot |-> 0, mature |-> FALSE, op |-> 0]>>
+/\ s = 1
+/\ phase = "idle"
+/\ installed = 4
+
+State 4: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 1, mature |-> FALSE, op |-> 1] >>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = <<[slot |-> 0, mature |-> FALSE, op |-> 0]>>
+/\ s = 1
+/\ phase = "prepared"
+/\ installed = 4
+
+State 5: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 1, mature |-> FALSE, op |-> 1] >>
+/\ s = 2
+/\ phase = "idle"
+/\ installed = 4
+
+State 6: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 1, mature |-> FALSE, op |-> 1],
+   [slot |-> 2, mature |-> FALSE, op |-> 2] >>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 1, mature |-> FALSE, op |-> 1] >>
+/\ s = 2
+/\ phase = "prepared"
+/\ installed = 4
+
+State 7: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 1, mature |-> FALSE, op |-> 1],
+   [slot |-> 2, mature |-> FALSE, op |-> 2] >>
+/\ s = 3
+/\ phase = "idle"
+/\ installed = 4
+
+State 8: <Prepare line 16, col 15 to line 18, col 78 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 1, mature |-> FALSE, op |-> 1],
+   [slot |-> 2, mature |-> FALSE, op |-> 2],
+   [slot |-> 3, mature |-> TRUE, op |-> 0] >>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 1, mature |-> FALSE, op |-> 1],
+   [slot |-> 2, mature |-> FALSE, op |-> 2] >>
+/\ s = 3
+/\ phase = "prepared"
+/\ installed = 4
+
+State 9: <Validate line 19, col 17 to line 27, col 49 of module RegistryWindowChecked>
+/\ audit = TRUE
+/\ pending = <<>>
+/\ rejected = 0
+/\ signed = FALSE
+/\ chain = << [slot |-> 0, mature |-> FALSE, op |-> 0],
+   [slot |-> 1, mature |-> FALSE, op |-> 1],
+   [slot |-> 2, mature |-> FALSE, op |-> 2],
+   [slot |-> 3, mature |-> TRUE, op |-> 0] >>
+/\ s = 4
+/\ phase = "idle"
+/\ installed = 5
+
+479 states generated, 386 distinct states found, 189 states left on queue.
+The depth of the complete state graph search is 10.
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 3 and the 95th percentile is 3).
+Finished in 00s at (2026-09-30 20:35:28)
+
+exit=12

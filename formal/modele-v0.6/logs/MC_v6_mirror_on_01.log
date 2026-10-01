@@ -1,0 +1,34 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_v6_mirror_on_01.cfg", "MC_v6_mirror_on_01.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 117 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 46262] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_v6_mirror_on_01.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModelFast2.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryModelFast2
+Semantic processing of module MC_v6_mirror_on_01
+Starting... (2026-09-30 20:19:08)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 20:19:08.
+Progress(12) at 2026-09-30 20:19:11: 83 424 states generated (83 424 s/min), 16 317 distinct states found (16 317 ds/min), 6 548 states left on queue.
+Progress(17) at 2026-09-30 20:20:11: 618 114 states generated (534 690 s/min), 100 608 distinct states found (84 291 ds/min), 20 210 states left on queue.
+Progress(19) at 2026-09-30 20:21:11: 917 108 states generated (298 994 s/min), 134 449 distinct states found (33 841 ds/min), 9 744 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 6.7E-9
+  based on the actual fingerprints:  val = 8.7E-10
+1015556 states generated, 141242 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 24.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 8 and the 95th percentile is 2).
+Finished in 02min 32s at (2026-09-30 20:21:40)
+
+exit=0

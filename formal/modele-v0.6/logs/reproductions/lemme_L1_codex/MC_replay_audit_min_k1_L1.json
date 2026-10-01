@@ -1,0 +1,33 @@
+{
+  "name": "MC_replay_audit_min_k1_L1",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.62,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessTwoSignatures"
+  ],
+  "generated": 11,
+  "distinct": 11,
+  "queue": 0,
+  "depth": 11,
+  "configuration": "SPECIFICATION Replay\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 1\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK FirstBlockCommon CommonInterval NoOtherStructural NoHonestOther NoWitnessTwoSignatures\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [],
+  "log": "logs/reproductions/lemme_L1_codex/MC_replay_audit_min_k1_L1.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_replay_audit_min_k1_L1.cfg": "b5844c60ccabac2100116492579d75c5ace8cdb2ce213d2c6a9d4935d029f909",
+    "MC_replay_audit_min_k1_L1.tla": "5f2e4c453f5de436f0874a435327349b6d44aa10ba000d3c8e625c53036aaf74",
+    "RegistryAudit.tla": "f7a9bea98293eaadf1e54c0cb2e5c3bc7876e2e35aa1d266ababf6fa9be0eb96",
+    "RegistryAudit_L1.tla": "2d7db0b5e1ce71faf2687ea8fd976945cdb048c928a0b900851f8822ac425251",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "RegistryModelFast2_L1.tla": "4f4cbfd665b1061a93938804d1775d81549f05e72e2c891e39fdaa9fecd8235c",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

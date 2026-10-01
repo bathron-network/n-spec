@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_registry_no_threshold_checked",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.52,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "ARule"
+  ],
+  "generated": 270,
+  "distinct": 222,
+  "queue": 109,
+  "depth": 9,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Threshold = 2\n Mutation = \"no_threshold\"\nINVARIANTS ARule\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_mut_registry_no_threshold_checked.log"
+}

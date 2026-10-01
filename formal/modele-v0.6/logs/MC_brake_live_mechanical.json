@@ -1,0 +1,30 @@
+{
+  "name": "MC_brake_live_mechanical",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 28.76,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 21,
+  "distinct": 21,
+  "queue": 0,
+  "depth": 21,
+  "configuration": "SPECIFICATION FairMechanical\nCONSTANTS\n W = 1000\n Scenario = \"slow\"\n Mutation = \"none\"\n Horizon = 20\nINVARIANTS Mechanical SlowProgress RotationUnderBrake\nPROPERTIES EventuallySlow\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 0.0"
+  ],
+  "log": "logs/MC_brake_live_mechanical.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "BrakeChecked.tla": "511f082c50acfa57c9f40d0b1283f967a580b4bd64a183dc108f9d0f34f521df",
+    "MC_brake_live_mechanical.cfg": "8452a35d398e3a6e8c3d0f9065e48529f30ba70f195b791c09e39dcb1744ddd9",
+    "MC_brake_live_mechanical.tla": "2c0f40646179b061473d7409ad93707115aaaa1b85ced2fbd8789308b3a70dae",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

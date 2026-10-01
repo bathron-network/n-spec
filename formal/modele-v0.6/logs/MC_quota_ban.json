@@ -1,0 +1,21 @@
+{
+  "name": "MC_quota_ban",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 30,
+  "distinct": 30,
+  "queue": 0,
+  "depth": 10,
+  "configuration": "SPECIFICATION Spec\nINVARIANTS Prospective BanBlocksNext\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 0.0"
+  ],
+  "log": "logs/MC_quota_ban.log"
+}

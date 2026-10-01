@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_brake_068_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 11.77,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitness068"
+  ],
+  "generated": 14,
+  "distinct": 14,
+  "queue": 0,
+  "depth": 14,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n W = 1000\n Scenario = \"068\"\n Mutation = \"none\"\n Horizon = 20\nINVARIANTS NoWitness068\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_brake_068_checked.log"
+}

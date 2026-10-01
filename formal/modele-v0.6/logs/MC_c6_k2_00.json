@@ -1,0 +1,31 @@
+{
+  "name": "MC_c6_k2_00",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 124.06,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 815017,
+  "distinct": 124850,
+  "queue": 0,
+  "depth": 26,
+  "configuration": "SPECIFICATION ShardSpec\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 2\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryStableOnCommonPrefix\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 4.7E-9",
+    "  based on the actual fingerprints:  val = 1.2E-9"
+  ],
+  "log": "logs/MC_c6_k2_00.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_c6_k2_00.cfg": "bd3c6f70b89fdd83cabf40ae1f16c3be96d57952fc5f24f810b0119bf589709e",
+    "MC_c6_k2_00.tla": "e0201570517f11d61abd1a744db2f03f2245bf66633461a1846fd1687a6e6a5e",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

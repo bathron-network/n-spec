@@ -1,0 +1,414 @@
+Error: Invariant NoWitnessSlow is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ epoch = 0
+/\ rotation = 0
+/\ calendar = {0}
+/\ slow = <<0>>
+/\ released = FALSE
+/\ cursor = 0
+/\ used = <<0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1] >>
+/\ wf = <<1000>>
+
+State 2: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 1
+/\ rotation = 0
+/\ calendar = {0, 1, 2, 3, 4}
+/\ slow = <<0, 0>>
+/\ released = FALSE
+/\ cursor = 4
+/\ used = <<0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1] >>
+/\ wf = <<1000, 1000>>
+
+State 3: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 2
+/\ rotation = 0
+/\ calendar = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+/\ slow = <<0, 0, 0>>
+/\ released = FALSE
+/\ cursor = 9
+/\ used = <<0, 0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1] >>
+/\ wf = <<1000, 1000, 1000>>
+
+State 4: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 3
+/\ rotation = 0
+/\ calendar = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}
+/\ slow = <<0, 0, 0, 0>>
+/\ released = FALSE
+/\ cursor = 14
+/\ used = <<0, 0, 0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1] >>
+/\ wf = <<1000, 1000, 1000, 1000>>
+
+State 5: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 4
+/\ rotation = 0
+/\ calendar = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+/\ slow = <<0, 0, 0, 0, 0>>
+/\ released = FALSE
+/\ cursor = 19
+/\ used = <<0, 0, 0, 0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1] >>
+/\ wf = <<1000, 1000, 1000, 1000, 1000>>
+
+State 6: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 5
+/\ rotation = 0
+/\ calendar = { 0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24 }
+/\ slow = <<0, 0, 0, 0, 0, 0>>
+/\ released = FALSE
+/\ cursor = 24
+/\ used = <<0, 0, 0, 0, 0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1] >>
+/\ wf = <<1000, 1000, 1000, 1000, 1000, 1000>>
+
+State 7: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 6
+/\ rotation = 0
+/\ calendar = { 0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29 }
+/\ slow = <<0, 0, 0, 0, 0, 0, 0>>
+/\ released = FALSE
+/\ cursor = 29
+/\ used = <<0, 0, 0, 0, 0, 0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1] >>
+/\ wf = <<1000, 1000, 1000, 1000, 1000, 1000, 1000>>
+
+State 8: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 7
+/\ rotation = 0
+/\ calendar = { 0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34 }
+/\ slow = <<0, 0, 0, 0, 0, 0, 0, 0>>
+/\ released = FALSE
+/\ cursor = 34
+/\ used = <<0, 0, 0, 0, 0, 0, 0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1] >>
+/\ wf = <<1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000>>
+
+State 9: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 8
+/\ rotation = 0
+/\ calendar = { 0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39 }
+/\ slow = <<0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ released = FALSE
+/\ cursor = 39
+/\ used = <<0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "SUSPECT", reset |-> 0, susp |-> 35, queue |-> -1],
+   [state |-> "SUSPECT", reset |-> 0, susp |-> 35, queue |-> -1],
+   [state |-> "SUSPECT", reset |-> 0, susp |-> 35, queue |-> -1],
+   [state |-> "SUSPECT", reset |-> 0, susp |-> 35, queue |-> -1] >>
+/\ wf = <<1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000>>
+
+State 10: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 9
+/\ rotation = 0
+/\ calendar = { 0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44 }
+/\ slow = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ released = FALSE
+/\ cursor = 44
+/\ used = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ audit = TRUE
+/\ everSlow = FALSE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "SUSPECT", reset |-> 0, susp |-> 35, queue |-> -1],
+   [state |-> "SUSPECT", reset |-> 0, susp |-> 35, queue |-> -1],
+   [state |-> "SUSPECT", reset |-> 0, susp |-> 35, queue |-> -1],
+   [state |-> "SUSPECT", reset |-> 0, susp |-> 35, queue |-> -1] >>
+/\ wf = <<1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000>>
+
+State 11: <Advance line 63, col 12 to line 89, col 78 of module BrakeChecked>
+/\ epoch = 10
+/\ rotation = 1
+/\ calendar = { 0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49 }
+/\ slow = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5>>
+/\ released = FALSE
+/\ cursor = 49
+/\ used = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5>>
+/\ audit = TRUE
+/\ everSlow = TRUE
+/\ control = << [state |-> "ACTIVE", reset |-> 0, susp |-> -1, queue |-> -1],
+   [state |-> "QUEUED", reset |-> 0, susp |-> 35, queue |-> 45],
+   [state |-> "QUEUED", reset |-> 0, susp |-> 35, queue |-> 45],
+   [state |-> "EXCLUDED", reset |-> 0, susp |-> 35, queue |-> 45],
+   [state |-> "QUEUED", reset |-> 0, susp |-> 35, queue |-> 45] >>
+/\ wf = <<1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000>>
+
+11 states generated, 11 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 11.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 1 and the 95th percentile is 1).
+Finished in 04s at (2026-09-30 20:35:24)
+
+exit=12

@@ -1,0 +1,36 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_mirror_on_11.cfg", "MC_mirror_on_11.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 14 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 41510] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_mirror_on_11.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModel.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryModel
+Semantic processing of module MC_mirror_on_11
+Starting... (2026-09-30 19:20:16)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 19:20:16.
+Progress(11) at 2026-09-30 19:20:19: 91 631 states generated (91 631 s/min), 20 376 distinct states found (20 376 ds/min), 9 983 states left on queue.
+Progress(15) at 2026-09-30 19:21:19: 894 991 states generated (803 360 s/min), 160 312 distinct states found (139 936 ds/min), 51 840 states left on queue.
+Progress(17) at 2026-09-30 19:22:19: 1 453 614 states generated (558 623 s/min), 236 205 distinct states found (75 893 ds/min), 53 534 states left on queue.
+Progress(18) at 2026-09-30 19:23:19: 1 917 886 states generated (464 272 s/min), 293 680 distinct states found (57 475 ds/min), 46 103 states left on queue.
+Progress(19) at 2026-09-30 19:24:19: 2 311 138 states generated (393 252 s/min), 333 434 distinct states found (39 754 ds/min), 27 103 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 4.4E-8
+  based on the actual fingerprints:  val = 1.1E-8
+2620872 states generated, 357724 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 25.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 8 and the 95th percentile is 3).
+Finished in 05min 02s at (2026-09-30 19:25:19)
+
+exit=0

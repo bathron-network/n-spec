@@ -1,0 +1,21 @@
+{
+  "name": "MC_mut_registry_lock_checked",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.52,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoJournalVeto"
+  ],
+  "generated": 68,
+  "distinct": 66,
+  "queue": 58,
+  "depth": 4,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n MaxReorg = 2\n Mutation = \"journal_veto\"\nINVARIANTS NoJournalVeto\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_mut_registry_lock_checked.log"
+}

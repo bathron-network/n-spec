@@ -1,0 +1,54 @@
+Error: Invariant RegistryImmutable is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ tip = <<<<>>, <<>>>>
+/\ journal = {}
+/\ steps = <<0, 0>>
+/\ step = 0
+
+State 2: <ReplayNext line 4, col 14 to line 7, col 16 of module MC_replay_closure_checked_fixed>
+/\ audit = TRUE
+/\ tip = <<<<0, 11, 13>>, <<>>>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<0>>>>,
+    R |-> <<3, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {0}, weights |-> <<3, 1, 1>>],
+    calendar |-> (4 :> 3 @@ 5 :> 0),
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<0, 11, 13>> ] }
+/\ steps = <<1, 0>>
+/\ step = 1
+
+State 3: <ReplayNext line 4, col 14 to line 7, col 16 of module MC_replay_closure_checked_fixed>
+/\ audit = TRUE
+/\ tip = <<<<0, 23>>, <<>>>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<>>>>,
+    R |-> <<2, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {}, weights |-> <<2, 1, 1>>],
+    calendar |-> (4 :> 2 @@ 5 :> 3),
+    node |-> 1,
+    kind |-> "adoption",
+    chain |-> <<0, 23>> ],
+  [ D |-> <<<<>>, <<>>, <<0>>>>,
+    R |-> <<3, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {0}, weights |-> <<3, 1, 1>>],
+    calendar |-> (4 :> 3 @@ 5 :> 0),
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<0, 11, 13>> ] }
+/\ steps = <<2, 0>>
+/\ step = 2
+
+3 states generated, 3 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 3.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 1 and the 95th percentile is 1).
+Finished in 00s at (2026-09-30 21:27:52)
+
+exit=12

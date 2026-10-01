@@ -1,0 +1,40 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 49 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 33409] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file <tmp>
+Parsing file <tmp>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module NModel_v06
+Semantic processing of module MC_live_v06
+Starting... (2026-09-30 17:41:23)
+Implied-temporal checking--satisfiability problem has 2 branches.
+Computing initial states...
+Computed 2 initial states...
+Computed 4 initial states...
+Computed 8 initial states...
+Computed 16 initial states...
+Computed 32 initial states...
+Finished computing initial states: 48 distinct states generated at 2026-09-30 17:41:23.
+Checking 2 branches of temporal properties for the current state space with 577 total distinct states at (2026-09-30 17:41:26)
+Finished checking temporal properties in 00s at 2026-09-30 17:41:26
+Progress(5) at 2026-09-30 17:41:26: 877 states generated (877 s/min), 332 distinct states found (332 ds/min), 85 states left on queue.
+Progress(7) at 2026-09-30 17:41:29: 1 296 states generated, 386 distinct states found, 0 states left on queue.
+Checking 2 branches of temporal properties for the complete state space with 772 total distinct states at (2026-09-30 17:41:29)
+Finished checking temporal properties in 00s at 2026-09-30 17:41:29
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.9E-14
+1296 states generated, 386 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 7.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 3 and the 95th percentile is 2).
+Finished in 06s at (2026-09-30 17:41:29)
+exit=0

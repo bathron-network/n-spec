@@ -1,0 +1,19 @@
+{
+  "name": "MC_witness_registry_Empty",
+  "status": "INCOMPLET",
+  "exit": 75,
+  "timeout": false,
+  "seconds": 0.53,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 280,
+  "distinct": 164,
+  "queue": 84,
+  "depth": 8,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Threshold = 2\n Mutation = \"none\"\nINVARIANTS NoWitnessEmpty\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_registry_Empty.log"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "MC_mut_generation_checked",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.56,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "S1"
+  ],
+  "generated": 4739,
+  "distinct": 1531,
+  "queue": 762,
+  "depth": 8,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Mutation = \"generation\"\nINVARIANTS S1\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_mut_generation_checked.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_mut_generation_checked.cfg": "ed0dff4f169ac456570ec986c92ce0bff73a2499f953c110ae3c0e88e71943e9",
+    "MC_mut_generation_checked.tla": "cbb12032d2b661a730f10b17ed59f09a5b95e3cf9f29bd30104f04eb47449b27",
+    "PersistenceChecked.tla": "7d8bf98f70c3936ebbe4e8f79b54ecfd02e5de82003ae0b0037bbd2fc90f355e",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

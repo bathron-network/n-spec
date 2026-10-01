@@ -1,0 +1,21 @@
+{
+  "name": "MC_brake_068_arithmetic",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 0.54,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 64,
+  "distinct": 32,
+  "queue": 0,
+  "depth": 1,
+  "configuration": "SPECIFICATION Spec\nINVARIANTS Density068 MaskFixed DenominatorZero\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 5.6E-17"
+  ],
+  "log": "logs/MC_brake_068_arithmetic.log"
+}

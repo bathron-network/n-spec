@@ -1,0 +1,11 @@
+{
+  "samples_per_beta_u": 1000000,
+  "seed": 20260930,
+  "workers": 8,
+  "independent_samples": 16000000,
+  "rows": 192,
+  "wall_seconds": 1.214699875,
+  "total_cpu_seconds": 9.602796000000001,
+  "hard_cpu_reservation": 324,
+  "note": "Conditional scenario. Four Delta values share the same instantaneous-delivery experiment."
+}

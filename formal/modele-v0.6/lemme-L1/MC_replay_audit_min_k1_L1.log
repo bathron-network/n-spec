@@ -1,0 +1,534 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-fp", "0", "-metadir", "<TMPDIR>", "-config", "MC_replay_audit_min_k1_L1.cfg", "MC_replay_audit_min_k1_L1.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 0 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 60843] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_replay_audit_min_k1_L1.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryAudit_L1.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryAudit.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModelFast2_L1.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModelFast2.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryModelFast2
+Semantic processing of module RegistryAudit
+Semantic processing of module RegistryModelFast2_L1
+Semantic processing of module RegistryAudit_L1
+Semantic processing of module MC_replay_audit_min_k1_L1
+Starting... (2026-09-30 23:05:17)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 23:05:17.
+Error: Invariant NoWitnessTwoSignatures is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ l1journal = {}
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>>
+/\ step = 0
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 2: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ l1journal = {}
+/\ slot = 0
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 1
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 3: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ l1journal = {}
+/\ slot = 1
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 2
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 4: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ l1journal = {}
+/\ slot = 2
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 3
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 5: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ l1journal = {}
+/\ slot = 3
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 4
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 6: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = {0}
+/\ journal = {}
+/\ partition = TRUE
+/\ l1journal = {}
+/\ slot = 4
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 5
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 7: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = {}
+/\ partition = TRUE
+/\ l1journal = {}
+/\ slot = 4
+/\ absent = TRUE
+/\ chains = <<<<>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 6
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 8: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = { [ slot |-> 4,
+    node |-> 1,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)>>,
+    control |-> {},
+    calendar |-> (4 :> 1 @@ 5 :> 1) ] }
+/\ partition = TRUE
+/\ l1journal = { [ node |-> 1,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    chain |-> <<11>> ] }
+/\ slot = 4
+/\ absent = TRUE
+/\ chains = <<<<11>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 7
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |->
+         [ epoch |-> 2,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+           registry |-> <<2, 1, 1>> ],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> 4,
+     origin |-> 0,
+     seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 9: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = { [ slot |-> 4,
+    node |-> 1,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)>>,
+    control |-> {},
+    calendar |-> (4 :> 1 @@ 5 :> 1) ] }
+/\ partition = TRUE
+/\ l1journal = { [ node |-> 1,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    chain |-> <<11>> ] }
+/\ slot = 4
+/\ absent = FALSE
+/\ chains = <<<<11>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 8
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |->
+         [ epoch |-> 2,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+           registry |-> <<2, 1, 1>> ],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> 4,
+     origin |-> 0,
+     seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 10: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = { [ slot |-> 4,
+    node |-> 1,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)>>,
+    control |-> {},
+    calendar |-> (4 :> 1 @@ 5 :> 1) ] }
+/\ partition = TRUE
+/\ l1journal = { [ node |-> 1,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    chain |-> <<11>> ] }
+/\ slot = 4
+/\ absent = FALSE
+/\ chains = <<<<11>>, <<13>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 1779, 0, 0, 0, 0, 0>>
+/\ step = 9
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |->
+         [ epoch |-> 2,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+           registry |-> <<2, 1, 1>> ],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> 4,
+     origin |-> 0,
+     seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |-> [epoch |-> -1, supports |-> <<>>, registry |-> <<>>],
+     epoch |-> 0,
+     tip |-> <<13>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> -1,
+     origin |-> 0,
+     seen |-> <<0, 1>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+State 11: <Action line 16, col 94 to line 16, col 182 of module MC_replay_audit_min_k1_L1>
+/\ recoveryUsed = {}
+/\ ready = 0..2
+/\ journal = { [ slot |-> 4,
+    node |-> 1,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)>>,
+    control |-> {},
+    calendar |-> (4 :> 1 @@ 5 :> 1) ],
+  [ slot |-> 4,
+    node |-> 2,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<13>>),
+    R |-> <<2, 2, 1>>,
+    X |-> <<"v6", 0, (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)>>,
+    control |-> {13},
+    calendar |-> (4 :> 2 @@ 5 :> 3) ] }
+/\ partition = TRUE
+/\ l1journal = { [ node |-> 1,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+    R |-> <<2, 1, 1>>,
+    chain |-> <<11>> ],
+  [ node |-> 2,
+    e |-> 2,
+    kind |-> "signature",
+    D |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<13>>),
+    R |-> <<2, 2, 1>>,
+    chain |-> <<13, 17>> ] }
+/\ slot = 4
+/\ absent = FALSE
+/\ chains = <<<<11>>, <<13, 17>>>>
+/\ blockTie = <<0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63233, 0, 1779, 0, 0, 0, 63426, 0>>
+/\ step = 10
+/\ bitcoin = (0 :> 0 @@ 1 :> 0 @@ 2 :> 1)
+/\ audit = [ anchor |-> TRUE,
+  conditional |-> TRUE,
+  immutable |-> TRUE,
+  h1 |-> TRUE,
+  bootstrap |-> TRUE,
+  recovery |-> TRUE ]
+/\ evidence = "NONE"
+/\ local = << [ history |->
+         [ epoch |-> 2,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<>>),
+           registry |-> <<2, 1, 1>> ],
+     epoch |-> 0,
+     tip |-> <<>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> 4,
+     origin |-> 0,
+     seen |-> <<1, 0>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ],
+   [ history |->
+         [ epoch |-> 2,
+           supports |-> (0 :> <<>> @@ 1 :> <<>> @@ 2 :> <<13>>),
+           registry |-> <<2, 2, 1>> ],
+     epoch |-> 0,
+     tip |-> <<13>>,
+     registry |-> <<2, 1, 1>>,
+     signed |-> 4,
+     origin |-> 0,
+     seen |-> <<0, 2>>,
+     anchor |-> <<>>,
+     mode |-> "RUN" ] >>
+
+11 states generated, 11 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 11.
+The average outdegree of the complete state graph is 1 (minimum is 1, the maximum 1 and the 95th percentile is 1).
+Finished in 00s at (2026-09-30 23:05:17)
+
+exit=12

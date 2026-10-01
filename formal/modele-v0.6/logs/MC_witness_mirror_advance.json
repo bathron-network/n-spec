@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_mirror_advance",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 104.22,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessMirror"
+  ],
+  "generated": 1247432,
+  "distinct": 245876,
+  "queue": 79814,
+  "depth": 15,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Epochs = 3\n SlotsPerEpoch = 2\n EndSlot = 4\n KReg = 1\n MaxReorg = 4\n ForkSlot = 0\n BrokenTipSnapshot = FALSE\n BrokenH1Promote = FALSE\n RuleA = TRUE\nINVARIANTS NoWitnessMirror\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_mirror_advance.log"
+}

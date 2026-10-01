@@ -1,0 +1,39 @@
+Error: Invariant AddNoReset is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ depth = 59
+/\ after = [state |-> "ACTIVE", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ consumed = FALSE
+/\ burnAmount = 9
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = FALSE
+/\ exclude = FALSE
+/\ before = [state |-> "ACTIVE", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 0
+/\ priceOK = FALSE
+/\ reference = "foreign"
+/\ currentPrice = 10
+
+State 2: <Add line 12, col 7 to line 19, col 108 of module AdmissionsChecked>
+/\ audit = FALSE
+/\ depth = 59
+/\ after = [state |-> "ACTIVE", reset |-> 0, queue |-> 3, active |-> 5, dormant |-> 0]
+/\ consumed = FALSE
+/\ burnAmount = 9
+/\ ban = FALSE
+/\ reserved = FALSE
+/\ react = FALSE
+/\ exclude = FALSE
+/\ before = [state |-> "ACTIVE", reset |-> 2, queue |-> 3, active |-> 4, dormant |-> 0]
+/\ phase = 1
+/\ priceOK = FALSE
+/\ reference = "foreign"
+/\ currentPrice = 10
+
+964 states generated, 964 distinct states found, 956 states left on queue.
+The depth of the complete state graph search is 2.
+Finished in 00s at (2026-09-30 20:34:08)
+
+exit=12

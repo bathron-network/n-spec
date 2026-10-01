@@ -1,0 +1,34 @@
+COMMAND ["<JAVA>", "-XX:+UseParallelGC", "-Xmx3g", "-Djava.io.tmpdir=<TMPDIR>", "-cp", "<TMPDIR>:tla2tools.jar", "LocalTLC", "-workers", "4", "-seed", "1", "-metadir", "<TMPDIR>", "-config", "MC_c6_k1_11.cfg", "MC_c6_k1_11.tla"]
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Running breadth-first search Model-Checking with fp 17 and seed 1 with 4 workers on 14 cores with 2731MB heap and 64MB offheap memory [pid: 51528] (Mac OS X 26.6.2 aarch64, Homebrew 21.0.12.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file etudes/n-spec/tla/modele-v0.6/MC_c6_k1_11.tla
+Parsing file etudes/n-spec/tla/modele-v0.6/RegistryModelFast2.tla
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Parsing file <TMPDIR>
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module RegistryModelFast2
+Semantic processing of module MC_c6_k1_11
+Starting... (2026-09-30 21:14:03)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-09-30 21:14:03.
+Progress(12) at 2026-09-30 21:14:06: 79 448 states generated (79 448 s/min), 16 551 distinct states found (16 551 ds/min), 6 914 states left on queue.
+Progress(17) at 2026-09-30 21:15:06: 652 649 states generated (573 201 s/min), 117 841 distinct states found (101 290 ds/min), 27 348 states left on queue.
+Progress(19) at 2026-09-30 21:16:06: 1 088 852 states generated (436 203 s/min), 179 325 distinct states found (61 484 ds/min), 21 671 states left on queue.
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.4E-8
+  based on the actual fingerprints:  val = 1.9E-9
+1412791 states generated, 213454 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 28.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 8 and the 95th percentile is 3).
+Finished in 03min 00s at (2026-09-30 21:17:03)
+
+exit=0

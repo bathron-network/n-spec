@@ -1,0 +1,218 @@
+Error: Invariant NoWitnessDeliveredLowDensity is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ c1 = [ tip |-> <<>>,
+  mode |-> "RUN",
+  anchor |-> <<>>,
+  adoptions |-> 0,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ c2 = [ tip |-> <<>>,
+  mode |-> "RUN",
+  anchor |-> <<>>,
+  adoptions |-> 0,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ now = 1
+/\ tree = {<<>>}
+/\ r1 = <<7, 10>>
+/\ r2 = <<43, 100>>
+/\ public = {<<>>}
+/\ seen = {<<>>}
+
+State 2: <HonestProduce line 162, col 3 to line 168, col 35 of module NonInterference_Deliv>
+/\ c1 = [ tip |-> <<<<1, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<>>,
+  adoptions |-> 1,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ c2 = [ tip |-> <<<<1, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<>>,
+  adoptions |-> 1,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ now = 1
+/\ tree = {<<>>, <<<<1, "h">>>>}
+/\ r1 = <<7, 10>>
+/\ r2 = <<43, 100>>
+/\ public = {<<>>, <<<<1, "h">>>>}
+/\ seen = {<<>>, <<<<1, "h">>>>}
+
+State 3: <Tick line 202, col 9 to line 208, col 51 of module NonInterference_Deliv>
+/\ c1 = [ tip |-> <<<<1, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<>>,
+  adoptions |-> 1,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ c2 = [ tip |-> <<<<1, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<>>,
+  adoptions |-> 1,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ now = 2
+/\ tree = {<<>>, <<<<1, "h">>>>}
+/\ r1 = <<7, 10>>
+/\ r2 = <<43, 100>>
+/\ public = {<<>>, <<<<1, "h">>>>}
+/\ seen = {<<>>, <<<<1, "h">>>>}
+
+State 4: <Tick line 202, col 9 to line 208, col 51 of module NonInterference_Deliv>
+/\ c1 = [ tip |-> <<<<1, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<>>,
+  adoptions |-> 1,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ c2 = [ tip |-> <<<<1, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<>>,
+  adoptions |-> 1,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ now = 3
+/\ tree = {<<>>, <<<<1, "h">>>>}
+/\ r1 = <<7, 10>>
+/\ r2 = <<43, 100>>
+/\ public = {<<>>, <<<<1, "h">>>>}
+/\ seen = {<<>>, <<<<1, "h">>>>}
+
+State 5: <HonestProduce line 162, col 3 to line 168, col 35 of module NonInterference_Deliv>
+/\ c1 = [ tip |-> <<<<1, "h">>, <<3, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<<<1, "h">>>>,
+  adoptions |-> 2,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ c2 = [ tip |-> <<<<1, "h">>, <<3, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<<<1, "h">>>>,
+  adoptions |-> 2,
+  maxDisc |-> 0,
+  excluded |-> {},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 0,
+  slow |-> 0,
+  produced |-> {} ]
+/\ now = 3
+/\ tree = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+/\ r1 = <<7, 10>>
+/\ r2 = <<43, 100>>
+/\ public = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+/\ seen = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+
+State 6: <Tick line 202, col 9 to line 208, col 51 of module NonInterference_Deliv>
+/\ c1 = [ tip |-> <<<<1, "h">>, <<3, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<<<1, "h">>>>,
+  adoptions |-> 2,
+  maxDisc |-> 0,
+  excluded |-> {"A"},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 1,
+  slow |-> 0,
+  produced |-> {} ]
+/\ c2 = [ tip |-> <<<<1, "h">>, <<3, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<<<1, "h">>>>,
+  adoptions |-> 2,
+  maxDisc |-> 0,
+  excluded |-> {"A"},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 1,
+  slow |-> 0,
+  produced |-> {} ]
+/\ now = 4
+/\ tree = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+/\ r1 = <<7, 10>>
+/\ r2 = <<43, 100>>
+/\ public = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+/\ seen = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+
+State 7: <Tick line 202, col 9 to line 208, col 51 of module NonInterference_Deliv>
+/\ c1 = [ tip |-> <<<<1, "h">>, <<3, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<<<1, "h">>>>,
+  adoptions |-> 2,
+  maxDisc |-> 0,
+  excluded |-> {"A"},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 1,
+  slow |-> 0,
+  produced |-> {} ]
+/\ c2 = [ tip |-> <<<<1, "h">>, <<3, "h">>>>,
+  mode |-> "RUN",
+  anchor |-> <<<<1, "h">>>>,
+  adoptions |-> 2,
+  maxDisc |-> 0,
+  excluded |-> {"A"},
+  slowLast |-> 0,
+  health |-> TRUE,
+  ordinary |-> 1,
+  slow |-> 0,
+  produced |-> {} ]
+/\ now = 5
+/\ tree = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+/\ r1 = <<7, 10>>
+/\ r2 = <<43, 100>>
+/\ public = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+/\ seen = {<<>>, <<<<1, "h">>>>, <<<<1, "h">>, <<3, "h">>>>}
+
+319 states generated, 254 distinct states found, 127 states left on queue.
+The depth of the complete state graph search is 8.
+The average outdegree of the complete state graph is 2 (minimum is 1, the maximum 5 and the 95th percentile is 4).
+Finished in 00s at (2026-10-01 10:58:26)
+
+exit=12

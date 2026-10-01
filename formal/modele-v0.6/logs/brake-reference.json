@@ -1,0 +1,288 @@
+[
+  {
+    "epoch": 1,
+    "cutoff": 4,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 2,
+    "cutoff": 9,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 3,
+    "cutoff": 14,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 4,
+    "cutoff": 19,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 5,
+    "cutoff": 24,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 6,
+    "cutoff": 29,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 7,
+    "cutoff": 34,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 8,
+    "cutoff": 39,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 9,
+    "cutoff": 44,
+    "Q": [],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 10,
+    "cutoff": 49,
+    "Q": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "health": false,
+    "weight": 1000,
+    "base": 1000,
+    "budget": 10,
+    "excluded": [
+      4
+    ],
+    "slow_weight": 5,
+    "rotation": true
+  },
+  {
+    "epoch": 11,
+    "cutoff": 54,
+    "Q": [
+      2,
+      3,
+      5
+    ],
+    "health": false,
+    "weight": 995,
+    "base": 995,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 12,
+    "cutoff": 59,
+    "Q": [
+      2,
+      3,
+      5
+    ],
+    "health": false,
+    "weight": 995,
+    "base": 995,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 13,
+    "cutoff": 64,
+    "Q": [
+      2,
+      3,
+      5
+    ],
+    "health": false,
+    "weight": 995,
+    "base": 995,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 14,
+    "cutoff": 69,
+    "Q": [
+      2,
+      3,
+      5
+    ],
+    "health": false,
+    "weight": 995,
+    "base": 995,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 15,
+    "cutoff": 74,
+    "Q": [
+      2,
+      3,
+      5
+    ],
+    "health": false,
+    "weight": 995,
+    "base": 995,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 16,
+    "cutoff": 79,
+    "Q": [
+      2,
+      3,
+      5
+    ],
+    "health": false,
+    "weight": 995,
+    "base": 995,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 17,
+    "cutoff": 84,
+    "Q": [
+      2,
+      3,
+      5
+    ],
+    "health": false,
+    "weight": 995,
+    "base": 995,
+    "budget": 9,
+    "excluded": [
+      5
+    ],
+    "slow_weight": 5,
+    "rotation": false
+  },
+  {
+    "epoch": 18,
+    "cutoff": 89,
+    "Q": [
+      2,
+      3
+    ],
+    "health": false,
+    "weight": 990,
+    "base": 990,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 19,
+    "cutoff": 94,
+    "Q": [
+      2,
+      3
+    ],
+    "health": false,
+    "weight": 990,
+    "base": 990,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  },
+  {
+    "epoch": 20,
+    "cutoff": 99,
+    "Q": [
+      2,
+      3
+    ],
+    "health": false,
+    "weight": 990,
+    "base": 990,
+    "budget": 4,
+    "excluded": [],
+    "slow_weight": 0,
+    "rotation": false
+  }
+]

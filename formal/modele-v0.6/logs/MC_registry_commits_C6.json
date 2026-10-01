@@ -1,0 +1,21 @@
+{
+  "name": "MC_registry_commits_C6",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 1.18,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 79903,
+  "distinct": 37249,
+  "queue": 0,
+  "depth": 5,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n MaxReorg = 2\n Mutation = \"none\"\nINVARIANTS C6\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 8.6E-11"
+  ],
+  "log": "logs/MC_registry_commits_C6.log"
+}

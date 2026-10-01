@@ -1,0 +1,30 @@
+{
+  "name": "MC_explore_sync_restricted_PivotDeep",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 109.37,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessDeepSync"
+  ],
+  "generated": 2130084,
+  "distinct": 1082953,
+  "queue": 562133,
+  "depth": 19,
+  "configuration": "SPECIFICATION RSpec\nCONSTANTS SlotsPerEpoch=4 KReg=2 MaxReorg=2 MatMin=6 BtcMat=7 EndSlot=12\nINVARIANTS TypeOK MaturityLegal AdoptWithinMaxreorg NoOtherStructural NoWitnessDeepSync\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/reproductions/pivot_profond_final/MC_explore_sync_restricted_PivotDeep.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_explore_sync_restricted_PivotDeep.cfg": "6c7f7db513a8b967be891ee7c8e7bef90bfe3f2a6e5cc2dde7e640abc258b003",
+    "MC_explore_sync_restricted_PivotDeep.tla": "eea351db6110bb989a720c312b0f0076a5f6f7f3c58e9691a19367d73d118035",
+    "RegistryModel_PivotDeep.tla": "9438ddd08991cb8b359fb77c7458ddcd59826c2262acdea9c78601196dc685e8",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

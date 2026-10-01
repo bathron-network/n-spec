@@ -1,0 +1,30 @@
+{
+  "name": "MC_deliv_mut_stop_bypass",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.65,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "ConsEqual"
+  ],
+  "generated": 3276,
+  "distinct": 2490,
+  "queue": 1765,
+  "depth": 10,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n  MaxSlot = 6\n  MaxReorg = 1\n  EpochLen = 3\n  Owner <- MCOwner\n  Ids = {\"A\", \"H\", \"O\"}\n  WShort = 2\n  WLong = 4\n  KDepth = 2\n  ObjSlot = 1\n  RhoRef <- MCRhoRef\n  Rhos <- MCRhos\n  HealthNum = 7\n  HealthDen = 10\n  Mutation = \"STOP_BYPASS\"\nINVARIANTS ConsEqual\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_mut_stop_bypass.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_deliv_mut_stop_bypass.cfg": "cfeefc8e937bc1e12d5f2054b471a9e188056a1472e5502fa265359ca4ba16c4",
+    "MC_deliv_mut_stop_bypass.tla": "e30b98ee6d5caf89ff9c5060e64b22d819446ca8dcce5c03f64bcfb4e99ae060",
+    "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

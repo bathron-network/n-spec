@@ -1,0 +1,31 @@
+{
+  "name": "MC_replay_audit_min_k1",
+  "status": "FAIL",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.64,
+  "workers": 1,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "CPregGlobal"
+  ],
+  "generated": 11,
+  "distinct": 11,
+  "queue": 0,
+  "depth": 11,
+  "configuration": "SPECIFICATION Replay\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 1\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryImmutable C6Global CPregGlobal\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [],
+  "log": "logs/MC_replay_audit_min_k1.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_replay_audit_min_k1.cfg": "c6eec93b1f683588eae825c9b806fa9cb0afc544783904388d1e07edeb36cd66",
+    "MC_replay_audit_min_k1.tla": "c537a34b000de952aa22cfa8fd59559312deac85c9dfb70992f883c8f71394e7",
+    "RegistryAudit.tla": "f7a9bea98293eaadf1e54c0cb2e5c3bc7876e2e35aa1d266ababf6fa9be0eb96",
+    "RegistryModelFast2.tla": "5b8ddcfa5bdb93f8f202b8e940115825e48aae195fca8d0b4dcd711341b9efec",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

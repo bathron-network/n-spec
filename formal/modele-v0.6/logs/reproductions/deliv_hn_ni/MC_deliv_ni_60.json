@@ -1,0 +1,31 @@
+{
+  "name": "MC_deliv_ni_60",
+  "status": "PASS",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 145.32,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 22118626,
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n  MaxSlot = 6\n  MaxReorg = 1\n  EpochLen = 3\n  Owner <- MCOwner\n  Ids = {\"A\", \"H\", \"O\"}\n  WShort = 2\n  WLong = 4\n  KDepth = 2\n  ObjSlot = 1\n  RhoRef <- MCRhoRef\n  Rhos <- MCRhos\n  HealthNum = 7\n  HealthDen = 10\n  Mutation = \"NONE\"\nINVARIANTS TypeOK ConsEqual AdoptSafe StopRespected\nCHECK_DEADLOCK FALSE\n",
+  "collision": [
+    "  calculated (optimistic):  val = 6.0E-6",
+    "  based on the actual fingerprints:  val = 1.6E-6"
+  ],
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_60.log",
+  "tool_abort": false,
+  "input_sha256": {
+    "MC_deliv_ni_60.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+    "MC_deliv_ni_60.tla": "4fcbc678dbde1def6b00eda1763001c5141b9635cb7d54019fa82dba926dc3aa",
+    "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+    "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+    "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+}

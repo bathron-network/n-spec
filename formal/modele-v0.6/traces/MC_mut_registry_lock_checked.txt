@@ -1,0 +1,51 @@
+Error: Invariant NoJournalVeto is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ audit = TRUE
+/\ tip = <<<<>>, <<>>>>
+/\ journal = {}
+/\ steps = <<0, 0>>
+
+State 2: <Commit line 25, col 18 to line 30, col 36 of module RegistryCommitmentsChecked>
+/\ audit = TRUE
+/\ tip = <<<<0, 23>>, <<>>>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<>>>>,
+    R |-> <<2, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {}, weights |-> <<2, 1, 1>>],
+    calendar |-> (4 :> 2 @@ 5 :> 3),
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<0, 23>> ] }
+/\ steps = <<1, 0>>
+
+State 3: <Commit line 25, col 18 to line 30, col 36 of module RegistryCommitmentsChecked>
+/\ audit = FALSE
+/\ tip = <<<<0, 23>>, <<>>>>
+/\ journal = { [ D |-> <<<<>>, <<>>, <<>>>>,
+    R |-> <<2, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {}, weights |-> <<2, 1, 1>>],
+    calendar |-> (4 :> 2 @@ 5 :> 3),
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<0, 23>> ],
+  [ D |-> <<<<>>, <<>>, <<0>>>>,
+    R |-> <<3, 1, 1>>,
+    X |-> <<"rules", 0, <<0, 1, 1>>>>,
+    epoch |-> 2,
+    control |-> [ops |-> {0}, weights |-> <<3, 1, 1>>],
+    calendar |-> (4 :> 3 @@ 5 :> 0),
+    node |-> 1,
+    kind |-> "signature",
+    chain |-> <<0, 11, 13>> ] }
+/\ steps = <<2, 0>>
+
+68 states generated, 66 distinct states found, 58 states left on queue.
+The depth of the complete state graph search is 4.
+The average outdegree of the complete state graph is 23 (minimum is 15, the maximum 30 and the 95th percentile is 30).
+Finished in 00s at (2026-09-30 20:34:14)
+
+exit=12

@@ -1,0 +1,6 @@
+Error: Invariant NoWitnessHealth is violated by the initial state:
+Q = {2, 3, 4, 5}
+
+Finished in 00s at (2026-09-30 19:36:39)
+
+exit=12

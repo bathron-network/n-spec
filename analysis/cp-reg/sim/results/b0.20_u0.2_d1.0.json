@@ -1,0 +1,98 @@
+{
+  "cell": "b0.20_u0.2_d1.0",
+  "parameters": {
+    "beta": 0.2,
+    "u": 0.2,
+    "h": 0.16000000000000003,
+    "alpha": 0.6400000000000001,
+    "f": 0.36000000000000004,
+    "delay": 1.0,
+    "d": 1,
+    "reduced_good": 0.28444444444444444,
+    "reduced_bad": 0.7155555555555555
+  },
+  "samples": 4096,
+  "horizon": 14400,
+  "seed_entropy": [
+    20260930,
+    1,
+    1,
+    3
+  ],
+  "honest_active_identities": 64,
+  "max_age_quantiles": [
+    14398.0,
+    14399.0,
+    14399.0,
+    14399.0,
+    14399.0
+  ],
+  "max_blocks_quantiles": [
+    2123.0,
+    2172.0,
+    2186.0,
+    2216.05,
+    2274.0
+  ],
+  "mean_public_growth": 0.14742146809895834,
+  "mean_favorable_starts": 7189.9658203125,
+  "envelope_violations": 0,
+  "examples": [
+    {
+      "rep": 0,
+      "age": {
+        "start_group": 0,
+        "start_slot": 0,
+        "release_slot": 14399,
+        "public_prefix_blocks": 0,
+        "public_total_blocks": 2125,
+        "private_added": 2921,
+        "disconnected": 2125,
+        "first_difference": 4,
+        "age": 14395,
+        "tie_favorable": false
+      },
+      "depth": {
+        "start_group": 0,
+        "start_slot": 0,
+        "release_slot": 14399,
+        "public_prefix_blocks": 0,
+        "public_total_blocks": 2125,
+        "private_added": 2921,
+        "disconnected": 2125,
+        "first_difference": 4,
+        "age": 14395,
+        "tie_favorable": false
+      }
+    },
+    {
+      "rep": 1,
+      "age": {
+        "start_group": 0,
+        "start_slot": 0,
+        "release_slot": 14399,
+        "public_prefix_blocks": 0,
+        "public_total_blocks": 2122,
+        "private_added": 2900,
+        "disconnected": 2122,
+        "first_difference": 4,
+        "age": 14395,
+        "tie_favorable": false
+      },
+      "depth": {
+        "start_group": 0,
+        "start_slot": 0,
+        "release_slot": 14399,
+        "public_prefix_blocks": 0,
+        "public_total_blocks": 2122,
+        "private_added": 2900,
+        "disconnected": 2122,
+        "first_difference": 4,
+        "age": 14395,
+        "tie_favorable": false
+      }
+    }
+  ],
+  "cpu_seconds": 8.949891000000001,
+  "wall_seconds": 9.608210333999999
+}

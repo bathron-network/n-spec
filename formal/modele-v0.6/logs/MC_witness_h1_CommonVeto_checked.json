@@ -1,0 +1,21 @@
+{
+  "name": "MC_witness_h1_CommonVeto_checked",
+  "status": "TÉMOIN",
+  "exit": 12,
+  "timeout": false,
+  "seconds": 0.75,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [
+    "NoWitnessCommonVeto"
+  ],
+  "generated": 13657,
+  "distinct": 4656,
+  "queue": 4420,
+  "depth": 5,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n Scenario = \"forward\"\n Mutation = \"none\"\n MaxReorg = 1\nINVARIANTS NoWitnessCommonVeto\nCHECK_DEADLOCK FALSE\n",
+  "collision": [],
+  "log": "logs/MC_witness_h1_CommonVeto_checked.log"
+}

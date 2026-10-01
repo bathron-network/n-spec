@@ -1,0 +1,19 @@
+{
+  "name": "MC_general_a_k1_c6",
+  "status": "INCOMPLET",
+  "exit": 143,
+  "timeout": true,
+  "seconds": 570.09,
+  "workers": 4,
+  "heap": "3g",
+  "limit_seconds": 570,
+  "mode": "BFS",
+  "violations": [],
+  "generated": 4435419,
+  "distinct": 719926,
+  "queue": 59148,
+  "depth": null,
+  "configuration": "SPECIFICATION Spec\nCONSTANTS\n  Epochs = 3\n  SlotsPerEpoch = 2\n  EndSlot = 4\n  KReg = 1\n  MaxReorg = 1\n  ForkSlot = 0\n  BrokenTipSnapshot = FALSE\n  BrokenH1Promote = FALSE\nINVARIANTS TypeOK RegistryStableOnCommonPrefix BlockMetadataCorrect\nCHECK_DEADLOCK FALSE\nCONSTANT RuleA = TRUE\n",
+  "collision": [],
+  "log": "logs/MC_general_a_k1_c6.log"
+}

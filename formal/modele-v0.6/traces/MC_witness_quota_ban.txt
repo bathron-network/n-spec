@@ -1,0 +1,29 @@
+Error: Invariant NoWitnessProspective is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ excluded = <<0>>
+/\ epoch = 0
+/\ ban = 900
+/\ capAtDecision = <<0>>
+/\ wf = <<1000>>
+
+State 2: <Advance line 11, col 11 to line 20, col 17 of module QuotaHistory>
+/\ excluded = <<0, 10>>
+/\ epoch = 1
+/\ ban = 900
+/\ capAtDecision = <<0, 20>>
+/\ wf = <<1000, 1000>>
+
+State 3: <Advance line 11, col 11 to line 20, col 17 of module QuotaHistory>
+/\ excluded = <<0, 10, 0>>
+/\ epoch = 2
+/\ ban = 900
+/\ capAtDecision = <<0, 20, 0>>
+/\ wf = <<1000, 1000, 90>>
+
+23 states generated, 23 distinct states found, 1 states left on queue.
+The depth of the complete state graph search is 10.
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
+Finished in 00s at (2026-09-30 20:35:33)
+
+exit=12

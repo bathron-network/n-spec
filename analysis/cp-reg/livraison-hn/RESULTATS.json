@@ -1,0 +1,396 @@
+[
+ {
+  "name": "MC_deliv_ni_00",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 145.05,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_00.log",
+  "input_sha256": {
+   "MC_deliv_ni_00.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_00.tla": "3ada91fb2783b971d7d4565e81a145e0a31d887c64ba0fd6c2cbbb2a32530260",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_100",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 145.26,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_100.log",
+  "input_sha256": {
+   "MC_deliv_ni_100.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_100.tla": "f7495647fb2d5bddeb7081c4e0e9c6cac4089a3f19e4e80c1184df97ee58aeb8",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_117",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 145.6,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_117.log",
+  "input_sha256": {
+   "MC_deliv_ni_117.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_117.tla": "acd113fb7705545d07e04b29a9a4e2b28b0385756696b6542c16d4221cf83a58",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_16",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 146.06,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_16.log",
+  "input_sha256": {
+   "MC_deliv_ni_16.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_16.tla": "5e322bc6c73c789e6de42d78c962b8582939091d523c326e54f4f8250951d373",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_20",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 146.37,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_20.log",
+  "input_sha256": {
+   "MC_deliv_ni_20.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_20.tla": "dafa350951cfd04ed48f88ba4225bb54cd17fe1a4021a8aad481392fd0fc5e8b",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_25",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 146.18,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_25.log",
+  "input_sha256": {
+   "MC_deliv_ni_25.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_25.tla": "8716d17c66c378df568789cb2c19b18fe6859d71e65b4a62a36b21bd750ab5b7",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_33",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 147.19,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_33.log",
+  "input_sha256": {
+   "MC_deliv_ni_33.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_33.tla": "9a33a0edd6192ca10b3715efa0befeb8e458bb87e9c55f6268d1cb40ece4918c",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_40",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 145.79,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_40.log",
+  "input_sha256": {
+   "MC_deliv_ni_40.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_40.tla": "c62f8f55a3a9d2ee15adbdbf50668a4886bfc523a8dd044e3fa9193a0ba05bbe",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_43",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 151.72,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_43.log",
+  "input_sha256": {
+   "MC_deliv_ni_43.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_43.tla": "01e1bab39968fa64c1cad4179e8f8bf869a4c2b7fa799773a245b037641e5227",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_60",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 145.32,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_60.log",
+  "input_sha256": {
+   "MC_deliv_ni_60.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_60.tla": "4fcbc678dbde1def6b00eda1763001c5141b9635cb7d54019fa82dba926dc3aa",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_67",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 145.51,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_67.log",
+  "input_sha256": {
+   "MC_deliv_ni_67.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_67.tla": "85e5c2809dd82f41984757a00b3a5db4fd4cde5392cefa3af774f282aef5c8a1",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_80",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 142.79,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_80.log",
+  "input_sha256": {
+   "MC_deliv_ni_80.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_80.tla": "8c76bd846a4b3f9a2c2fba7a548b13719b8919aed6ec422a7caf9f79236d8ca0",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_ni_83",
+  "status": "PASS",
+  "violations": [],
+  "distinct": 7564308,
+  "queue": 0,
+  "depth": 22,
+  "seconds": 146.81,
+  "log": "logs/reproductions/deliv_hn_ni/MC_deliv_ni_83.log",
+  "input_sha256": {
+   "MC_deliv_ni_83.cfg": "54d90f956d2fbb2be35c72a4277de7363d3565fd15ea5bcb1cb66b82f706e2b2",
+   "MC_deliv_ni_83.tla": "65ae526be3b4202dca7a40738b31836091eeece1f0a291415ba6ae5744c7a9c3",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_mut_brake_shared",
+  "status": "FAIL",
+  "violations": [
+   "ConsEqual"
+  ],
+  "distinct": 70,
+  "queue": 35,
+  "depth": 6,
+  "seconds": 0.58,
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_mut_brake_shared.log",
+  "input_sha256": {
+   "MC_deliv_mut_brake_shared.cfg": "0f673ae9d70bd8f82907df80b9607f41956ecd6a842b6a871222c0147c369929",
+   "MC_deliv_mut_brake_shared.tla": "d74665d8acafdf38cddf8bc3654f3582189ef2846eb9fa18a2932224b3e4eda1",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_mut_select_gated",
+  "status": "FAIL",
+  "violations": [
+   "ConsEqual"
+  ],
+  "distinct": 495,
+  "queue": 285,
+  "depth": 9,
+  "seconds": 0.58,
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_mut_select_gated.log",
+  "input_sha256": {
+   "MC_deliv_mut_select_gated.cfg": "9ffcae77454d50d56f22535b18f55c2cddbc5fa79f8565892608460d9f50de99",
+   "MC_deliv_mut_select_gated.tla": "9ebdc4ee16859bb7dd3c0856589b6b45d07da30b4d78bdfb6c85c672f4ccb45e",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_mut_stop_bypass",
+  "status": "FAIL",
+  "violations": [
+   "ConsEqual"
+  ],
+  "distinct": 2490,
+  "queue": 1765,
+  "depth": 10,
+  "seconds": 0.65,
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_mut_stop_bypass.log",
+  "input_sha256": {
+   "MC_deliv_mut_stop_bypass.cfg": "cfeefc8e937bc1e12d5f2054b471a9e188056a1472e5502fa265359ca4ba16c4",
+   "MC_deliv_mut_stop_bypass.tla": "e30b98ee6d5caf89ff9c5060e64b22d819446ca8dcce5c03f64bcfb4e99ae060",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_witness_DeliveredLowDensity",
+  "status": "TÉMOIN",
+  "violations": [
+   "NoWitnessDeliveredLowDensity"
+  ],
+  "distinct": 254,
+  "queue": 127,
+  "depth": 8,
+  "seconds": 0.58,
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_witness_DeliveredLowDensity.log",
+  "input_sha256": {
+   "MC_deliv_witness_DeliveredLowDensity.cfg": "d8c3d4e995c34d904700f66c5e7273b82bbdd63d051522595532aa17f2b00823",
+   "MC_deliv_witness_DeliveredLowDensity.tla": "29946cb204bcd97fe125af3fa856cafe25010c0193efac288d34c3dd4257f403",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_witness_DeliveryDiffers",
+  "status": "TÉMOIN",
+  "violations": [
+   "NoWitnessDeliveryDiffers"
+  ],
+  "distinct": 251,
+  "queue": 125,
+  "depth": 8,
+  "seconds": 0.58,
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_witness_DeliveryDiffers.log",
+  "input_sha256": {
+   "MC_deliv_witness_DeliveryDiffers.cfg": "8487408d414ee138361bf34ec48736ed0bed6c7ec1272efb9ed7f5e00d96fccb",
+   "MC_deliv_witness_DeliveryDiffers.tla": "2a7af9a86e6ed45515695fd1f8d07acae7b8ef72f2d67c58948a9a60e798dece",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_witness_Halted",
+  "status": "TÉMOIN",
+  "violations": [
+   "NoWitnessHalted"
+  ],
+  "distinct": 3075,
+  "queue": 2209,
+  "depth": 11,
+  "seconds": 0.65,
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_witness_Halted.log",
+  "input_sha256": {
+   "MC_deliv_witness_Halted.cfg": "aada65b1c2eaab5ed1e742210dd1c740dfd3546b99cd838e3202fb045f74d350",
+   "MC_deliv_witness_Halted.tla": "30bd2dc5b5135f2fea30c592dfaab6065835f805e242bbd89ec3190c6101e409",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_witness_ReorgAdoption",
+  "status": "TÉMOIN",
+  "violations": [
+   "NoWitnessReorgAdoption"
+  ],
+  "distinct": 802,
+  "queue": 500,
+  "depth": 9,
+  "seconds": 0.64,
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_witness_ReorgAdoption.log",
+  "input_sha256": {
+   "MC_deliv_witness_ReorgAdoption.cfg": "234ebee71116b6af647931e696f12544780a692e3cf6ee4482bfb0cb3a9d49d3",
+   "MC_deliv_witness_ReorgAdoption.tla": "a5b653ca84f6a0f7421c0f87ce610550d86d9b5c5fb7e1f1dca1a1088ad65b3d",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ },
+ {
+  "name": "MC_deliv_witness_SlowLane",
+  "status": "TÉMOIN",
+  "violations": [
+   "NoWitnessSlowLane"
+  ],
+  "distinct": 46,
+  "queue": 23,
+  "depth": 6,
+  "seconds": 0.58,
+  "log": "logs/reproductions/deliv_hn_w/MC_deliv_witness_SlowLane.log",
+  "input_sha256": {
+   "MC_deliv_witness_SlowLane.cfg": "f40db7a83cdbf794e88c81db4da04608ecf5b204a16ff1bbec1fd6dce9ff438c",
+   "MC_deliv_witness_SlowLane.tla": "44074a7a6883a0cb6931a53fe0855a0145964f7a78e19e33b45912df8c5a26b5",
+   "NonInterference_Deliv.tla": "3115bd364b94c1df7d779d0d5b62b4c04fa09a7e149c4a51315c92867eec2831",
+   "run.py": "258064e5b242e8d4226d91cf2904f16f7f8ff2cf5d0409bfdba6b57b0b6d6240",
+   "tla2tools.jar": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+   "tools/LocalTLC.java": "03d701565fe4f62240db104b8e6f6d3263a0b63f269f45ce9d4e15079693881d"
+  }
+ }
+]
