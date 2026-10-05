@@ -2,6 +2,7 @@
 
 > **N v0.7 — Architecture Frozen Candidate. Not mainnet-qualified. Not production-ready.**
 > The current BATHRON Core does **not** implement N yet. Implementation follows the qualification requirements below.
+> Network status: <https://bathron.org/docs/status.html>.
 
 N is a mechanical, vote-free consensus engine. It uses **one producer per slot**, drawn from a registry of burned Bitcoin tickets with a
 Bitcoin-derived seed, and a deterministic fork-choice by score (most valid production blocks since genesis, then a public tie-break
