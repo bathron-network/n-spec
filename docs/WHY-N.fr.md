@@ -17,17 +17,17 @@ Chaque candidat ci-dessous a subi des kill-tests menés par au moins deux analys
 
 C associait un séquenceur unique à un quorum de détenteurs de tickets qui finalisait les lots (`q > (N+f)/2`, verrou par hauteur, certificats chaînés, ban sur équivoque prouvée). Son modèle TLA+ borné, adapté d'un modèle Tendermint publié, n'a trouvé **aucune violation de sûreté**, et toutes les variantes volontairement cassées ont été détectées. C n'a pas été abandonné pour un défaut de sûreté. Trois éléments ont pesé contre lui :
 
-- **β n'est pas garantissable.** Le kill-test sur β a montré que l'affirmation « le burn garantit β » est fausse. Un burn a un coût, mais il ne borne ni la concentration, ni la location de clés, ni la corruption, ni la coercition, ni l'attrition. Au lancement, avec quelques opérateurs gérés par le projet, aucun β < 1 n'est défendable.
-- **Le coût.** Les votes post-quantiques de milliers d'opérateurs coûtent cher. Une analyse estime les signatures de production de N à ≈ 35 Mo/jour (créneaux de 6 s), contre ≈ 49 Go/jour pour deux phases C complètes toutes les 60 s à 7 000 identités, soit un facteur ≈ 1 400.
+- **β n'est pas garantissable.** Le kill-test sur β a montré que l'affirmation « le burn garantit β » est fausse. Un burn a un coût, mais il ne borne ni la concentration, ni la location de clés, ni la corruption, ni la coercition, ni l'attrition. Au lancement, avec quelques producteurs gérés par le projet, aucun β < 1 n'est défendable.
+- **Le coût.** Les votes post-quantiques de milliers d'identités enregistrées coûtent cher. Une analyse estime les signatures de production de N à ≈ 35 Mo/jour (créneaux de 6 s), contre ≈ 49 Go/jour pour deux phases C complètes toutes les 60 s à 7 000 identités, soit un facteur ≈ 1 400.
 - **L'économie des témoins.** Une relecture aveugle de l'économie n'a trouvé aucune rémunération des témoins.
 
-C est **archivé** comme finality gadget possible d'une évolution future. Au genesis, rien ne défère à C. Un C privé ajouté au-dessus de N fournirait une attestation ou une assurance, jamais une « finalité de N ».
+C est **archivé** comme mécanisme possible de décision irrévocable d'une évolution future. Au genesis, rien ne défère à C. Un C privé ajouté au-dessus de N fournirait une attestation ou une assurance, jamais une « finalité de N ».
 
 ### La finalité sans quorum : D, D2, D3, barrière Bitcoin
 
 - **D** (finalité par convergence) : tué. Un propriétaire qui équivoque, combiné à une partition, produit deux « finalités » incompatibles, et le silence ne prouve rien.
 - **D2** (finalité mécanique) : sans vote, l'unicité exige un journal commun qui n'équivoque pas, c'est-à-dire Bitcoin. Le prix est une transaction Bitcoin par transfert ou par lot. Non adopté.
-- **D3** (lignée unique, Bitcoin en lecture seule) : tué pour les paiements libres. Pour toute règle locale, P[double lignée] ≥ 2·(vivacité d'un paiement honnête) − 1. Lire Bitcoin prouve « après H », jamais « avant H ». Ce qui survit : les automates d'horloge et l'**objet de swap à un saut**.
+- **D3** (lignée unique, Bitcoin en lecture seule) : tué pour les paiements libres. Pour toute règle locale, P[double lignée] ≥ 2·(vivacité d'un paiement honnête) − 1. Lire Bitcoin prouve « après H », jamais « avant H ». Ce qui survit : les automates d'horloge et l'**objet de règlement à un saut**.
 - **Barrière Bitcoin** (BFT synchrone cadencé par les blocs Bitcoin) : la sûreté repose sur Δ. Deux tickets et une partition plus longue que 2Δ suffisent à produire deux FINAL silencieux.
 
 ### Certificats échantillonnés et hybrides : E, E2, deux étages, NC
@@ -40,6 +40,8 @@ Fil commun : la finalité ferme exige un quorum à intersection, des écritures 
 
 ## 2. Pourquoi N existe
 
+Le brouillon applicatif actuel définit **M0 comme seul actif de règlement**. Pour la lecture applicative de N-SPEC §13, voir [APP-SPEC v1 draft, GEN-3](../app/APP-SPEC-v1-draft.md#01-rang-du-document) ; le texte gelé du moteur reste inchangé. Les SP et LP sont des rôles hors consensus qui ne requièrent pas d'identité enregistrée ; un producteur est une identité enregistrée sélectionnée pour produire un bloc.
+
 N répond à un choix explicite du propriétaire du projet, le 30 septembre : **N pur au genesis**.
 
 - Un producteur par créneau, tiré mécaniquement à partir de Bitcoin et du registre des tickets.
@@ -47,7 +49,7 @@ N répond à un choix explicite du propriétaire du projet, le 30 septembre : **
 - Les tickets servent de loterie de production ; ils ne donnent pas de poids de vote. Un burn de `P0 = 1 000 000 sats` donne une unité de poids. Le burn rend les Sybils coûteux ; il ne garantit pas l'indépendance des tickets.
 - Aucune récompense de bloc : les frais sont transférés, jamais créés.
 
-N renonce à la finalité ferme, à la preuve de finalité exportable et à la règle « pause plutôt que recul ». Le vocabulaire client est **inclusion → profondeur → stabilité selon une politique**, et il n'existe aucun statut natif `FINAL`. L'atomicité est garantie **sur chaque branche** : un règlement livraison contre paiement X/M1 est tout ou rien. Pour BTC/M1, la jambe Bitcoin est irréversible. Le risque résiduel ε(k) est donc porté et tarifé par le prestataire de règlement ou de liquidité (SP/LP), au moyen de la profondeur qu'il choisit.
+N renonce à la finalité ferme, à la preuve de finalité exportable et à la règle « pause plutôt que recul ». Le vocabulaire client est **inclusion → profondeur → stabilité selon une politique**, et il n'existe aucun statut natif `FINAL`. L'atomicité est garantie **sur chaque branche** : un règlement livraison contre paiement X/M0 est tout ou rien. Pour BTC/M0, la jambe Bitcoin est irréversible. Le risque résiduel ε(k) est donc porté et tarifé par le prestataire de règlement ou de liquidité (SP/LP), au moyen de la profondeur qu'il choisit.
 
 En échange, N offre une chaîne qui continue de produire, mécanique « comme Bitcoin », avec une bande passante de signatures inférieure de deux à trois ordres de grandeur à celle d'un moteur à votes.
 
@@ -57,13 +59,13 @@ En échange, N offre une chaîne qui continue de produire, mécanique « comme B
 
 | Propriété | Portée par | Sens |
 |---|---|---|
-| **Provenance** | Bitcoin | Toute ressource monétaire a une origine Bitcoin typée. L'offre est égale à la somme des burns. TICKET et REACT créent zéro M0 et zéro M1. |
-| **Conservation** | Objets / Core | Les transitions sont valides dans chaque histoire. Une transition native et son undo sont atomiques. C'est une obligation d'interface (G1–G10), vérifiée conjointement avec la spécification applicative : N seul ne démontre pas la conservation monétaire. |
+| **Provenance** | Bitcoin | Toute ressource de règlement a une origine Bitcoin typée. L'offre est égale à la somme des burns. TICKET et REACT créent zéro M0. |
+| **Conservation** | Objets / Core | Les transitions sont valides dans chaque histoire. Une transition native et son undo sont atomiques. C'est une obligation d'interface (G1–G10), vérifiée conjointement avec la spécification applicative : N seul ne démontre pas la conservation de l'actif de règlement. |
 | **Canonicité** | N | Sélection d'une histoire parmi des histoires incompatibles. C'est la seule chose que N décide. |
 | **Antériorité** | Bitcoin | Engagement d'un préfixe dans une transaction Bitcoin admissible (burns M0, tickets NEW/ADD, REACT). Il n'existe aucune transaction `ANCHOR` dédiée. |
 | **Origine** (nœuds nouveaux ou de retour) | A′ / RELEASE | Dossier `BOOTSTRAP` distribué avec les releases, authentifié par 4 clés avec un seuil de 3 sur 4. La récupération exceptionnelle passe par un dossier `RECOVERY` accepté explicitement. |
 
-Sous N, une attaque longue portée est donc un conflit de **registre**, jamais de monnaie. La conservation monétaire (aucune création de M0 ou de M1) ne vaut **que sous les obligations applicatives G1–G10 (spec §21), pas encore qualifiées**.
+Sous N, une attaque longue portée est donc un conflit de **registre**, jamais de l'actif de règlement. La conservation de l'actif de règlement (aucune création de M0) ne vaut **que sous les obligations applicatives G1–G10 (spec §21), pas encore qualifiées**.
 
 ## 4. Subjectivité faible
 
@@ -79,7 +81,7 @@ N est faiblement subjectif, par décision explicite du propriétaire (D1, 1er oc
 Pour N, Bitcoin est en lecture seule : N ne modifie jamais les règles de Bitcoin et n'ajoute aucune transaction d'ancrage. Bitcoin fournit quatre choses :
 
 1. **Les racines.** Les burns créent le M0 et les tickets. Une REACT est authentifiée par la signature Bitcoin elle-même.
-2. **Les faits.** Chaque nœud vérifie lui-même les en-têtes, les confirmations et les paiements. Le swap BTC/M1 à un saut est résolu par l'inclusion de la jambe Bitcoin.
+2. **Les faits.** Chaque nœud vérifie lui-même les en-têtes, les confirmations et les paiements. Le règlement BTC/M0 à un saut est résolu par l'inclusion de la jambe Bitcoin.
 3. **Le temps.** Il comprend la MTP (median time past), une garde de graine de 12 h (43 200 s), une marge MTP de 7 200 s, et des durées comptées en hauteurs Bitcoin (`G_anchor = 26 280`, cadence 13 140, grâce REACT 4 032).
 4. **L'aléa.** La graine d'époque hache le premier bloc Bitcoin dont la MTP atteint l'heure de graine, enfoui à `k_seed = 30` confirmations, ainsi que la racine du registre. Aucun parent N, état, signature ni nonce de producteur n'entre dans la graine.
 
@@ -135,9 +137,9 @@ N n'a pas de finalité ; il publie une table. K(ε) est la profondeur au-delà d
 - pour un nœud synchronisé, un arrêt profond (`HALTED_DEEP_REORG`) plutôt que l'adoption d'une branche privée qui change de calendrier après le début d'une époque, sauf avec une probabilité d'au plus `T_CG` (les pivots sous `maxreorg` sont comptés à part, dans `T_court` et `T_profond`, à l'intérieur de ε_H) ;
 - le déterminisme : une même chaîne candidate, une même époque et un même contexte Bitcoin donnent le même registre et la même graine, quelles que soient les observations antérieures du nœud ;
 - l'atomicité des transitions natives sur chaque branche ;
-- aucune création monétaire par N, et aucun pouvoir sur la fork-choice pour une origine ou pour H1.
+- aucune création d'actif de règlement par N, et aucun pouvoir sur la fork-choice pour une origine ou pour H1.
 
-**N ne garantit pas :** une finalité native ; la convergence entre origines incompatibles ; une synchronisation sûre sous éclipse ; un calendrier imprévisible ; un aléa Bitcoin non biaisé ; une protection longue portée complète ; un coût d'attaque universel ; l'absence de censure ou de DoS ; l'atomicité BTC/M1 après disparition du verrou ; la conservation monétaire sans qualification applicative. Les arrêts profonds persistent tant que le conflit demeure.
+**N ne garantit pas :** une finalité native ; la convergence entre origines incompatibles ; une synchronisation sûre sous éclipse ; un calendrier imprévisible ; un aléa Bitcoin non biaisé ; une protection longue portée complète ; un coût d'attaque universel ; l'absence de censure ou de DoS ; l'atomicité BTC/M0 après disparition du verrou ; la conservation de l'actif de règlement sans qualification applicative. Les arrêts profonds persistent tant que le conflit demeure.
 
 ## 9. Réserves de qualification (QR-1 … QR-10)
 

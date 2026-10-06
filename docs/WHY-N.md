@@ -16,28 +16,30 @@ Each candidate below went through kill-tests by at least two independent analyse
 
 C paired a single sequencer with a quorum of ticket holders that finalised batches (`q > (N+f)/2`, per-height locks, chained certificates, ban on proven equivocation). Its bounded TLA+ model, adapted from a published Tendermint model, found **no safety violation** and caught every deliberately broken variant. No safety bug was found in C. What weighed against it:
 
-- **β cannot be enforced.** The β kill-test showed that "the burn guarantees β" fails: a burn has a cost, but it bounds neither concentration, key rental, corruption, coercion nor attrition. At launch, with a handful of project-run operators, no β < 1 is defensible.
-- **Cost.** Post-quantum votes from thousands of operators are expensive. One analysis put N's production signatures at ≈35 MB/day (6 s slots), against ≈49 GB/day for two full C phases every 60 s at 7,000 identities (a factor of ≈1,400).
+- **β cannot be enforced.** The β kill-test showed that "the burn guarantees β" fails: a burn has a cost, but it bounds neither concentration, key rental, corruption, coercion nor attrition. At launch, with a handful of project-managed producers, no β < 1 is defensible.
+- **Cost.** Post-quantum votes from thousands of registered identities are expensive. One analysis put N's production signatures at ≈35 MB/day (6 s slots), against ≈49 GB/day for two full C phases every 60 s at 7,000 identities (a factor of ≈1,400).
 - **Witness economics.** A blind review of the economics found no remuneration for witnesses.
 
-C is **archived** as a possible future finality gadget. Nothing defers to C at genesis. A private C on top of N would be attestation or insurance, never "finality of N".
+C is **archived** as a possible future mechanism for irrevocable decisions. Nothing defers to C at genesis. A private C on top of N would be attestation or insurance; it would not make N decisions irrevocable.
 
-### Finality without a quorum: D, D2, D3, Bitcoin barrier
+### Irrevocable decisions without a quorum: D, D2, D3, Bitcoin barrier
 
-- **D** (finality by convergence): killed. An equivocating owner plus a partition gives two incompatible "finalities", and silence proves nothing.
-- **D2** (mechanical finality): without votes, uniqueness needs a common non-equivocating log, which is Bitcoin. The cost is one Bitcoin transaction per transfer or batch. Not adopted.
-- **D3** (single lineage, Bitcoin read-only): killed for free payments. For any local rule, P[double lineage] ≥ 2·(liveness of an honest payment) − 1. Reading Bitcoin proves "after H", never "before H". What survived: clock automata and the **one-hop swap object**.
+- **D** (irrevocability by convergence): killed. An equivocating owner plus a partition gives two incompatible decisions each claimed to be irrevocable, and silence proves nothing.
+- **D2** (mechanical irrevocability): without votes, uniqueness needs a common non-equivocating log, which is Bitcoin. The cost is one Bitcoin transaction per transfer or batch. Not adopted.
+- **D3** (single lineage, Bitcoin read-only): killed for free payments. For any local rule, P[double lineage] ≥ 2·(liveness of an honest payment) − 1. Reading Bitcoin proves "after H", never "before H". What survived: clock automata and the **one-hop settlement object**.
 - **Bitcoin barrier** (synchronous BFT clocked by Bitcoin): safety rests on Δ. Two tickets plus a partition longer than 2Δ give two silent FINALs.
 
 ### Sampled certificates and hybrids: E, E2, two stages, NC
 
 - **E/F**: sampling yields no small committees (≈200 members at β = 0.1, 1,300 to 2,600 at β = 0.2, impossible at β = 0.3), and E still depends on C. Deferred.
 - **E2** (faithful SBRB/DPRB): **closed**. It needs 27 to 252 Mbit/s per node at 32 tx/s (≈5 for C), offers probabilistic safety under a static adversary, and has no exportable proof.
-- **Two stages** (chain plus C checkpoints) and **NC** (C finality per object): no gain on β. NC's finality does not stay local: it propagates in depth, upstream and to new nodes.
+- **Two stages** (chain plus C checkpoints) and **NC** (irrevocable C decisions per object): no gain on β. NC's irrevocability requirement does not stay local: it propagates in depth, upstream and to new nodes.
 
-Common thread: firm finality needs an intersecting quorum, Bitcoin writes, or synchrony carrying safety. On 30 September the owner chose to give up firm finality.
+Common thread: irrevocable decisions need an intersecting quorum, Bitcoin writes, or synchrony carrying safety. On 30 September the owner chose to give up that requirement.
 
 ## 2. Why N exists
+
+The current application draft defines **M0 as the only settlement asset**. For the application reading of N-SPEC §13, see [APP-SPEC v1 draft, GEN-3](../app/APP-SPEC-v1-draft.md#01-rang-du-document); the frozen engine text is unchanged. SPs and LPs are roles outside consensus and do not require a registered identity; a producer is a registered identity selected to produce a block.
 
 N is the answer to a choice made explicitly by the project owner on 30 September: **pure N at genesis**.
 
@@ -46,7 +48,7 @@ N is the answer to a choice made explicitly by the project owner on 30 September
 - Tickets are a production lottery, not voting weight. A burn of `P0 = 1,000,000 sats` buys one unit of weight. The burn makes Sybils costly. It does not guarantee that tickets are independent.
 - No block reward. Fees are transferred, never minted.
 
-N gives up firm finality, an exportable finality proof, and "pause rather than roll back". Client vocabulary: **inclusion → depth → stability under a policy**; there is no native `FINAL`. Atomicity holds **on every branch** (X/M1 delivery-versus-payment is all-or-nothing). For BTC/M1 the Bitcoin leg is irreversible, so the residual risk ε(k) is carried and priced by the settlement or liquidity provider (SP/LP) through its choice of depth.
+There is no native finality. N provides no exportable proof of irrevocability and gives up "pause rather than roll back". Client vocabulary: **inclusion → depth → stability under a policy**; there is no native `FINAL`. Atomicity holds **on every branch** (X/M0 delivery-versus-payment is all-or-nothing). For BTC/M0 the Bitcoin leg is irreversible, so the residual risk ε(k) is carried and priced by the settlement or liquidity provider (SP/LP) through its choice of depth.
 
 In exchange: a chain that keeps producing, mechanical "like Bitcoin", with signature bandwidth two to three orders of magnitude below a voting engine.
 
@@ -56,13 +58,13 @@ In exchange: a chain that keeps producing, mechanical "like Bitcoin", with signa
 
 | Property | Carried by | Meaning |
 |---|---|---|
-| **Provenance** | Bitcoin | Every monetary resource has a typed Bitcoin origin. Supply equals the sum of burns. TICKET and REACT create zero M0 and zero M1. |
-| **Conservation** | Objects / Core | Transitions are valid inside each history. Native transitions and their undo are atomic. This is an interface obligation (G1–G10), checked jointly with the application specification. N alone does not prove monetary conservation. |
+| **Provenance** | Bitcoin | Every settlement resource has a typed Bitcoin origin. Supply equals the sum of burns. TICKET and REACT create zero M0. |
+| **Conservation** | Objects / Core | Transitions are valid inside each history. Native transitions and their undo are atomic. This is an interface obligation (G1–G10), checked jointly with the application specification. N alone does not prove settlement-asset conservation. |
 | **Canonicity** | N | Selection of one history among incompatible ones. This is the only thing N decides. |
 | **Anteriority** | Bitcoin | A prefix commitment carried in an admissible Bitcoin transaction (M0 burns, NEW/ADD tickets, REACT). There is no dedicated `ANCHOR` transaction. |
 | **Origin** (new or returning nodes) | A′ / RELEASE | A `BOOTSTRAP` package distributed with releases and authenticated by 4 keys with a 3-of-4 threshold. Exceptional recovery uses an explicitly accepted `RECOVERY` package. |
 
-A long-range attack under N is therefore a **registry** conflict, never a money conflict. Monetary conservation (no creation of M0 or M1) holds **only under the application obligations G1–G10 (spec §21), which are not yet qualified**.
+A long-range attack under N is therefore a **registry** conflict, never a settlement-asset conflict. Settlement-asset conservation (no creation of M0) holds **only under the application obligations G1–G10 (spec §21), which are not yet qualified**.
 
 ## 4. Weak subjectivity
 
@@ -78,7 +80,7 @@ N is weakly subjective, by an explicit owner decision (D1, 1 October).
 Bitcoin is read-only for N. N never changes Bitcoin's rules and adds no anchoring transaction. Bitcoin supplies four things:
 
 1. **Roots.** Burns create M0 and tickets. REACT is authenticated by the Bitcoin signature itself.
-2. **Facts.** Every node verifies headers, confirmations and payments. The one-hop BTC/M1 swap is resolved by inclusion of the Bitcoin leg.
+2. **Facts.** Every node verifies headers, confirmations and payments. The one-hop BTC/M0 settlement is resolved by inclusion of the Bitcoin leg.
 3. **Time.** The median time past (MTP), a 12-hour seed guard (43,200 s), a 7,200 s MTP margin, and durations counted in Bitcoin heights (`G_anchor = 26,280`, cadence 13,140, REACT grace 4,032).
 4. **Randomness.** The epoch seed hashes the first Bitcoin block whose MTP passes the seed time, buried at `k_seed = 30` confirmations, together with the registry root. No N parent, state, signature or producer nonce enters the seed.
 
@@ -116,7 +118,7 @@ Derived parameters (dynamic programming bound, composed per epoch, rounded up): 
 
 ## 7. Why SPs and LPs choose their own depth
 
-N has no finality. It publishes a table instead. K(ε) is the depth beyond which a common-prefix violation has probability at most ε **per cut**, at the worst corner of the domain (β = 0.30, d = 0.70, p_late = 10⁻²):
+There is no native finality in N. It publishes a table instead. K(ε) is the depth beyond which a common-prefix violation has probability at most ε **per cut**, at the worst corner of the domain (β = 0.30, d = 0.70, p_late = 10⁻²):
 
 | ε per cut | K slots | K blocks | Duration at τ = 10 s | [best exact private attack, slots] |
 |---|---:|---:|---:|---:|
@@ -134,9 +136,9 @@ N has no finality. It publishes a table instead. K(ε) is the depth beyond which
 - for a synchronised node, a deep halt (`HALTED_DEEP_REORG`) rather than adoption of a private branch that changes calendar after the start of an epoch, except with probability at most `T_CG` (the pivot cases below `maxreorg` are counted separately, in `T_court` and `T_profond`, inside ε_H);
 - determinism: the same candidate chain, epoch and Bitcoin context give the same registry and seed, whatever a node observed earlier;
 - atomicity of native transitions on every branch;
-- zero monetary creation by N, and zero fork-choice power for an origin or for H1.
+- zero settlement-asset creation by N, and zero fork-choice power for an origin or for H1.
 
-**N does not guarantee:** native finality; convergence between incompatible origins; safe sync under eclipse; an unpredictable calendar; unbiased Bitcoin randomness; complete long-range protection; a universal attack cost; absence of censorship or DoS; BTC/M1 atomicity once the lock is gone; monetary conservation without application qualification. Deep halts persist as long as the conflict does.
+**N does not guarantee:** native finality; convergence between incompatible origins; safe sync under eclipse; an unpredictable calendar; unbiased Bitcoin randomness; complete long-range protection; a universal attack cost; absence of censorship or DoS; BTC/M0 atomicity once the lock is gone; settlement-asset conservation without application qualification. Deep halts persist as long as the conflict does.
 
 ## 9. Qualification reserves (QR-1 … QR-10)
 

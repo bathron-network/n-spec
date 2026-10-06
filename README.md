@@ -6,11 +6,16 @@
 
 N is a mechanical, vote-free consensus engine. It uses **one producer per slot**, drawn from a registry of burned Bitcoin tickets with a
 Bitcoin-derived seed, and a deterministic fork-choice by score (most valid production blocks since genesis, then a public tie-break
-independent of block content). It has no committee, no quorum and no finality gadget.
+independent of block content). It has no committee and no quorum. There is no native finality.
 - Bitcoin provides roots, facts, time and randomness.
 - Objects carry provenance and conservation.
 - N only chooses the canonical history when evolutions become incompatible.
 - Bitcoin fingerprints can trigger STOP. They never promote a branch.
+
+The current application draft defines **M0 as the only settlement asset**. Settlement Providers (SPs)
+and Liquidity Providers (LPs) are roles outside consensus; neither requires a registered identity.
+A producer is a registered identity selected to produce a block. See [APP-SPEC vocabulary](app/APP-SPEC-v1-draft.md#vocabulaire)
+and [Who does what](https://bathron.org/docs/roles.html).
 
 Start here:
 - **[docs/WHY-N.md](docs/WHY-N.md)** (FR: [WHY-N.fr.md](docs/WHY-N.fr.md)) explains why N, what it guarantees under its published domain, and
