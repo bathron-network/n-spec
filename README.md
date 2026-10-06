@@ -19,6 +19,8 @@ Start here:
   found, and what was changed.
 - **[spec/N-SPEC-v0.7.md](spec/N-SPEC-v0.7.md)** is the normative specification (in French). Its changes from v0.6 are listed in
   [spec/CHANGELOG-v0.7.md](spec/CHANGELOG-v0.7.md).
+- **[app/APP-SPEC-v1-draft.md](app/APP-SPEC-v1-draft.md)** is the application layer (M0 settlement asset, burns, settlement, Sapling)
+  in French. **Draft — gate RA not passed**: it contains only decided rules; other provisions are marked reserved or not published.
 
 ## Published domain H_N (summary, §17 of the spec)
 
@@ -38,6 +40,7 @@ Outside H_N, N makes **no quantitative claim**.
 | Path | Content |
 |---|---|
 | `spec/` | Normative spec v0.7 and changelog |
+| `app/` | Application spec v1, draft (decided rules only; gate RA not passed) |
 | `docs/` | WHY-N, ATTACKS (EN + FR) |
 | `qualification/` | Freeze criteria, qualification requirements QR-1…QR-10, network bench synthesis |
 | `analysis/cp-reg/` | Common-prefix analyses (two independent methods), first-divergence lemma, deep pivot, delivery profile, consistency check, `derivation/` (K(ε) and K_reg derivation, reproducible) |
